@@ -1,11 +1,11 @@
 # 2. ESTADO DA ARTE
 
-O estado da arte evidencia crescimento significativo das pesquisas relacio-nadas à aplicação de tecnologias digitais no setor de restaurantes e hospitalidade.
+O estado da arte evidencia crescimento significativo das pesquisas relacionadas à aplicação de tecnologias digitais no setor de restaurantes e hospitalidade.
 Estudos aplicados, como o de Sutjiadi et al. (2024), demonstram que sistemas web de reserva desenvolvidos com base em prototipagem de requisitos apresentam alta aceitação por parte dos usuários, além de contribuírem para melhoria da organização operacional.
 
 Revisões teóricas indicam que a automação de serviços no setor de hospitalidade impacta diretamente a eficiência operacional, permitindo melhor controle de processos e redução de falhas humanas (MAIER; EDWARDS, 2020).
 
-No âmbito das tendências tecnológicas, Valencia-Arias et al. (2025) identificaram crescimento nas pesquisas sobre restaurantes inteligentes, destacando integração de sistemas digitais, análise de dados e tecnologias emergentes como IoT e inteligência artificial.
+No contexto das tendências tecnológicas, Valencia-Arias et al. (2025) identificaram um crescimento significativo nas pesquisas sobre restaurantes inteligentes, evidenciando a integração de sistemas digitais, o uso de análise de dados e a aplicação de tecnologias emergentes, como Internet das Coisas (IoT) e inteligência artificial, para otimizar a gestão, aprimorar a experiência do cliente e tornar os processos operacionais mais eficientes.
 
 Entretanto, a literatura também aponta divergências quanto ao grau ideal de automação e à complexidade dos sistemas adotados. Enquanto parte dos pesquisadores enfatiza a importância de soluções tecnológicas robustas, outros defendem que sistemas excessivamente complexos podem dificultar a adoção por pequenos estabelecimentos.
 
