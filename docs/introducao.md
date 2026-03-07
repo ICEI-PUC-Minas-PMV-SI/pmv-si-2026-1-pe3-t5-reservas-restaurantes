@@ -14,6 +14,7 @@ Apesar do avanço tecnológico observado no setor de hospitalidade, muitos resta
 ## 1.2. Objetivos do trabalho
 
 Objetivo Geral
+
 Desenvolver um sistema web para a gestão de reservas em restaurantes, visando otimizar a organização operacional, reduzir conflitos de agendamento e aprimorar a experiência do usuário.
 
 Objetivos Específicos
