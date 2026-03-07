@@ -14,18 +14,21 @@ Apesar do avanço tecnológico observado no setor de hospitalidade, muitos resta
 ## 1.2. Objetivos do trabalho
 
 Objetivo Geral
-
-Desenvolver um sistema web de reservas para restaurantes, com o propósito de contribuir para a organização operacional, redução de conflitos de agendamento e melhoria da experiência do usuário.
+Desenvolver um sistema web para a gestão de reservas em restaurantes, visando otimizar a organização operacional, reduzir conflitos de agendamento e aprimorar a experiência do usuário.
 
 Objetivos Específicos
 
-•	Analisar a literatura científica relacionada à digitalização e automação no setor de restaurantes;
-•	Identificar práticas atuais de gestão de reservas em pequenos estabelecimentos;
-•	Levantar requisitos funcionais e não funcionais associados ao processo de reserva;
-•	Modelar a estrutura de dados necessária para armazenamento das informações;
-•	Desenvolver interface web utilizando tecnologias HTML, CSS e JavaScript;
-•	Implementar mecanismo inicial de persistência de dados por meio de Local Storage;
-•	Propor futura integração com banco de dados relacional (MySQL), considerando aspectos de escalabilidade e segurança.
+• Analisar a literatura científica relacionada à digitalização e automação no setor de restaurantes;
+
+• Identificar práticas atuais de gestão de reservas em pequenos estabelecimentos;
+
+• Levantar requisitos funcionais e não funcionais associados ao processo de reserva;
+
+• Modelar a estrutura de dados necessária para o armazenamento das informações;
+
+• Desenvolver a interface web utilizando tecnologias HTML, CSS e JavaScript;
+
+• Implementar um mecanismo inicial de persistência de dados por meio de Local Storage.
 
 ## 1.3. Justificativa
 
