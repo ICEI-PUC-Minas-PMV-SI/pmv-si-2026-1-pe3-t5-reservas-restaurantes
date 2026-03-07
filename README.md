@@ -6,9 +6,9 @@
 
 `SEMESTRE: 3º`
 
-O presente projeto tem como objetivo o desenvolvimento de um sistema web de reservas para restaurantes, com foco na organização operacional dos estabelecimentos e na melhoria da experiência do usuário. A proposta consiste em criar uma solução digital que facilite o gerenciamento de reservas, contribuindo para a redução de conflitos de agendamento, melhor controle da capacidade de atendimento e maior eficiência na gestão do fluxo de clientes.
+O presente projeto tem como objetivo o desenvolvimento de um sistema web de reservas para restaurantes, com foco na organização operacional dos estabelecimentos e no aprimoramento da experiência do usuário. A solução digital visa facilitar o gerenciamento de reservas, contribuindo para a redução de conflitos de agendamento, o controle da capacidade de atendimento e a gestão do fluxo de clientes.
 
-O desenvolvimento da aplicação será orientado pelos princípios de Design Centrado no Usuário (DCU), considerando as necessidades, expectativas e comportamentos dos diferentes perfis de usuários envolvidos no processo de reserva. O sistema será desenvolvido utilizando tecnologias web, como HTML, CSS e JavaScript, buscando oferecer uma interface simples, intuitiva e acessível. Dessa forma, o projeto pretende contribuir para a criação de uma solução digital que promova maior praticidade para clientes e maior organização operacional para restaurantes de pequeno e médio porte.
+O desenvolvimento da aplicação será orientado pelos princípios de Design Centrado no Usuário (DCU), considerando as necessidades, expectativas e comportamentos dos perfis envolvidos no processo de reserva. O sistema será desenvolvido utilizando tecnologias web como HTML, CSS e JavaScript, buscando oferecer uma interface simples, intuitiva e acessível. Dessa forma, o projeto pretende viabilizar uma solução que promova praticidade para os clientes e maior organização operacional para restaurantes de pequeno e médio porte.
 
 ## Integrantes
 
