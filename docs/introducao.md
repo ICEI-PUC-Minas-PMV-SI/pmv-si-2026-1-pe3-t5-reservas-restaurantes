@@ -33,9 +33,9 @@ Objetivos Específicos
 
 ## 1.3. Justificativa
 
-A escolha do tema justifica-se pela crescente digitalização do setor de alimentação e pela necessidade de soluções acessíveis voltadas a pequenos e médios restaurantes. Embora existam plataformas consolidadas no mercado, muitas apresentam custos elevados ou funcionalidades excessivamente complexas para estabelecimentos de menor porte.
-Do ponto de vista acadêmico, o projeto possibilita integrar conhecimentos de desenvolvimento web, modelagem de sistemas, experiência do usuário e análise de processos organizacionais. Pesquisas indicam que a adoção de tecnologias no setor de hospitalidade está diretamente relacionada à percepção de utilidade e facilidade de uso, reforçando a importância de soluções centradas no usuário (FI-GUEIREDO et al., 2025).
-Adicionalmente, estudos sobre automação no setor demonstram impactos positivos na eficiência operacional e na qualidade do serviço (MAIER; EDWARDS, 2020), o que reforça a relevância do desenvolvimento de soluções digitais aplicadas à gestão de reservas.
+A escolha do tema justifica-se pela crescente digitalização do setor de alimentação e pela necessidade de soluções acessíveis voltadas a pequenos e médios restaurantes. Embora existam plataformas consolidadas no mercado, muitas apresentam custos elevados ou funcionalidades excessivamente complexas para estabelecimentos de menor porte. Do ponto de vista acadêmico, o projeto possibilita integrar conhecimentos de desenvolvimento web, modelagem de sistemas, experiência do usuário e análise de processos organizacionais.
+
+Pesquisas indicam que a adoção de tecnologias no setor de hospitalidade está diretamente relacionada à percepção de utilidade e facilidade de uso, reforçando a importância de soluções centradas no usuário (FIGUEIREDO et al., 2025). Adicionalmente, estudos sobre automação no setor demonstram impactos positivos na eficiência operacional e na qualidade do serviço (MAIER; EDWARDS, 2020), o que reforça a relevância do desenvolvimento de soluções digitais aplicadas à gestão de reservas.
 
 ## 1.4. Público alvo
 
