@@ -4,7 +4,7 @@ A transformação digital tem promovido mudanças profundas no setor de serviço
 
 Nesse cenário, os sistemas de reserva online tornaram-se ferramentas estratégicas para organizar o fluxo de clientes e controlar a capacidade operacional dos estabelecimentos. Essa digitalização está integrada ao conceito de restaurantes inteligentes, que buscam automatizar processos e melhorar a gestão por meio de dados.
 
-Estudos recentes confirmam o crescimento acelerado do interesse tecnológico no setor alimentício, reforçando sua importância estratégica. A adesão a essas ferramentas depende, fundamentalmente, da percepção de utilidade e da facilidade de uso por parte do público. Portanto, implementar um sistema de reservas não representa apenas uma inovação técnica, mas uma estratégia de reorganização operacional capaz de elevar tanto a eficiência do serviço quanto a satisfação do cliente.
+O interesse crescente por tecnologias no setor alimentício reforça sua importância estratégica. A adesão a essas ferramentas depende, fundamentalmente, da percepção de utilidade e da facilidade de uso por parte do público. Portanto, implementar um sistema de reservas não representa apenas uma inovação técnica, mas uma estratégia de reorganização operacional capaz de elevar tanto a eficiência do serviço quanto a satisfação do cliente.
 
 ## 1.1. Problema
 
