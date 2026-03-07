@@ -37,12 +37,12 @@ A escolha do tema justifica-se pela crescente digitalização do setor de alimen
 
 Pesquisas indicam que a adoção de tecnologias no setor de hospitalidade está diretamente relacionada à percepção de utilidade e facilidade de uso, reforçando a importância de soluções centradas no usuário (FIGUEIREDO et al., 2025). Adicionalmente, estudos sobre automação no setor demonstram impactos positivos na eficiência operacional e na qualidade do serviço (MAIER; EDWARDS, 2020), o que reforça a relevância do desenvolvimento de soluções digitais aplicadas à gestão de reservas.
 
-## 1.4. Público alvo
+## 1.4. Público-alvo
 
 O sistema destina-se principalmente a dois perfis de usuários:
 
-1.	Gestores e funcionários de restaurantes de pequeno e médio porte, com conhecimento básico de informática e familiaridade com ferramentas digitais utilizadas em rotinas administrativas. Espera-se que esses usuários valorizem sistemas simples, intuitivos e de fácil aprendizagem.
+1.	Gestores e funcionários de restaurantes de pequeno e médio porte: profissionais com conhecimento básico de informática e familiaridade com ferramentas digitais utilizadas em rotinas administrativas. Espera-se que esses usuários valorizem sistemas simples, intuitivos e de fácil aprendizagem.
    
-2.	Clientes do restaurante, que possuem familiaridade com navegação web e dispositivos móveis, buscando praticidade e rapidez no momento da reserva. A literatura aponta que a facilidade de uso e a percepção de utilidade são fatores determinantes na aceitação de tecnologias digitais nesse contexto (FIGUEIREDO et al., 2025).
+2.	Clientes do restaurante: indivíduos que possuem familiaridade com navegação web e dispositivos móveis, buscando praticidade e rapidez no momento da reserva. A literatura aponta que a facilidade de uso e a percepção de utilidade são fatores determinantes na aceitação de tecnologias digitais nesse contexto (FIGUEIREDO et al., 2025).
    
 A diversidade desses perfis reforça a necessidade de desenvolvimento orientado à usabilidade e ao design centrado no usuário.
