@@ -1,10 +1,10 @@
 # 1. INTRODUÇÃO
 
-A transformação digital tem promovido mudanças significativas no setor de serviços, especialmente no segmento de hospitalidade e alimentação. Restaurantes vêm incorporando tecnologias digitais com o objetivo de otimizar processos operacionais, melhorar a experiência do cliente e aumentar a competitividade no mercado (MAIER; EDWARDS, 2020).
-O avanço da conectividade e a popularização dos dispositivos móveis modificaram o comportamento do consumidor, que passou a priorizar conveniência, autonomia e rapidez nos serviços digitais. Nesse contexto, sistemas web de reservas tornaram-se ferramentas estratégicas para organização do fluxo de clientes e gestão da capacidade operacional dos estabelecimentos (SUTJIADI et al., 2024).
-Além disso, a digitalização no setor de restaurantes está associada ao conceito de “smart restaurants”, que envolve a integração de tecnologias como automação de processos, análise de dados e sistemas informatizados de gestão. Estudos bibliométricos recentes demonstram crescimento expressivo das pesquisas relacionadas à aplicação de tecnologias inteligentes no setor de alimentação, evidenciando sua relevância científica e mercadológica (VALENCIA-ARIAS et al., 2025).
-A aceitação dessas tecnologias por parte dos usuários também tem sido amplamente estudada sob a perspectiva do Modelo de Aceitação de Tecnologia (TAM), que destaca fatores como utilidade percebida e facilidade de uso como determinantes na adoção de sistemas digitais (FIGUEIREDO et al., 2025).
-Diante desse cenário, a digitalização do processo de reservas representa não apenas inovação tecnológica, mas também uma estratégia de reorganização operacional capaz de impactar positivamente a eficiência do serviço e a satisfação do cliente.
+A transformação digital tem promovido mudanças profundas no setor de serviços, especialmente na gastronomia. Restaurantes vêm adotando tecnologias digitais para otimizar operações, elevar a qualidade do atendimento e ganhar competitividade. O avanço da conectividade e o uso massivo de dispositivos móveis alteraram o comportamento do consumidor, que hoje prioriza conveniência, autonomia e agilidade.
+
+Nesse cenário, os sistemas de reserva online tornaram-se ferramentas estratégicas para organizar o fluxo de clientes e controlar a capacidade operacional dos estabelecimentos. Essa digitalização está integrada ao conceito de restaurantes inteligentes, que buscam automatizar processos e melhorar a gestão por meio de dados.
+
+Estudos recentes confirmam o crescimento acelerado do interesse tecnológico no setor alimentício, reforçando sua importância estratégica. A adesão a essas ferramentas depende, fundamentalmente, da percepção de utilidade e da facilidade de uso por parte do público. Portanto, implementar um sistema de reservas não representa apenas uma inovação técnica, mas uma estratégia de reorganização operacional capaz de elevar tanto a eficiência do serviço quanto a satisfação do cliente.
 
 ## 1.1. Problema
 
