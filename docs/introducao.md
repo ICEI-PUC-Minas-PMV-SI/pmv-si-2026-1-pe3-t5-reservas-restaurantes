@@ -37,7 +37,7 @@ A escolha do tema justifica-se pela crescente digitalização do setor de alimen
 
 Pesquisas indicam que a adoção de tecnologias no setor de hospitalidade está diretamente relacionada à percepção de utilidade e facilidade de uso, reforçando a importância de soluções centradas no usuário (FIGUEIREDO et al., 2025). Adicionalmente, estudos sobre automação no setor demonstram impactos positivos na eficiência operacional e na qualidade do serviço (MAIER; EDWARDS, 2020), o que reforça a relevância do desenvolvimento de soluções digitais aplicadas à gestão de reservas.
 
-## 1.4. Público-alvo
+## 1.4. Público alvo
 
 O sistema destina-se principalmente a dois perfis de usuários:
 
