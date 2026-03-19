@@ -3,27 +3,58 @@
 Nesta parte do trabalho você deve detalhar a documentação dos requisitos do sistema proposto de acordo com as seções a seguir. Ressalta-se que aqui é utilizado como exemplo um sistema de gestão de cursos de aperfeiçoamento.
 
 ## 3.1 Objetivos deste documento
-Descrever e especificar as necessidades da Coordenação do Curso de Sistemas de Informação da PUC Minas que devem ser atendidas pelo projeto SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento.
+Este documento tem como objetivo especificar os requisitos do sistema web de reservas para restaurantes, descrevendo suas funcionalidades, restrições, perfis de usuários e elementos principais de modelagem. A especificação busca orientar o desenvolvimento da solução proposta, servindo como base para as próximas etapas do projeto, especialmente o design de interação, a implementação e os testes.
+
+Além disso, o documento tem a finalidade de registrar de forma clara o escopo do produto, seus limites e os benefícios esperados, garantindo que todos os integrantes da equipe compartilhem a mesma compreensão sobre o sistema a ser desenvolvido, pelos princípios de Design Centrado no Usuário (DCU), visando atender às necessidades de gestores e clientes finais
 
 ## 3.2 Escopo do produto
 
 ### 3.2.1 Nome do produto e seus componentes principais
-O produto será denominado SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento. Ele terá somente um componente (módulo) com os devidos elementos necessários à gestão de cursos.
+O produto será denominado ReservaFácil, um sistema web de reservas para restaurantes de pequeno e médio porte.
+
+O sistema possuirá, inicialmente, os seguintes componentes principais:
+•	módulo de cadastro e autenticação de usuários;
+
+•	módulo de gerenciamento de mesas;
+
+•	módulo de gerenciamento de reservas;
+
+•	módulo de consulta de disponibilidade;
+
+•	módulo de administração para gestores e funcionários.
+
 
 ### 3.2.2 Missão do produto
-Gerenciar informações sobre a oferta de cursos de aperfeiçoamento, gerenciar a composição das turmas, alunos, professores e matrículas. 
+A missão do produto é permitir o gerenciamento digital das reservas de restaurantes, promovendo maior organização operacional, redução de conflitos de agendamento e melhoria da experiência do usuário durante o processo de reserva.
 
 ### 3.2.3 Limites do produto
-O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcelas do curso, pagamento a professore e agendamentos. O SCCA não contempla o atendimento a vários cursos de Sistemas de Informação de outras unidades da PUC Minas.
+O sistema proposto contempla o cadastro e o gerenciamento de reservas e mesas, bem como a consulta de horários disponíveis.
+
+
+O produto não contempla, nesta versão inicial:
+
+•	processamento de pagamentos online;
+
+•	integração com sistemas de delivery;
+
+•	emissão de nota fiscal;
+
+•	integração com aplicativos externos de mensagens;
+
+•	controle financeiro do restaurante;
+
+•	gestão de cardápio e pedidos nas mesas.
 
 ### 3.2.4 Benefícios do produto
 
 | # | Benefício | Valor para o Cliente |
 |--------------------|------------------------------------|----------------------------------------|
-|1	| Facilidade no cadastro de dados |	Essencial |
-|2 | Facilidade na recuperação de informações | Essencial | 
-|3 | Segurança no cadastro de matrículas | Essencial | 
-|4	| Melhoria na comunicação com os alunos	| Recomendável | 
+|1	| Facilidade no agendamento de reservas |	Essencial |
+|2 | Redução de conflitos de horários | Essencial | 
+|3 | Melhor controle da ocupação das mesas | Essencial | 
+|4	| Organização das informações de clientes e reservas	| Essencial | 
+|5	| Melhoria da experiência do usuário	| Recomendável | 
+|6	| Agilidade no atendimento e planejamento operacional	| Recomendável | 
 
 ## 3.3 Descrição geral do produto
 
