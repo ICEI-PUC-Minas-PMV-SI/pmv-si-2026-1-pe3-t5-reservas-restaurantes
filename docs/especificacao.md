@@ -60,29 +60,42 @@ O produto não contempla, nesta versão inicial:
 
 ### 3.3.1 Requisitos Funcionais
 
+O sistema proposto consiste em uma aplicação web destinada ao gerenciamento de reservas de mesas em restaurantes. A solução busca auxiliar na organização do fluxo de clientes, otimizar o uso das mesas disponíveis e reduzir falhas associadas a processos manuais de controle de reservas. O sistema permitirá que clientes realizem reservas de forma digital, enquanto os gestores do restaurante poderão administrar mesas, horários, reservas e dados dos clientes, contribuindo para uma gestão mais eficiente e baseada em informações.
+
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
-| RF2 |	Gerenciar Professor	| Processamento de Inclusão, Alteração, Exclusão e Consulta de professores |
-| RF3	| Gerenciar Matrícula |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Matrículas de alunos em Cursos de Aperfeiçoamento |
-| ... |	...	| ... |
+| RF1 | Gerenciar Clientes | Processamento de inclusão, alteração, exclusão e consulta de dados de clientes que utilizam o sistema de reservas. |
+| RF2 | Gerenciar Mesas | Processamento de inclusão, alteração, exclusão e consulta de mesas do restaurante, incluindo capacidade de pessoas e localização da mesa. |
+| RF3 | Gerenciar Reservas | Processamento de inclusão, alteração, exclusão e consulta de reservas realizadas pelos clientes. |
+| RF4 | Consultar Disponibilidade de Mesas |	O sistema deve permitir a verificação da disponibilidade de mesas de acordo com data, horário e quantidade de pessoas. |
+| RF5 | Confirmar Reserva | O sistema deve permitir que o cliente confirme a realização da reserva após o preenchimento das informações necessárias. |
+| RF6 | Cancelar Reserva | O sistema deve permitir que o cliente ou administrador cancele uma reserva previamente realizada. |
+| RF7 | Gerenciar Usuários do Sistema |	Processamento de inclusão, alteração, exclusão e consulta de usuários administrativos do sistema. |
+| RF8 | Visualizar Agenda de Reservas |	O sistema deve permitir que os administradores visualizem todas as reservas organizadas por data e horário. |
+| RF9 | Notificar Confirmação de Reserva | O sistema deve enviar uma notificação ou mensagem de confirmação ao cliente após a realização da reserva. |
+| RF10 | Gerar Relatórios de Reservas | O sistema deve permitir a geração de relatórios contendo informações sobre reservas realizadas, canceladas e ocupação das mesas. |
 
 ### 3.3.2 Requisitos Não Funcionais
 
 | Código | Requisito Não Funcional (Restrição) |
 |--------------------|------------------------------------|
-| RNF1 | O ambiente operacional a ser utilizado é o Windows XP. |
-| RNF2 | O sistema deverá executar em um computador configurado com uma impressora de tecnologia laser ou de jato de tinta, a ser usada para impressão dos relatórios. |
-| RNF3 |	Segurança	O produto deve restringir o acesso por meio de senhas individuais para o usuário. |
-| ... |	... |	... |
+| RNF1 | O sistema deverá ser desenvolvido como uma aplicação web acessível por meio de navegadores modernos como Google Chrome, Mozilla Firefox e Microsoft Edge. |
+| RNF2 | O sistema deverá apresentar interface responsiva, permitindo acesso por computadores, tablets e dispositivos móveis. |
+| RNF3 | Segurança: o sistema deverá restringir o acesso às funcionalidades administrativas por meio de autenticação com login e senha individuais. |
+| RNF4 | Segurança: o sistema deverá restringir o acesso às funcionalidades administrativas por meio de autenticação com login e senha individuais. |
+| RNF5 | O tempo de resposta para operações de consulta de disponibilidade de mesas não deverá ultrapassar 3 segundos em condições normais de uso. |
+| RNF6 | O tempo de resposta para operações de consulta de disponibilidade de mesas não deverá ultrapassar 3 segundos em condições normais de uso. |
+| RNF7 | O sistema deverá manter registro das reservas realizadas para fins de auditoria e geração de relatórios. |
+| RNF8 | O sistema deverá permitir fácil manutenção e atualização do software sem interrupção significativa do serviço. |
 
 ### 3.3.3 Usuários 
 
 | Ator | Descrição |
 |--------------------|------------------------------------|
-| Coordenador |	Usuário gerente do sistema responsável pelo cadastro e manutenção de cursos de aperfeiçoamento. Possui acesso geral ao sistema. |
-| Secretaria |	Usuário responsável por registros de alunos, professores, turmas e gerência de matrículas. |
-| ... |	... |	... |
+| Administrador | Usuário responsável pela administração geral do sistema, incluindo cadastro de mesas, gerenciamento de reservas e geração de relatórios. |
+| Funcionário do Restaurante | Usuário responsável por acompanhar as reservas realizadas, confirmar presença dos clientes e auxiliar na organização das mesas. |
+| Cliente | Usuário final que acessa o sistema para consultar disponibilidade de mesas e realizar reservas no restaurante. |
+
 
 ## 3.4 Modelagem do Sistema
 
