@@ -62,18 +62,16 @@ O produto não contempla, nesta versão inicial:
 
 O sistema proposto consiste em uma aplicação web destinada ao gerenciamento de reservas de mesas em restaurantes. A solução busca auxiliar na organização do fluxo de clientes, otimizar o uso das mesas disponíveis e reduzir falhas associadas a processos manuais de controle de reservas. O sistema permitirá que clientes realizem reservas de forma digital, enquanto os gestores do restaurante poderão administrar mesas, horários, reservas e dados dos clientes, contribuindo para uma gestão mais eficiente e baseada em informações.
 
-| Código | Requisito Funcional (Funcionalidade) | Descrição |
-|--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar Clientes | Processamento de inclusão, alteração, exclusão e consulta de dados de clientes que utilizam o sistema de reservas. |
-| RF2 | Gerenciar Mesas | Processamento de inclusão, alteração, exclusão e consulta de mesas do restaurante, incluindo capacidade de pessoas e localização da mesa. |
-| RF3 | Gerenciar Reservas | Processamento de inclusão, alteração, exclusão e consulta de reservas realizadas pelos clientes. |
-| RF4 | Consultar Disponibilidade de Mesas |	O sistema deve permitir a verificação da disponibilidade de mesas de acordo com data, horário e quantidade de pessoas. |
-| RF5 | Confirmar Reserva | O sistema deve permitir que o cliente confirme a realização da reserva após o preenchimento das informações necessárias. |
-| RF6 | Cancelar Reserva | O sistema deve permitir que o cliente ou administrador cancele uma reserva previamente realizada. |
-| RF7 | Gerenciar Usuários do Sistema |	Processamento de inclusão, alteração, exclusão e consulta de usuários administrativos do sistema. |
-| RF8 | Visualizar Agenda de Reservas |	O sistema deve permitir que os administradores visualizem todas as reservas organizadas por data e horário. |
-| RF9 | Notificar Confirmação de Reserva | O sistema deve enviar uma notificação ou mensagem de confirmação ao cliente após a realização da reserva. |
-| RF10 | Gerar Relatórios de Reservas | O sistema deve permitir a geração de relatórios contendo informações sobre reservas realizadas, canceladas e ocupação das mesas. |
+| Código | Requisito Funcional (Funcionalidade) | Descrição                                                                                                                  |
+| ------ | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| RF1    | Gerenciar Clientes                   | Permitir o cadastro, atualização, exclusão e consulta de dados dos clientes que utilizam o sistema.                        |
+| RF2    | Gerenciar Mesas                      | Permitir ao gestor cadastrar, editar, excluir e consultar mesas, incluindo número identificador, capacidade e localização. |
+| RF3    | Gerenciar Reservas                   | Permitir a criação, alteração, cancelamento e consulta de reservas, associando cliente, data, horário e mesa.              |
+| RF4    | Consultar Disponibilidade de Mesas   | Permitir a verificação de mesas disponíveis com base na data, horário e quantidade de pessoas informada.                   |
+| RF5    | Gerenciar Acesso de Usuários         | Permitir cadastro e autenticação de usuários (cliente e gestor) por meio de login e senha.                                 |
+| RF6    | Visualizar Agenda de Reservas        | Permitir ao gestor visualizar todas as reservas organizadas por data e horário.                                            |
+| RF7    | Notificar Cliente sobre Reserva      | Enviar notificações de confirmação e lembretes de reservas ao cliente.                                                     |
+| RF8    | Gerar Relatórios de Reservas         | Permitir ao gestor gerar relatórios com informações sobre reservas, cancelamentos e ocupação das mesas.                    |
 
 ### 3.3.2 Requisitos Não Funcionais
 
