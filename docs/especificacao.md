@@ -215,7 +215,7 @@ Fluxo Principal:
 5. Se as credenciais forem válidas, o sistema concede acesso ao sistema.
 
 
-Fluxo Alternativo (4): Credenciais inválidas
+- Fluxo Alternativo (4): Credenciais inválidas
 
 a) O sistema identifica que os dados informados são inválidos.
 
@@ -244,7 +244,7 @@ Fluxo Principal:
 4. O sistema valida os dados informados.
 5. O sistema registra o novo usuário no sistema.
 
-Fluxo Alternativo (4): Dados inválidos
+- Fluxo Alternativo (4): Dados inválidos
 
 a) O sistema identifica que algum dado informado é inválido ou incompleto.
 
@@ -256,7 +256,8 @@ d) O usuário informa os dados novamente.
 
 e) O fluxo retorna ao passo 4 do fluxo principal.
 
-Fluxo Alternativo (4): Usuário já cadastrado
+
+- Fluxo Alternativo (4): Usuário já cadastrado
 
 a) O sistema verifica que o e-mail ou CPF já está cadastrado.
 
