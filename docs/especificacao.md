@@ -246,26 +246,26 @@ Fluxo Principal:
 
 - Fluxo Alternativo (4): Dados inválidos
 
-  a) O sistema identifica que algum dado informado é inválido ou incompleto.
+ a) O sistema identifica que algum dado informado é inválido ou incompleto.
 
-  b) O sistema informa o erro ao usuário.
+ b) O sistema informa o erro ao usuário.
 
-  c) O sistema solicita a correção dos dados.
+ c) O sistema solicita a correção dos dados.
 
-  d) O usuário informa os dados novamente.
+ d) O usuário informa os dados novamente.
 
-  e) O fluxo retorna ao passo 4 do fluxo principal.
+ e) O fluxo retorna ao passo 4 do fluxo principal.
 
 
 - Fluxo Alternativo (4): Usuário já cadastrado
 
-  a) O sistema verifica que o e-mail ou CPF já está cadastrado.
+ a) O sistema verifica que o e-mail ou CPF já está cadastrado.
 
-  b) O sistema informa que já existe um cadastro para o usuário.
+ b) O sistema informa que já existe um cadastro para o usuário.
 
-  c) O sistema orienta o usuário a realizar login ou recuperar a senha.
+ c) O sistema orienta o usuário a realizar login ou recuperar a senha.
 
-  d) O caso de uso é encerrado.
+ d) O caso de uso é encerrado.
 
 -----------------------------------------------
 
@@ -294,25 +294,26 @@ Fluxo Principal:
 
 Fluxo Alternativo (4): Não há mesas disponíveis
 
-a) O sistema verifica que não existem mesas disponíveis no horário solicitado.
+ a) O sistema verifica que não existem mesas disponíveis no horário solicitado.
 
-b) O sistema informa a indisponibilidade ao usuário.
+ b) O sistema informa a indisponibilidade ao usuário.
 
-c) O usuário pode escolher outra data ou horário.
+ c) O usuário pode escolher outra data ou horário.
 
-d) O fluxo retorna ao passo 2 do fluxo principal.
+ d) O fluxo retorna ao passo 2 do fluxo principal.
 
 Fluxo Alternativo (6): Mesa indisponível no momento da seleção
 
-a) O sistema identifica que a mesa selecionada acabou de ser reservada por outro usuário.
+ a) O sistema identifica que a mesa selecionada acabou de ser reservada por outro usuário.
 
-b) O sistema informa ao usuário que a mesa não está mais disponível.
+ b) O sistema informa ao usuário que a mesa não está mais disponível.
 
-c) O sistema solicita que o usuário selecione outra mesa disponível.
+ c) O sistema solicita que o usuário selecione outra mesa disponível.
 
-d) O fluxo retorna ao passo 5 do fluxo principal.
+ d) O fluxo retorna ao passo 5 do fluxo principal.
+
 -----------------------------------------------
-   
+  
 Consultar Disponibilidade de Mesas (CSU08)
 
 Sumário:
