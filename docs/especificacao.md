@@ -217,11 +217,11 @@ Fluxo Principal:
 
 - Fluxo Alternativo (4): Credenciais inválidas
 
-a) O sistema identifica que os dados informados são inválidos.
+  a) O sistema identifica que os dados informados são inválidos.
 
-b) O sistema informa o erro ao usuário.
+  b) O sistema informa o erro ao usuário.
 
-c) O usuário pode tentar novamente.
+  c) O usuário pode tentar novamente.
 
 -----------------------------------------------
 
@@ -246,26 +246,26 @@ Fluxo Principal:
 
 - Fluxo Alternativo (4): Dados inválidos
 
-a) O sistema identifica que algum dado informado é inválido ou incompleto.
+  a) O sistema identifica que algum dado informado é inválido ou incompleto.
 
-b) O sistema informa o erro ao usuário.
+  b) O sistema informa o erro ao usuário.
 
-c) O sistema solicita a correção dos dados.
+  c) O sistema solicita a correção dos dados.
 
-d) O usuário informa os dados novamente.
+  d) O usuário informa os dados novamente.
 
-e) O fluxo retorna ao passo 4 do fluxo principal.
+  e) O fluxo retorna ao passo 4 do fluxo principal.
 
 
 - Fluxo Alternativo (4): Usuário já cadastrado
 
-a) O sistema verifica que o e-mail ou CPF já está cadastrado.
+  a) O sistema verifica que o e-mail ou CPF já está cadastrado.
 
-b) O sistema informa que já existe um cadastro para o usuário.
+  b) O sistema informa que já existe um cadastro para o usuário.
 
-c) O sistema orienta o usuário a realizar login ou recuperar a senha.
+  c) O sistema orienta o usuário a realizar login ou recuperar a senha.
 
-d) O caso de uso é encerrado.
+  d) O caso de uso é encerrado.
 
 -----------------------------------------------
 
