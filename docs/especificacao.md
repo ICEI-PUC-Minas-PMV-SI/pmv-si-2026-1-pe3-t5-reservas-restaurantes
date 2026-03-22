@@ -217,11 +217,11 @@ Fluxo Principal:
 
 - Fluxo Alternativo (4): Credenciais inválidas
 
-  a) O sistema identifica que os dados informados são inválidos.
+ a) O sistema identifica que os dados informados são inválidos.
 
-  b) O sistema informa o erro ao usuário.
+ b) O sistema informa o erro ao usuário.
 
-  c) O usuário pode tentar novamente.
+ c) O usuário pode tentar novamente.
 
 -----------------------------------------------
 
@@ -292,7 +292,7 @@ Fluxo Principal:
 8. O sistema confirma a reserva ao usuário.
 
 
-Fluxo Alternativo (4): Não há mesas disponíveis
+- Fluxo Alternativo (4): Não há mesas disponíveis
 
  a) O sistema verifica que não existem mesas disponíveis no horário solicitado.
 
@@ -302,7 +302,7 @@ Fluxo Alternativo (4): Não há mesas disponíveis
 
  d) O fluxo retorna ao passo 2 do fluxo principal.
 
-Fluxo Alternativo (6): Mesa indisponível no momento da seleção
+- Fluxo Alternativo (6): Mesa indisponível no momento da seleção
 
  a) O sistema identifica que a mesa selecionada acabou de ser reservada por outro usuário.
 
