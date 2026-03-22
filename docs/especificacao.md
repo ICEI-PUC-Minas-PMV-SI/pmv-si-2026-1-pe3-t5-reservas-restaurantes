@@ -124,7 +124,7 @@ Fluxo Principal:
 4. O sistema processa os dados das reservas.
 5. O sistema gera e apresenta o relatório ao administrador.
 
-
+-----------------------------------------------
 
 Gerenciar Clientes (CSU02)
 
@@ -147,7 +147,7 @@ Fluxo Principal:
 6. O sistema valida os dados informados.
 7. O sistema registra a operação realizada.
 
-
+-----------------------------------------------
 
 Gerenciar Mesas (CSU03)
 
@@ -170,7 +170,7 @@ Fluxo Principal:
 6. O sistema valida os dados informados.
 7. O sistema registra a operação.
 
-
+-----------------------------------------------
 
 Gerenciar Reservas (CSU04)
 
@@ -190,7 +190,7 @@ Fluxo Principal:
 3. O administrador pode consultar, alterar ou cancelar uma reserva.
 4. O sistema registra as alterações realizadas.
 
-
+-----------------------------------------------
 
 Efetuar Autenticação (CSU05)
 
@@ -208,11 +208,11 @@ O usuário deve possuir cadastro no sistema.
 
 Fluxo Principal:
 
-O usuário acessa a tela de autenticação do sistema.
-O sistema apresenta os campos de login e senha.
-O usuário informa suas credenciais.
-O sistema valida os dados informados.
-Se as credenciais forem válidas, o sistema concede acesso ao sistema.
+1. O usuário acessa a tela de autenticação do sistema.
+2. O sistema apresenta os campos de login e senha.
+3. O usuário informa suas credenciais.
+4. O sistema valida os dados informados.
+5. Se as credenciais forem válidas, o sistema concede acesso ao sistema.
 
 
 Fluxo Alternativo (4): Credenciais inválidas
@@ -221,7 +221,7 @@ a) O sistema identifica que os dados informados são inválidos.
 b) O sistema informa o erro ao usuário.
 c) O usuário pode tentar novamente.
 
-
+-----------------------------------------------
 
 Cadastrar Usuário (CSU06)
 
@@ -242,7 +242,7 @@ Fluxo Principal:
 4. O sistema valida os dados informados.
 5. O sistema registra o novo usuário no sistema.
 
-
+-----------------------------------------------
 
 Efetuar Reserva (CSU07)
 
@@ -266,7 +266,7 @@ Fluxo Principal:
 7. O sistema registra a reserva.
 8. O sistema confirma a reserva ao usuário.
 
-
+-----------------------------------------------
    
 Consultar Disponibilidade de Mesas (CSU08)
 
@@ -285,7 +285,7 @@ Fluxo Principal:
 2. O sistema verifica as mesas disponíveis no horário solicitado.
 3. O sistema retorna a lista de mesas disponíveis.
 
-
+-----------------------------------------------
 
 Verificar Quantidade de Pessoas por Mesa (CSU09)
 
@@ -304,7 +304,7 @@ Fluxo Principal:
 2. O sistema compara a capacidade da mesa com a quantidade de pessoas informada.
 3. Se a capacidade for suficiente, a reserva pode prosseguir.
 
-
+-----------------------------------------------
 
 Notificar sobre Status da Reserva (CSU10)
 
@@ -319,9 +319,9 @@ Uma reserva deve ter sido registrada no sistema.
 
 Fluxo Principal:
 
-O sistema registra a reserva realizada.
-O sistema gera uma notificação de confirmação.
-O sistema envia a notificação ao usuário informando o status da reserva.
+1. O sistema registra a reserva realizada.
+2. O sistema gera uma notificação de confirmação.
+3. O sistema envia a notificação ao usuário informando o status da reserva.
 
 
 
