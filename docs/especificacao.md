@@ -105,52 +105,226 @@ O sistema proposto consiste em uma aplicação web destinada ao gerenciamento de
  
 ### 3.4.2 Descrições de Casos de Uso
 
-Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
+Gerar Relatórios das Reservas (CSU01)
 
-#### Gerenciar Professor (CSU01)
+Sumário:
+O administrador solicita a geração de relatórios contendo informações sobre as reservas realizadas no sistema.
 
-Sumário: A Secretária realiza a gestão (inclusão, remoção, alteração e consulta) dos dados sobre professores.
+Ator Primário:
+Administrador.
 
-Ator Primário: Secretária.
-
-Ator Secundário: Coordenador.
-
-Pré-condições: A Secretária deve ser validada pelo Sistema.
+Pré-condições:
+O administrador deve estar autenticado no sistema.
 
 Fluxo Principal:
 
-1) 	A Secretária requisita manutenção de professores.
-2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de um novo professor, alteração de um professor, a exclusão de um professor e a consulta de dados de um professor.
-3) 	A Secretária seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
-4) 	Se a Secretária desejar continuar com a gestão de professores, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+1. O administrador acessa a funcionalidade de relatórios de reservas.
+2. O sistema apresenta opções de filtros para geração do relatório (data, período ou cliente).
+3. O administrador seleciona os filtros desejados.
+4. O sistema processa os dados das reservas.
+5. O sistema gera e apresenta o relatório ao administrador.
 
-Fluxo Alternativo (3): Inclusão
 
-a)	A Secretária requisita a inclusão de um professor. <br>
-b)	O Sistema apresenta uma janela solicitando o CPF do professor a ser cadastrado. <br>
-c)	A Secretária fornece o dado solicitado. <br>
-d)	O Sistema verifica se o professor já está cadastrado. Se sim, o Sistema reporta o fato e volta ao início; caso contrário, apresenta um formulário em branco para que os detalhes do professor (Código, Nome, Endereço, CEP, Estado, Cidade, Bairro, Telefone, Identidade, Sexo, Fax, CPF, Data do Cadastro e Observação) sejam incluídos. <br>
-e)	A Secretária fornece os detalhes do novo professor. <br>
-f)	O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo professor e a grade listando os professores cadastrados é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
 
-Fluxo Alternativo (3): Remoção
+Gerenciar Clientes (CSU02)
 
-a)	A Secretária seleciona um professor e requisita ao Sistema que o remova. <br>
-b)	Se o professor pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
+Sumário:
+O administrador realiza a gestão dos dados dos clientes, podendo incluir, alterar, excluir ou consultar informações.
 
-Fluxo Alternativo (3): Alteração
+Ator Primário:
+Administrador.
 
-a)	A Secretária altera um ou mais dos detalhes do professor e requisita sua atualização. <br>
-b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de professores, caso contrário, o erro é reportado. <br>
- 
-Fluxo Alternativo (3): Consulta
+Pré-condições:
+O administrador deve estar autenticado no sistema.
 
-a)	A Secretária opta por pesquisar pelo nome ou código e solicita a consulta sobre a lista de professores. <br>
-b)	O Sistema apresenta uma lista professores. <br>
-c)	A Secretária seleciona o professor. <br>
-d)	O Sistema apresenta os detalhes do professor no formulário de professores. <br>
+Fluxo Principal:
 
-Pós-condições: Um professor foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+1. O administrador solicita o gerenciamento de clientes.
+2. O sistema apresenta as operações disponíveis: inclusão, alteração, exclusão e consulta de clientes.
+3. O administrador seleciona a operação desejada.
+4. O sistema apresenta os campos necessários para a operação selecionada.
+5. O administrador informa ou altera os dados do cliente.
+6. O sistema valida os dados informados.
+7. O sistema registra a operação realizada.
+
+
+
+Gerenciar Mesas (CSU03)
+
+Sumário:
+O administrador realiza a gestão das mesas disponíveis no restaurante, podendo cadastrar, alterar, excluir ou consultar mesas.
+
+Ator Primário:
+Administrador.
+
+Pré-condições:
+O administrador deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1. O administrador acessa a opção de gerenciamento de mesas.
+2. O sistema apresenta as operações disponíveis: inclusão, alteração, exclusão e consulta de mesas.
+3. O administrador seleciona a operação desejada.
+4. O sistema apresenta os campos necessários para a operação escolhida.
+5. O administrador informa ou altera os dados da mesa.
+6. O sistema valida os dados informados.
+7. O sistema registra a operação.
+
+
+
+Gerenciar Reservas (CSU04)
+
+Sumário:
+O administrador realiza a gestão das reservas cadastradas no sistema.
+
+Ator Primário:
+Administrador.
+
+Pré-condições:
+O administrador deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1. O administrador acessa a funcionalidade de gerenciamento de reservas.
+2. O sistema apresenta a lista de reservas cadastradas.
+3. O administrador pode consultar, alterar ou cancelar uma reserva.
+4. O sistema registra as alterações realizadas.
+
+
+
+Efetuar Autenticação (CSU05)
+
+Sumário:
+O usuário ou administrador realiza o login no sistema para acessar as funcionalidades disponíveis.
+
+Ator Primário:
+Usuário.
+
+Ator Secundário:
+Administrador.
+
+Pré-condições:
+O usuário deve possuir cadastro no sistema.
+
+Fluxo Principal:
+
+O usuário acessa a tela de autenticação do sistema.
+O sistema apresenta os campos de login e senha.
+O usuário informa suas credenciais.
+O sistema valida os dados informados.
+Se as credenciais forem válidas, o sistema concede acesso ao sistema.
+
+
+Fluxo Alternativo (4): Credenciais inválidas
+
+a) O sistema identifica que os dados informados são inválidos.
+b) O sistema informa o erro ao usuário.
+c) O usuário pode tentar novamente.
+
+
+
+Cadastrar Usuário (CSU06)
+
+Sumário:
+Permite que um novo usuário realize seu cadastro no sistema para posteriormente efetuar reservas.
+
+Ator Primário:
+Usuário.
+
+Pré-condições:
+O usuário não deve possuir cadastro no sistema.
+
+Fluxo Principal:
+
+1. O usuário solicita o cadastro no sistema.
+2. O sistema apresenta um formulário de cadastro.
+3. O usuário informa seus dados pessoais.
+4. O sistema valida os dados informados.
+5. O sistema registra o novo usuário no sistema.
+
+
+
+Efetuar Reserva (CSU07)
+
+Sumário:
+O usuário solicita a realização de uma reserva de mesa no restaurante.
+
+Ator Primário:
+Usuário.
+
+Pré-condições:
+O usuário deve estar autenticado no sistema.
+
+Fluxo Principal:
+
+1. O usuário acessa a funcionalidade de reserva de mesa.
+2. O sistema solicita os dados da reserva (data, horário e número de pessoas).
+3. O usuário informa os dados solicitados.
+4. O sistema consulta a disponibilidade de mesas.
+5. O sistema apresenta as mesas disponíveis.
+6. O usuário seleciona a mesa desejada.
+7. O sistema registra a reserva.
+8. O sistema confirma a reserva ao usuário.
+
+
+   
+Consultar Disponibilidade de Mesas (CSU08)
+
+Sumário:
+O sistema verifica quais mesas estão disponíveis para a data e horário solicitados.
+
+Ator Primário:
+Usuário.
+
+Pré-condições:
+O usuário deve informar data e horário desejados.
+
+Fluxo Principal:
+
+1. O sistema recebe os dados da reserva.
+2. O sistema verifica as mesas disponíveis no horário solicitado.
+3. O sistema retorna a lista de mesas disponíveis.
+
+
+
+Verificar Quantidade de Pessoas por Mesa (CSU09)
+
+Sumário:
+O sistema verifica se a mesa selecionada suporta a quantidade de pessoas informada pelo usuário.
+
+Ator Primário:
+Sistema.
+
+Pré-condições:
+Uma mesa deve ter sido selecionada.
+
+Fluxo Principal:
+
+1. O sistema verifica a capacidade da mesa selecionada.
+2. O sistema compara a capacidade da mesa com a quantidade de pessoas informada.
+3. Se a capacidade for suficiente, a reserva pode prosseguir.
+
+
+
+Notificar sobre Status da Reserva (CSU10)
+
+Sumário:
+O sistema envia uma notificação ao usuário informando o status da reserva realizada.
+
+Ator Primário:
+Usuário.
+
+Pré-condições:
+Uma reserva deve ter sido registrada no sistema.
+
+Fluxo Principal:
+
+O sistema registra a reserva realizada.
+O sistema gera uma notificação de confirmação.
+O sistema envia a notificação ao usuário informando o status da reserva.
+
+
+
 
 ### 3.4.3 Diagrama de Classes 
 
