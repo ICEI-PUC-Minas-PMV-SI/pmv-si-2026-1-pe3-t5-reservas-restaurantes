@@ -98,11 +98,10 @@ O sistema proposto consiste em uma aplicação web destinada ao gerenciamento de
 ## 3.4 Modelagem do Sistema
 
 ### 3.4.1 Diagrama de Casos de Uso
-Como observado no diagrama de casos de uso da Figura 1, a secretária poderá gerenciar as matrículas e professores no sistema, enquanto o coordenador, além dessas funções, poderá gerenciar os cursos de aperfeiçoamento.
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-![dcu](https://github.com/user-attachments/assets/41f6b731-b44e-43aa-911f-423ad6198f47)
+![Diagrama_de_Casos_de_Uso](img/Template de Diagrama de Casos de Uso(2).jpg)
  
 ### 3.4.2 Descrições de Casos de Uso
 
