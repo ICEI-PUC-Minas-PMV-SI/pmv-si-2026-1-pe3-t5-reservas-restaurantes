@@ -195,10 +195,10 @@ Fluxo Principal:
 Efetuar Autenticação (CSU05)
 
 Sumário:
-O usuário ou administrador realiza o login no sistema para acessar as funcionalidades disponíveis.
+O Usuário realiza o login no sistema para acessar as funcionalidades disponíveis.
 
 Ator Primário:
-Usuário.
+Cliente.
 
 Ator Secundário:
 Administrador.
@@ -225,24 +225,24 @@ Fluxo Principal:
 
 -----------------------------------------------
 
-Cadastrar Usuário (CSU06)
+Cadastrar Cliente (CSU06)
 
 Sumário:
-Permite que um novo usuário realize seu cadastro no sistema para posteriormente efetuar reservas.
+Permite que um novo cliente realize seu cadastro no sistema para posteriormente efetuar reservas.
 
 Ator Primário:
-Usuário.
+Cliente.
 
 Pré-condições:
-O usuário não deve possuir cadastro no sistema.
+O cliente não deve possuir cadastro no sistema.
 
 Fluxo Principal:
 
-1. O usuário solicita o cadastro no sistema.
+1. O cliente solicita o cadastro no sistema.
 2. O sistema apresenta um formulário de cadastro.
-3. O usuário informa seus dados pessoais.
+3. O cliente informa seus dados pessoais.
 4. O sistema valida os dados informados.
-5. O sistema registra o novo usuário no sistema.
+5. O sistema registra o novo cliente no sistema.
 
 - Fluxo Alternativo (4): Dados inválidos
 
@@ -252,18 +252,18 @@ Fluxo Principal:
 
  c) O sistema solicita a correção dos dados.
 
- d) O usuário informa os dados novamente.
+ d) O cliente informa os dados novamente.
 
  e) O fluxo retorna ao passo 4 do fluxo principal.
 
 
-- Fluxo Alternativo (4): Usuário já cadastrado
+- Fluxo Alternativo (4): cliente já cadastrado
 
  a) O sistema verifica que o e-mail ou CPF já está cadastrado.
 
  b) O sistema informa que já existe um cadastro para o usuário.
 
- c) O sistema orienta o usuário a realizar login ou recuperar a senha.
+ c) O sistema orienta o cliente a realizar login ou recuperar a senha.
 
  d) O caso de uso é encerrado.
 
@@ -355,10 +355,10 @@ Fluxo Principal:
 Notificar sobre Status da Reserva (CSU10)
 
 Sumário:
-O sistema envia uma notificação ao usuário informando o status da reserva realizada.
+O sistema envia uma notificação ao cliente informando o status da reserva realizada.
 
 Ator Primário:
-Usuário.
+Cliente.
 
 Pré-condições:
 Uma reserva deve ter sido registrada no sistema.
@@ -367,7 +367,7 @@ Fluxo Principal:
 
 1. O sistema registra a reserva realizada.
 2. O sistema gera uma notificação de confirmação.
-3. O sistema envia a notificação ao usuário informando o status da reserva.
+3. O sistema envia a notificação ao cliente informando o status da reserva.
 
 
 
