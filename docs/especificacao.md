@@ -188,29 +188,26 @@ Fluxo Principal:
 1. O administrador acessa a funcionalidade de gerenciamento de reservas.
 2. O sistema apresenta a lista de reservas cadastradas.
 3. O administrador pode consultar, alterar ou cancelar uma reserva.
-4. O sistema registra as alterações realizadas.
+4. O sistema registra as alterações ou cancelamentos realizados.
 
 -----------------------------------------------
 
 Efetuar Autenticação (CSU05)
 
 Sumário:
-O usuário ou administrador realiza o login no sistema para acessar as funcionalidades disponíveis.
+O Cliente ou Administrador realiza o login no sistema para acessar as funcionalidades disponíveis.
 
 Ator Primário:
-Usuário.
-
-Ator Secundário:
-Administrador.
+Cliente ou Administrador.
 
 Pré-condições:
-O usuário deve possuir cadastro no sistema.
+O Cliente ou Administrador deve possuir cadastro no sistema.
 
 Fluxo Principal:
 
-1. O usuário acessa a tela de autenticação do sistema.
+1. O Cliente ou Administrador acessa a tela de autenticação do sistema.
 2. O sistema apresenta os campos de login e senha.
-3. O usuário informa suas credenciais.
+3. O Cliente ou Administrador informa suas credenciais.
 4. O sistema valida os dados informados.
 5. Se as credenciais forem válidas, o sistema concede acesso ao sistema.
 
@@ -219,51 +216,51 @@ Fluxo Principal:
 
  a) O sistema identifica que os dados informados são inválidos.
 
- b) O sistema informa o erro ao usuário.
+ b) O sistema informa o erro ao Cliente ou Administrador.
 
- c) O usuário pode tentar novamente.
+ c) O Cliente ou Administrador pode tentar novamente.
 
 -----------------------------------------------
 
-Cadastrar Usuário (CSU06)
+Cadastrar Cliente ou Administrador (CSU06)
 
 Sumário:
-Permite que um novo usuário realize seu cadastro no sistema para posteriormente efetuar reservas.
+Permite que um novo Cliente ou Administrador realize seu cadastro no sistema para posteriormente efetuar reservas.
 
 Ator Primário:
-Usuário.
+Cliente ou Administrador.
 
 Pré-condições:
-O usuário não deve possuir cadastro no sistema.
+O Cliente ou Administrador não deve possuir cadastro no sistema.
 
 Fluxo Principal:
 
-1. O usuário solicita o cadastro no sistema.
+1. O Cliente ou Administrador solicita o cadastro no sistema.
 2. O sistema apresenta um formulário de cadastro.
-3. O usuário informa seus dados pessoais.
+3. O Cliente ou Administrador informa seus dados pessoais.
 4. O sistema valida os dados informados.
-5. O sistema registra o novo usuário no sistema.
+5. O sistema registra o novo Cliente ou Administrador no sistema.
 
 - Fluxo Alternativo (4): Dados inválidos
 
  a) O sistema identifica que algum dado informado é inválido ou incompleto.
 
- b) O sistema informa o erro ao usuário.
+ b) O sistema informa o erro ao Cliente ou Administrador.
 
  c) O sistema solicita a correção dos dados.
 
- d) O usuário informa os dados novamente.
+ d) O Cliente ou Administrador informa os dados novamente.
 
  e) O fluxo retorna ao passo 4 do fluxo principal.
 
 
-- Fluxo Alternativo (4): Usuário já cadastrado
+- Fluxo Alternativo (4): Cliente ou Administrador já cadastrado
 
  a) O sistema verifica que o e-mail ou CPF já está cadastrado.
 
- b) O sistema informa que já existe um cadastro para o usuário.
+ b) O sistema informa que já existe um cadastro para o Cliente ou Administrador.
 
- c) O sistema orienta o usuário a realizar login ou recuperar a senha.
+ c) O sistema orienta o Cliente ou Administrador a realizar login ou recuperar a senha.
 
  d) O caso de uso é encerrado.
 
@@ -272,45 +269,46 @@ Fluxo Principal:
 Efetuar Reserva (CSU07)
 
 Sumário:
-O usuário solicita a realização de uma reserva de mesa no restaurante.
+O Cliente ou Administrador solicita a realização de uma reserva de mesa no restaurante.
 
 Ator Primário:
-Usuário.
+Cliente ou Administrador.
 
 Pré-condições:
-O usuário deve estar autenticado no sistema.
+O Cliente ou Administrador deve estar autenticado no sistema.
 
 Fluxo Principal:
 
-1. O usuário acessa a funcionalidade de reserva de mesa.
+1. O Cliente ou Administrador acessa a funcionalidade de reserva de mesa.
 2. O sistema solicita os dados da reserva (data, horário e número de pessoas).
-3. O usuário informa os dados solicitados.
+3. O Cliente ou Administrador informa os dados solicitados.
 4. O sistema consulta a disponibilidade de mesas.
 5. O sistema apresenta as mesas disponíveis.
-6. O usuário seleciona a mesa desejada.
-7. O sistema registra a reserva.
-8. O sistema confirma a reserva ao usuário.
+6. O Cliente ou Administrador seleciona a mesa desejada.
+7. O sistema verifica se a mesa suporta a quantidade de pessoas informada.
+8. O sistema registra a reserva.
+9. O sistema confirma a reserva ao Cliente ou Administrador.
 
 
 - Fluxo Alternativo (4): Não há mesas disponíveis
 
  a) O sistema verifica que não existem mesas disponíveis no horário solicitado.
 
- b) O sistema informa a indisponibilidade ao usuário.
+ b) O sistema informa a indisponibilidade ao Cliente ou Administrador.
 
- c) O usuário pode escolher outra data ou horário.
+ c) O Cliente ou Administrador pode escolher outra data ou horário.
 
- d) O fluxo retorna ao passo 2 do fluxo principal.
+ d) O fluxo retorna ao passo 2 do CSU07.
 
 - Fluxo Alternativo (6): Mesa indisponível no momento da seleção
 
- a) O sistema identifica que a mesa selecionada acabou de ser reservada por outro usuário.
+ a) O sistema identifica que a mesa selecionada acabou de ser reservada por outro Cliente ou Administrador.
 
- b) O sistema informa ao usuário que a mesa não está mais disponível.
+ b) O sistema informa ao Cliente ou Administrador que a mesa não está mais disponível.
 
- c) O sistema solicita que o usuário selecione outra mesa disponível.
+ c) O sistema solicita que o Cliente ou Administrador selecione outra mesa disponível.
 
- d) O fluxo retorna ao passo 5 do fluxo principal.
+ d) O fluxo retorna ao passo 5 do CSU07.
 
 -----------------------------------------------
   
@@ -320,10 +318,10 @@ Sumário:
 O sistema verifica quais mesas estão disponíveis para a data e horário solicitados.
 
 Ator Primário:
-Usuário.
+Cliente ou Administrador.
 
 Pré-condições:
-O usuário deve informar data e horário desejados.
+O Cliente ou Administrador deve informar data e horário desejados.
 
 Fluxo Principal:
 
@@ -336,10 +334,10 @@ Fluxo Principal:
 Verificar Quantidade de Pessoas por Mesa (CSU09)
 
 Sumário:
-O sistema verifica se a mesa selecionada suporta a quantidade de pessoas informada pelo usuário.
+O sistema verifica se a mesa selecionada suporta a quantidade de pessoas informada pelo Cliente.
 
 Ator Primário:
-Sistema.
+Cliente ou Administrador.
 
 Pré-condições:
 Uma mesa deve ter sido selecionada.
@@ -350,24 +348,34 @@ Fluxo Principal:
 2. O sistema compara a capacidade da mesa com a quantidade de pessoas informada.
 3. Se a capacidade for suficiente, a reserva pode prosseguir.
 
+Fluxo Alternativo (3): Capacidade insuficiente
+
+ a) O sistema identifica que a mesa não suporta a quantidade de pessoas.
+
+ b) O sistema informa o problema ao Cliente ou Administrador.
+
+ c) O sistema solicita a seleção de outra mesa.
+
+ d) O fluxo retorna ao passo 5 do CSU07.
+
 -----------------------------------------------
 
 Notificar sobre Status da Reserva (CSU10)
 
 Sumário:
-O sistema envia uma notificação ao usuário informando o status da reserva realizada.
+O sistema envia uma notificação ao Cliente ou Administrador informando o status da reserva realizada.
 
 Ator Primário:
-Usuário.
+Cliente ou Administrador.
 
 Pré-condições:
 Uma reserva deve ter sido registrada no sistema.
 
 Fluxo Principal:
 
-1. O sistema registra a reserva realizada.
+1. Uma reserva é confirmada no sistema.
 2. O sistema gera uma notificação de confirmação.
-3. O sistema envia a notificação ao usuário informando o status da reserva.
+3. O sistema envia a notificação ao Cliente ou Administrador informando o status da reserva.
 
 
 
