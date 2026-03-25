@@ -188,7 +188,7 @@ Fluxo Principal:
 1. O administrador acessa a funcionalidade de gerenciamento de reservas.
 2. O sistema apresenta a lista de reservas cadastradas.
 3. O administrador pode consultar, alterar ou cancelar uma reserva.
-4. O sistema registra as alterações realizadas.
+4. O sistema registra as alterações ou cancelamentos realizados.
 
 -----------------------------------------------
 
@@ -204,13 +204,13 @@ Ator Secundário:
 Administrador.
 
 Pré-condições:
-O usuário deve possuir cadastro no sistema.
+O Cliente ou Administrador deve possuir cadastro no sistema.
 
 Fluxo Principal:
 
-1. O usuário acessa a tela de autenticação do sistema.
+1. O Cliente ou Administrador acessa a tela de autenticação do sistema.
 2. O sistema apresenta os campos de login e senha.
-3. O usuário informa suas credenciais.
+3. O Cliente ou Administrador informa suas credenciais.
 4. O sistema valida os dados informados.
 5. Se as credenciais forem válidas, o sistema concede acesso ao sistema.
 
@@ -219,9 +219,9 @@ Fluxo Principal:
 
  a) O sistema identifica que os dados informados são inválidos.
 
- b) O sistema informa o erro ao usuário.
+ b) O sistema informa o erro ao Cliente ou Administrador.
 
- c) O usuário pode tentar novamente.
+ c) O Cliente ou Administrador pode tentar novamente.
 
 -----------------------------------------------
 
@@ -248,7 +248,7 @@ Fluxo Principal:
 
  a) O sistema identifica que algum dado informado é inválido ou incompleto.
 
- b) O sistema informa o erro ao usuário.
+ b) O sistema informa o erro ao Cliente ou Administrador.
 
  c) O sistema solicita a correção dos dados.
 
@@ -261,7 +261,7 @@ Fluxo Principal:
 
  a) O sistema verifica que o e-mail ou CPF já está cadastrado.
 
- b) O sistema informa que já existe um cadastro para o usuário.
+ b) O sistema informa que já existe um cadastro para o Cliente ou Administrador.
 
  c) O sistema orienta o cliente a realizar login ou recuperar a senha.
 
@@ -272,45 +272,46 @@ Fluxo Principal:
 Efetuar Reserva (CSU07)
 
 Sumário:
-O usuário solicita a realização de uma reserva de mesa no restaurante.
+O Cliente ou Administrador solicita a realização de uma reserva de mesa no restaurante.
 
 Ator Primário:
-Usuário.
+Cliente ou Administrador.
 
 Pré-condições:
-O usuário deve estar autenticado no sistema.
+O Cliente ou Administrador deve estar autenticado no sistema.
 
 Fluxo Principal:
 
-1. O usuário acessa a funcionalidade de reserva de mesa.
+1. O Cliente ou Administrador acessa a funcionalidade de reserva de mesa.
 2. O sistema solicita os dados da reserva (data, horário e número de pessoas).
-3. O usuário informa os dados solicitados.
+3. O Cliente ou Administrador informa os dados solicitados.
 4. O sistema consulta a disponibilidade de mesas.
 5. O sistema apresenta as mesas disponíveis.
-6. O usuário seleciona a mesa desejada.
-7. O sistema registra a reserva.
-8. O sistema confirma a reserva ao usuário.
+6. O Cliente ou Administrador seleciona a mesa desejada.
+7. O sistema verifica se a mesa suporta a quantidade de pessoas informada.
+8. O sistema registra a reserva.
+9. O sistema confirma a reserva ao Cliente ou Administrador.
 
 
 - Fluxo Alternativo (4): Não há mesas disponíveis
 
  a) O sistema verifica que não existem mesas disponíveis no horário solicitado.
 
- b) O sistema informa a indisponibilidade ao usuário.
+ b) O sistema informa a indisponibilidade ao Cliente ou Administrador.
 
- c) O usuário pode escolher outra data ou horário.
+ c) O Cliente ou Administrador pode escolher outra data ou horário.
 
- d) O fluxo retorna ao passo 2 do fluxo principal.
+ d) O fluxo retorna ao passo 2 do CSU07.
 
 - Fluxo Alternativo (6): Mesa indisponível no momento da seleção
 
- a) O sistema identifica que a mesa selecionada acabou de ser reservada por outro usuário.
+ a) O sistema identifica que a mesa selecionada acabou de ser reservada por outro Cliente ou Administrador.
 
- b) O sistema informa ao usuário que a mesa não está mais disponível.
+ b) O sistema informa ao Cliente ou Administrador que a mesa não está mais disponível.
 
- c) O sistema solicita que o usuário selecione outra mesa disponível.
+ c) O sistema solicita que o Cliente ou Administrador selecione outra mesa disponível.
 
- d) O fluxo retorna ao passo 5 do fluxo principal.
+ d) O fluxo retorna ao passo 5 do CSU07.
 
 -----------------------------------------------
   
@@ -320,10 +321,10 @@ Sumário:
 O sistema verifica quais mesas estão disponíveis para a data e horário solicitados.
 
 Ator Primário:
-Usuário.
+Cliente ou Administrador.
 
 Pré-condições:
-O usuário deve informar data e horário desejados.
+O Cliente ou Administrador deve informar data e horário desejados.
 
 Fluxo Principal:
 
@@ -336,10 +337,10 @@ Fluxo Principal:
 Verificar Quantidade de Pessoas por Mesa (CSU09)
 
 Sumário:
-O sistema verifica se a mesa selecionada suporta a quantidade de pessoas informada pelo usuário.
+O sistema verifica se a mesa selecionada suporta a quantidade de pessoas informada pelo Cliente.
 
 Ator Primário:
-Sistema.
+Cliente ou Administrador.
 
 Pré-condições:
 Uma mesa deve ter sido selecionada.
@@ -349,6 +350,16 @@ Fluxo Principal:
 1. O sistema verifica a capacidade da mesa selecionada.
 2. O sistema compara a capacidade da mesa com a quantidade de pessoas informada.
 3. Se a capacidade for suficiente, a reserva pode prosseguir.
+
+Fluxo Alternativo (3): Capacidade insuficiente
+
+ a) O sistema identifica que a mesa não suporta a quantidade de pessoas.
+
+ b) O sistema informa o problema ao Cliente ou Administrador.
+
+ c) O sistema solicita a seleção de outra mesa.
+
+ d) O fluxo retorna ao passo 5 do CSU07.
 
 -----------------------------------------------
 
@@ -365,7 +376,7 @@ Uma reserva deve ter sido registrada no sistema.
 
 Fluxo Principal:
 
-1. O sistema registra a reserva realizada.
+1. Uma reserva é confirmada no sistema.
 2. O sistema gera uma notificação de confirmação.
 3. O sistema envia a notificação ao cliente informando o status da reserva.
 
@@ -374,20 +385,20 @@ Fluxo Principal:
 
 ### 3.4.3 Diagrama de Classes 
 
-A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a identificação do funcionário responsável pelo registro, bem com os dados do aluno e turmas. Para uma disciplina podemos ter diversas turmas, mas apenas um professor responsável por ela.
+A Figura mostra o diagrama de classes do sistema Reserva Fácil. A classe Usuário representa os dados comuns de acesso ao sistema, como identificação, nome, e-mail e senha, sendo especializada nas classes Cliente e Administrador. O Cliente é responsável por consultar a disponibilidade de mesas, realizar, visualizar e cancelar reservas, enquanto o Administrador gerencia clientes, mesas, reservas e relatórios. A classe Reserva armazena as informações relacionadas às reservas realizadas, como data, horário, quantidade de pessoas e status, estando associada a um único cliente e a uma única mesa. A classe Mesa contém os dados das mesas disponíveis no restaurante, como número, capacidade e status. Já a classe Relatório representa os relatórios gerados pelo administrador. Dessa forma, o diagrama de classes apresenta a estrutura estática do sistema, evidenciando os principais atributos, métodos e relacionamentos entre as classes que compõem o domínio da aplicação.
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-![image](https://github.com/user-attachments/assets/abc7591a-b46f-4ea2-b8f0-c116b60eb24e)
+![image](../docs/img/diagrama_classes.png)
 
 
 ### 3.4.4 Descrições das Classes 
 
-| # | Nome | Descrição |
-|--------------------|------------------------------------|----------------------------------------|
-| 1	|	Aluno |	Cadastro de informações relativas aos alunos. |
-| 2	| Curso |	Cadastro geral de cursos de aperfeiçoamento. |
-| 3 |	Matrícula |	Cadastro de Matrículas de alunos nos cursos. |
-| 4 |	Turma |	Cadastro de turmas.
-| 5	|	Professor |	Cadastro geral de professores que ministram as disciplinas. |
-| ... |	... |	... |
+| # | Nome          | Descrição                                                                                                                                                                                                        |
+| - | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1 | Usuário       | Classe geral que representa os dados de acesso ao sistema, contendo informações como identificação, nome, e-mail e senha. Serve como superclasse para os perfis de cliente e administrador.                      |
+| 2 | Cliente       | Classe responsável por representar o usuário que utiliza o sistema para consultar disponibilidade de mesas, realizar, visualizar e cancelar reservas. Herda os dados e comportamentos básicos da classe Usuário. |
+| 3 | Administrador | Classe responsável pelo gerenciamento do sistema, permitindo administrar clientes, mesas, reservas e gerar relatórios. Herda os dados e comportamentos básicos da classe Usuário.                                |
+| 4 | Reserva       | Classe que armazena as informações relacionadas às reservas realizadas no sistema, como data, horário, quantidade de pessoas e status da reserva. Está associada a um cliente e a uma mesa.                      |
+| 5 | Mesa          | Classe que representa as mesas disponíveis no restaurante, armazenando informações como número, capacidade e status de disponibilidade.                                                                          |
+| 6 | Relatório     | Classe responsável por representar os relatórios gerados pelo administrador, contendo informações como identificação, data de geração e tipo do relatório.                                                       |
