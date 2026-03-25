@@ -101,7 +101,7 @@ O sistema proposto consiste em uma aplicação web destinada ao gerenciamento de
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-<img src="/docs/img/Template de Diagrama de Casos de Uso(2).jpg">
+<img src="/docs/img/Diagrama_de_Casos_de_Uso.jpg">
  
 ### 3.4.2 Descrições de Casos de Uso
 
@@ -195,10 +195,13 @@ Fluxo Principal:
 Efetuar Autenticação (CSU05)
 
 Sumário:
-O Cliente ou Administrador realiza o login no sistema para acessar as funcionalidades disponíveis.
+O Usuário realiza o login no sistema para acessar as funcionalidades disponíveis.
 
 Ator Primário:
-Cliente ou Administrador.
+Cliente.
+
+Ator Secundário:
+Administrador.
 
 Pré-condições:
 O Cliente ou Administrador deve possuir cadastro no sistema.
@@ -222,24 +225,24 @@ Fluxo Principal:
 
 -----------------------------------------------
 
-Cadastrar Cliente ou Administrador (CSU06)
+Cadastrar Cliente (CSU06)
 
 Sumário:
-Permite que um novo Cliente ou Administrador realize seu cadastro no sistema para posteriormente efetuar reservas.
+Permite que um novo cliente realize seu cadastro no sistema para posteriormente efetuar reservas.
 
 Ator Primário:
-Cliente ou Administrador.
+Cliente.
 
 Pré-condições:
-O Cliente ou Administrador não deve possuir cadastro no sistema.
+O cliente não deve possuir cadastro no sistema.
 
 Fluxo Principal:
 
-1. O Cliente ou Administrador solicita o cadastro no sistema.
+1. O cliente solicita o cadastro no sistema.
 2. O sistema apresenta um formulário de cadastro.
-3. O Cliente ou Administrador informa seus dados pessoais.
+3. O cliente informa seus dados pessoais.
 4. O sistema valida os dados informados.
-5. O sistema registra o novo Cliente ou Administrador no sistema.
+5. O sistema registra o novo cliente no sistema.
 
 - Fluxo Alternativo (4): Dados inválidos
 
@@ -249,18 +252,18 @@ Fluxo Principal:
 
  c) O sistema solicita a correção dos dados.
 
- d) O Cliente ou Administrador informa os dados novamente.
+ d) O cliente informa os dados novamente.
 
  e) O fluxo retorna ao passo 4 do fluxo principal.
 
 
-- Fluxo Alternativo (4): Cliente ou Administrador já cadastrado
+- Fluxo Alternativo (4): cliente já cadastrado
 
  a) O sistema verifica que o e-mail ou CPF já está cadastrado.
 
  b) O sistema informa que já existe um cadastro para o Cliente ou Administrador.
 
- c) O sistema orienta o Cliente ou Administrador a realizar login ou recuperar a senha.
+ c) O sistema orienta o cliente a realizar login ou recuperar a senha.
 
  d) O caso de uso é encerrado.
 
@@ -363,10 +366,10 @@ Fluxo Alternativo (3): Capacidade insuficiente
 Notificar sobre Status da Reserva (CSU10)
 
 Sumário:
-O sistema envia uma notificação ao Cliente ou Administrador informando o status da reserva realizada.
+O sistema envia uma notificação ao cliente informando o status da reserva realizada.
 
 Ator Primário:
-Cliente ou Administrador.
+Cliente.
 
 Pré-condições:
 Uma reserva deve ter sido registrada no sistema.
@@ -375,7 +378,7 @@ Fluxo Principal:
 
 1. Uma reserva é confirmada no sistema.
 2. O sistema gera uma notificação de confirmação.
-3. O sistema envia a notificação ao Cliente ou Administrador informando o status da reserva.
+3. O sistema envia a notificação ao cliente informando o status da reserva.
 
 
 
