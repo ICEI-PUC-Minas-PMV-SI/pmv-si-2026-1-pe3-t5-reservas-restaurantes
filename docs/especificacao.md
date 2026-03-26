@@ -82,9 +82,9 @@ O sistema proposto consiste em uma aplicação web destinada ao gerenciamento de
 | RNF3 | Segurança: o sistema deverá restringir o acesso às funcionalidades administrativas por meio de autenticação com login e senha individuais. |
 | RNF4 | O sistema deverá garantir a proteção das informações dos usuários por meio de armazenamento seguro de dados. |
 | RNF5 | O tempo de resposta para operações de consulta de disponibilidade de mesas não deverá ultrapassar 3 segundos em condições normais de uso. |
-| RNF6 | O tempo de resposta para operações de consulta de disponibilidade de mesas não deverá ultrapassar 3 segundos em condições normais de uso. |
-| RNF7 | O sistema deverá manter registro das reservas realizadas para fins de auditoria e geração de relatórios. |
-| RNF8 | O sistema deverá permitir fácil manutenção e atualização do software sem interrupção significativa do serviço. |
+| RNF6 | O sistema deverá manter registro das reservas realizadas para fins de auditoria e geração de relatórios. |
+| RNF7 | O sistema deverá permitir fácil manutenção e atualização do software sem interrupção significativa do serviço. |
+| RNF8 | O sistema deverá armazenar as informações inicialmente utilizando armazenamento local (Local Storage) e posteriormente permitir integração com banco de dados relacional, como MySQL. |
 
 ### 3.3.3 Usuários 
 
