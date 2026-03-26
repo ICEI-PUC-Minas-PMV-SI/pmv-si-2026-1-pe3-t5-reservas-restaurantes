@@ -33,12 +33,6 @@ O sistema proposto contempla o cadastro e o gerenciamento de reservas e mesas, b
 
 O produto não contempla, nesta versão inicial:
 
-•	processamento de pagamentos online;
-
-•	integração com sistemas de delivery;
-
-•	emissão de nota fiscal;
-
 •	integração com aplicativos externos de mensagens;
 
 •	controle financeiro do restaurante;
