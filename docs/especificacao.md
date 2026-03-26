@@ -80,7 +80,7 @@ O sistema proposto consiste em uma aplicação web destinada ao gerenciamento de
 | RNF1 | O sistema deverá ser desenvolvido como uma aplicação web acessível por meio de navegadores modernos como Google Chrome, Mozilla Firefox e Microsoft Edge. |
 | RNF2 | O sistema deverá apresentar interface responsiva, permitindo acesso por computadores, tablets e dispositivos móveis. |
 | RNF3 | Segurança: o sistema deverá restringir o acesso às funcionalidades administrativas por meio de autenticação com login e senha individuais. |
-| RNF4 | Segurança: o sistema deverá restringir o acesso às funcionalidades administrativas por meio de autenticação com login e senha individuais. |
+| RNF4 | O sistema deverá garantir a proteção das informações dos usuários por meio de armazenamento seguro de dados. |
 | RNF5 | O tempo de resposta para operações de consulta de disponibilidade de mesas não deverá ultrapassar 3 segundos em condições normais de uso. |
 | RNF6 | O tempo de resposta para operações de consulta de disponibilidade de mesas não deverá ultrapassar 3 segundos em condições normais de uso. |
 | RNF7 | O sistema deverá manter registro das reservas realizadas para fins de auditoria e geração de relatórios. |
