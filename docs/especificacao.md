@@ -91,7 +91,6 @@ O sistema proposto consiste em uma aplicação web destinada ao gerenciamento de
 | Ator | Descrição |
 |--------------------|------------------------------------|
 | Administrador | Usuário responsável pela administração geral do sistema, incluindo cadastro de mesas, gerenciamento de reservas e geração de relatórios. |
-| Funcionário do Restaurante | Usuário responsável por acompanhar as reservas realizadas, confirmar presença dos clientes e auxiliar na organização das mesas. |
 | Cliente | Usuário final que acessa o sistema para consultar disponibilidade de mesas e realizar reservas no restaurante. |
 
 
