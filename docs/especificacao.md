@@ -13,6 +13,7 @@ Além disso, o documento tem a finalidade de registrar de forma clara o escopo d
 O produto será denominado ReservaFácil, um sistema web de reservas para restaurantes de pequeno e médio porte.
 
 O sistema possuirá, inicialmente, os seguintes componentes principais:
+
 •	módulo de cadastro e autenticação de usuários;
 
 •	módulo de gerenciamento de mesas;
