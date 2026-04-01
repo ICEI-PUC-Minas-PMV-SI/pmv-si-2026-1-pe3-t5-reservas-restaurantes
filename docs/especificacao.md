@@ -20,9 +20,8 @@ O sistema possuirá, inicialmente, os seguintes componentes principais:
 
 •	módulo de gerenciamento de reservas;
 
-•	módulo de consulta de disponibilidade;
+•	módulo de gerir disponibilidade;
 
-•	módulo de administração para gestores e funcionários.
 
 
 ### 3.2.2 Missão do produto
@@ -62,7 +61,7 @@ O sistema proposto consiste em uma aplicação web destinada ao gerenciamento de
 | RF1    | Gerenciar Clientes                   | Permitir o cadastro, atualização, exclusão e consulta de dados dos clientes que utilizam o sistema.                        |
 | RF2    | Gerenciar Mesas                      | Permitir ao administrador cadastrar, editar, excluir e consultar mesas, incluindo número identificador, capacidade e localização. |
 | RF3    | Gerenciar Reservas                   | Permitir a criação, alteração, cancelamento e consulta de reservas, associando cliente, data, horário e mesa.              |
-| RF4    | Consultar Disponibilidade de Mesas   | Permitir a verificação de mesas disponíveis com base na data, horário e quantidade de pessoas informada.                   |
+| RF4    | Gerir Disponibilidade de Mesas   | Permitir a verificação de mesas disponíveis com base na data, horário e quantidade de pessoas informada.                   |
 | RF5    | Gerenciar Acesso de Usuários         | Permitir cadastro e autenticação de usuários (cliente e administrador) por meio de login e senha.                                 |
 | RF6    | Visualizar Agenda de Reservas        | Permitir ao administrador visualizar todas as reservas organizadas por data e horário.                                            |
 | RF7    | Notificar Cliente sobre Reserva      | Enviar notificações de confirmação e lembretes de reservas ao cliente.                                                     |
