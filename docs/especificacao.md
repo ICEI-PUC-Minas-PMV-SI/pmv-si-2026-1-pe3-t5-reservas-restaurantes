@@ -58,10 +58,10 @@ O sistema proposto consiste em uma aplicação web destinada ao gerenciamento de
 | ------ | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
 | RF1    | Gerenciar Clientes                   | Permitir o cadastro, atualização, exclusão e consulta de dados dos clientes que utilizam o sistema.                        |
 | RF2    | Gerenciar Mesas                      | Permitir ao administrador cadastrar, editar, excluir e consultar mesas, incluindo número identificador, capacidade e localização. |
-| RF3    | Gerenciar Reservas                   | Permitir a criação, alteração, cancelamento e consulta de reservas, associando cliente, data, horário e mesa.              |
+| RF3    | Gerenciar Reservas                   | Permitir ao administrador a criação, alteração, cancelamento e consulta de reservas, associando cliente, data, horário e mesa.              |
 | RF4    | Permitir avaliações dos restaurantes   | Permitir que usuários avaliem restaurantes com notas e comentários.                   |
 | RF5    | Gerenciar Acesso de Usuários         | Permitir autenticação de usuários (cliente e administrador) por meio de login e senha para acessar o sistema.                                 |
-| RF6    | Visualizar Agenda de Reservas        | Permitir ao administrador visualizar todas as reservas organizadas por data e horário.                                            |
+| RF6    | Efetuar Reservas        | Permitir realização de reservas de usuários visitantes (sem login).                                            |
 | RF7    | Notificar Cliente sobre Reserva      | Enviar notificações de confirmação e lembretes de reservas ao cliente.                                                     |
 | RF8    | Gerar Relatórios de Reservas         | Permitir ao administrador gerar relatórios com informações sobre reservas, cancelamentos e ocupação das mesas.                    |
 
@@ -216,21 +216,24 @@ Fluxo Principal:
 Efetuar Reserva (CSU06)
 
 Sumário:
-O Cliente ou Administrador solicita a realização de reserva de mesa no restaurante.
+O Usuário sem autenticação (Cliente) solicita a realização de reserva no restaurante.
 
 Ator Primário:
-Cliente ou Administrador.
+Cliente
+
+Ator Secundário:
+Administrador
 
 Pré-condições:
-O Administrador deve estar autenticado no sistema.
+O Cliente precisa estar conectado à internet para ter acesso ao sistema. 
 
 Fluxo Principal:
 
-1. O Cliente ou Administrador acessa a funcionalidade de reserva de mesa.
+1. O Cliente acessa a funcionalidade de reserva de mesa.
 2. O sistema solicita os dados para consultar disponibilidade (data, horário e número de pessoas).
-3. O Cliente ou Administrador informa os dados solicitados.
+3. O Cliente informa os dados solicitados.
 4. O sistema apresenta as opções disponíveis.
-5. O Cliente ou Administrador seleciona a opção desejada.
+5. O Cliente seleciona a opção desejada.
 6. O sistema solicita os dados para efetuar a reserva (nome completo, telefone, email e dados de cartão de crédito).
 7. O sistema registra e confirma a reserva.
 8. O sistema envia confirmação da reserva para o telefone ou email fornecidos pelo Cliente.
@@ -240,11 +243,11 @@ Fluxo Principal:
 
  a) O sistema verifica disponibilidade de acordo com a solicitação.
 
- b) O sistema informa a indisponibilidade ao Cliente ou Administrador.
+ b) O sistema informa a indisponibilidade ao Cliente.
 
- c) O Cliente ou Administrador pode escolher outra data, horário e/ou alterar número de pessoas.
+ c) O Cliente pode escolher outra data, horário e/ou alterar número de pessoas.
 
- d) O fluxo retorna ao passo 2 do CSU07.
+ d) O fluxo retorna ao passo 2 do CSU06.
 
 -----------------------------------------------
 
