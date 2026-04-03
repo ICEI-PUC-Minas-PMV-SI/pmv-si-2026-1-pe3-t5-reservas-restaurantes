@@ -269,6 +269,25 @@ Fluxo Principal:
 3. O sistema envia a notificação ao cliente informando o status da reserva.
 4. O sistema notifica o Cliente com lembrete sobre proximidade da reserva.
 
+-----------------------------------------------
+
+Avaliar Restaurante (CSU08)
+
+Sumário:
+O Cliente pode avaliar o restaurante com notas de 0 a 5 estrelas e comentários.
+
+Ator Primário:
+Cliente.
+
+Ator Secundário:
+Administrador
+
+Pré-condições:
+O Cliente deve ter comparecido ao restaurante.
+
+Fluxo Principal:
+
+1. 
 
 
 
