@@ -92,7 +92,7 @@ O sistema proposto consiste em uma aplicação web destinada ao gerenciamento de
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-<img src="/docs/img/Diagrama_de_Casos_de_Uso.jpg">
+![Imagem do Diagrama de Casos de Uso](../docs/img/diagrama_de_casos_de_uso.jpg)
  
 ### 3.4.2 Descrições de Casos de Uso
 
