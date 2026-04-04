@@ -1,6 +1,6 @@
 # 3. DOCUMENTO DE ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE
 
-Nesta parte do trabalho você deve detalhar a documentação dos requisitos do sistema proposto de acordo com as seções a seguir. Ressalta-se que aqui é utilizado como exemplo um sistema de gestão de cursos de aperfeiçoamento.
+Segue a documentação dos requisitos do sistema apresentada abaixo:
 
 ## 3.1 Objetivos deste documento
 Este documento tem como objetivo especificar os requisitos do sistema web de reservas para restaurantes, descrevendo suas funcionalidades, restrições, perfis de usuários e elementos principais de modelagem. A especificação busca orientar o desenvolvimento da solução proposta, servindo como base para as próximas etapas do projeto, especialmente o design de interação, a implementação e os testes.
@@ -14,13 +14,11 @@ O produto será denominado ReservaFácil, um sistema web de reservas para restau
 
 O sistema possuirá, inicialmente, os seguintes componentes principais:
 
-•	módulo de cadastro e autenticação de usuários;
+•	Módulo de cadastro e autenticação de usuários;
 
-•	módulo de gerenciamento de mesas;
+•	Módulo de gerenciamento de mesas;
 
-•	módulo de gerenciamento de reservas;
-
-
+•	Módulo de gerenciamento de reservas.
 
 ### 3.2.2 Missão do produto
 A missão do produto é permitir o gerenciamento digital das reservas de restaurantes, promovendo maior organização operacional, redução de conflitos de agendamento e melhoria da experiência do usuário durante o processo de reserva.
@@ -31,11 +29,11 @@ O sistema proposto contempla o cadastro e o gerenciamento de reservas e mesas, b
 
 O produto não contempla, nesta versão inicial:
 
-•	integração com aplicativos externos de mensagens;
+•	Integração com aplicativos externos de mensagens;
 
-•	controle financeiro do restaurante;
+•	Controle financeiro do restaurante;
 
-•	gestão de cardápio e pedidos nas mesas.
+•	Gestão de cardápio e pedidos nas mesas.
 
 ### 3.2.4 Benefícios do produto
 
