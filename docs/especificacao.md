@@ -301,7 +301,7 @@ A Figura mostra o diagrama de classes do sistema Reserva Fácil. A classe Usuár
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-![image](<img width="614" height="772" alt="image" src="https://github.com/user-attachments/assets/58e5499c-38e1-4a0f-8d52-f72d0dda5b8e" />)
+<img width="614" height="772" alt="image" src="https://github.com/user-attachments/assets/c688f33d-350f-48af-b32e-874d86ca9950" />
 
 
 ### 3.4.4 Descrições das Classes 
