@@ -272,7 +272,7 @@ Fluxo Principal:
 Avaliar Restaurante (CSU08)
 
 Sumário:
-O Cliente pode avaliar o restaurante com notas de 0 a 5 estrelas e comentários.
+O cliente solicita registrar uma avaliação para um restaurante, atribuindo uma nota e adicionando um comentário sobre sua experiência.
 
 Ator Primário:
 Cliente.
@@ -281,11 +281,17 @@ Ator Secundário:
 Administrador
 
 Pré-condições:
-O Cliente deve ter comparecido ao restaurante.
+O Cliente deve ter tido reserva em seu nome.
 
 Fluxo Principal:
 
-1. 
+1. O cliente acessa a página do restaurante desejado.
+2. O sistema exibe as informações do restaurante e as avaliações existentes.
+3. O cliente seleciona a opção de avaliar o restaurante.
+4. O sistema apresenta formulário para inserção da nota e comentário.
+5. O cliente preenche o formulário.
+6. O cliente confirma o envio da avaliação.
+7. O sistema registra a avaliação e exibe a nova avaliação no feed de avaliações.
 
 
 
