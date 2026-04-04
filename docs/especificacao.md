@@ -301,7 +301,7 @@ A Figura mostra o diagrama de classes do sistema Reserva Fácil. A classe Usuár
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-![image](../docs/img/diagrama_classes.png)
+![image](<img width="614" height="772" alt="image" src="https://github.com/user-attachments/assets/58e5499c-38e1-4a0f-8d52-f72d0dda5b8e" />)
 
 
 ### 3.4.4 Descrições das Classes 
@@ -309,8 +309,8 @@ A Figura mostra o diagrama de classes do sistema Reserva Fácil. A classe Usuár
 | # | Nome          | Descrição                                                                                                                                                                                                        |
 | - | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1 | Usuário       | Classe geral que representa os dados de acesso ao sistema, contendo informações como identificação, nome, e-mail e senha. Serve como superclasse para os perfis de cliente e administrador.                      |
-| 2 | Cliente       | Classe responsável por representar o usuário que utiliza o sistema para consultar disponibilidade de mesas, realizar, visualizar e cancelar reservas. Herda os dados e comportamentos básicos da classe Usuário. |
-| 3 | Administrador | Classe responsável pelo gerenciamento do sistema, permitindo administrar clientes, mesas, reservas e gerar relatórios. Herda os dados e comportamentos básicos da classe Usuário.                                |
-| 4 | Reserva       | Classe que armazena as informações relacionadas às reservas realizadas no sistema, como data, horário, quantidade de pessoas e status da reserva. Está associada a um cliente e a uma mesa.                      |
-| 5 | Mesa          | Classe que representa as mesas disponíveis no restaurante, armazenando informações como número, capacidade e status de disponibilidade.                                                                          |
-| 6 | Relatório     | Classe responsável por representar os relatórios gerados pelo administrador, contendo informações como identificação, data de geração e tipo do relatório.                                                       |
+| 2 | Cliente       | Classe responsável por representar o usuário que utiliza o sistema para consultar disponibilidade de mesas, realizar, visualizar, alterar e cancelar reservas. Herda os dados e comportamentos básicos da classe Usuário. |
+| 3 | Administrador | Classe responsável pelo gerenciamento do sistema, permitindo gerenciar clientes, mesas, reservas e gerar relatórios. Herda os dados e comportamentos básicos da classe Usuário.                                |
+| 4 | Reserva       | Classe que armazena as informações relacionadas às reservas realizadas no sistema, como data, horário, quantidade de pessoas e status da reserva. Está associada a um usuário, a uma mesa e a um restaurante.                      |
+| 5 | Mesa          | Classe que representa as mesas disponíveis no restaurante, armazenando informações como número, capacidade e status de serviço.                                                                          |
+| 6 | Restaurante     | Classe responsável por representar o estabelecimento, contendo informações como identificação, nome do restaurante, horário de funcioinamento, tipo de comida e avaliações de usuários. Possui relação de depenência com a classe Reserva.                  |
