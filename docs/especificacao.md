@@ -181,33 +181,46 @@ Fluxo Principal:
 
 -----------------------------------------------
 
-Efetuar Autenticação (CSU05)
+Gerenciar Acesso de Usuários (CSU05)
 
 Sumário:
-O Usuário realiza o login no sistema para acessar as funcionalidades disponíveis.
+O Cliente ou Administrador realiza o acesso ao sistema, podendo autenticar-se ou realizar seu cadastro para utilizar as funcionalidades disponíveis.
 
 Ator Primário:
 Administrador e Cliente.
 
 Pré-condições:
-O Cliente ou Administrador deve possuir cadastro no sistema.
+O Cliente ou Administrador deve possuir acesso ao sistema.
 
-Fluxo Principal:
+Fluxo Principal
+1. O Cliente ou Administrador acessa a tela de acesso do sistema.
+2. O sistema apresenta as opções de login ou cadastro.
+3. O Cliente ou Administrador seleciona a opção desejada.
+4. Caso escolha login, o sistema apresenta os campos de credenciais.
+5. O Cliente ou Administrador informa login e senha.
+6. O sistema valida os dados informados.
+7. Se as credenciais forem válidas, o sistema concede acesso.
 
-1. O Cliente ou Administrador acessa a tela de autenticação do sistema.
-2. O sistema apresenta os campos de login e senha.
-3. O Cliente ou Administrador informa suas credenciais.
-4. O sistema valida os dados informados.
-5. Se as credenciais forem válidas, o sistema concede acesso.
 
+- Fluxo Alternativo – Cadastro de usuário
 
-- Fluxo Alternativo: Credenciais inválidas
+a) O Cliente ou Administrador seleciona a opção de cadastro.
 
- a) O sistema identifica que os dados informados são inválidos.
+b) O sistema apresenta o formulário de cadastro.
 
- b) O sistema informa o erro ao Cliente ou Administrador.
+c) O Cliente ou Administrador informa os dados solicitados.
 
- c) O Cliente ou Administrador pode tentar novamente ou encerrar o caso de uso.
+d) O sistema valida os dados informados.
+
+e) O sistema registra o novo usuário.
+
+- Fluxo Alternativo – Credenciais inválidas
+
+a) O sistema identifica que os dados informados são inválidos.
+
+b) O sistema informa o erro ao Cliente ou Administrador.
+
+c) O Cliente ou Administrador pode tentar novamente.
 
 -----------------------------------------------
 
