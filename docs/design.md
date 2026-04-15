@@ -42,6 +42,8 @@
 | Dores:                          | Confusão na gestão de horários, Falta de controle centralizado e Perda de clientes devido à desorganização.        | 
 | Necessidades:                   | Painel administrativo simples e funcional, Relatórios de reservas (RF8) e Controle em tempo real.       |
 
+<img src="../docs/img/Personas_Rest_page-0003.jpg" style="width:70%;">
+
 ### Persona 4 – Recepcionista Operacional
 
 | Categoria                       | Informação  |
@@ -53,6 +55,8 @@
 | Objetivos:                      | Consultar reservas rapidamente, Evitar filas e desorganização e Confirmar a chegada dos clientes        |
 | Dores:                          | Informações desorganizadas, Pressão de clientes em espera e Falta de um sistema claro       | 
 | Necessidades:                   | Lista de reservas atualizada (RF3), Interface simples e ágil e Baixo tempo de resposta (RNF5)        |
+
+<img src="../docs/img/Personas_Rest_page-0004.jpg" style="width:70%;">
 
 ### Persona 5 – Cliente Avaliador (Experiência)
 
@@ -66,6 +70,8 @@
 | Dores:                          | Falta de transparência sobre a qualidade do serviço e Experiências inconsistentes       | 
 | Necessidades:                   | Sistema confiável de avaliações, Histórico de reservas e Interface clara para feedback       |
 
+<img src="../docs/img/Personas_Rest_page-0005.jpg" style="width:70%;">
+
 ### Persona 6 – Cliente Digital Jovem)
 
 | Categoria                       | Informação  |
@@ -77,6 +83,8 @@
 | Objetivos:                      | Realizar reservas via dispositivos móveis, Executar processos de forma rápida e Compartilhar experiências com amigos        |
 | Dores:                          | Sistemas lentos ou complexos e Falta de responsividade        | 
 | Necessidades:                   | Interface responsiva (RNF2), Processo de login simplificado (RF5) e Navegação intuitiva       |
+
+<img src="../docs/img/Personas_Rest_page-0006.jpg" style="width:70%;">
 
 
 ## 4.2 Mapa de Empatia
