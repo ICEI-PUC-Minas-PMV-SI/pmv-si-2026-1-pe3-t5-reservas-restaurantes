@@ -14,6 +14,8 @@
 | Dores:                          | Falta de confirmação de reserva, Dificuldade em visualizar a disponibilidade e Perda de tempo com processos manuais. | 
 | Necessidades:                   | Interface simples e responsiva (RNF2), Processo rápido sem necessidade de login e Notificações automáticas. | 
 
+![Personas Imagem](../docs/img/Personas_Rest_page-0001.jpg)
+
 ### Persona 2 – Cliente Planejador (Ocasiões Especiais)
 
 | Categoria                       | Informação  |
