@@ -14,7 +14,7 @@
 | Dores:                          | Falta de confirmação de reserva, Dificuldade em visualizar a disponibilidade e Perda de tempo com processos manuais. | 
 | Necessidades:                   | Interface simples e responsiva (RNF2), Processo rápido sem necessidade de login e Notificações automáticas. | 
 
-![Personas Imagem](../docs/img/Personas_Rest_page-0001.jpg)
+<img src="../docs/img/Personas_Rest_page-0001.jpg" style="width:70%;">
 
 ### Persona 2 – Cliente Planejador (Ocasiões Especiais)
 
@@ -27,6 +27,8 @@
 | Objetivos:                      | Garantir reservas em datas importantes, Evitar imprevistos e Escolher horários adequados.   |
 | Dores:                          | Ocorrência de reservas duplicadas (overbooking) e Falta de organização por parte do restaurante       | 
 | Necessidades:                   | Sistema confiável e sem conflitos (RF3), Confirmação e lembrete de reserva (RF7) e Experiência segura e clara      |
+
+<img src="../docs/img/Personas_Rest_page-0002.jpg" style="width:70%;">
 
 ### Persona 3 – Administradora (Gestão do Restaurante)
 
