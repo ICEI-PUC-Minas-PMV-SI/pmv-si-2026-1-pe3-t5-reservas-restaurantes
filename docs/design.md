@@ -4,85 +4,31 @@
 
 ### Persona 1 – Cliente Prático (Reserva Rápida)
 
-| Categoria                       | Informação                                   |
-|---------------------------------|----------------------------------------------|
-| Nome:                           | João Silva                                   | 
-| Idade:                          | 29 anos                                      | 
-| Profissão:                      | Analista de Sistemas                         | 
-| Descrição:                      | João utiliza frequentemente aplicativos e sistemas web para facilitar sua rotina. Busca praticidade ao realizar reservas em restaurantes, evitando ligações telefônicas e tempo de espera no local.| 
-| Objetivos:                      | Realizar reservas de forma rápida (RF6), Consultar horários disponíveis com facilidade e Receber confirmação imediata da reserva (RF7).| 
-| Dores:                          | Falta de confirmação de reserva, Dificuldade em visualizar a disponibilidade e Perda de tempo com processos manuais. | 
-| Necessidades:                   | Interface simples e responsiva (RNF2), Processo rápido sem necessidade de login e Notificações automáticas. | 
 
 <img src="../docs/img/Personas_Rest_page-0001.jpg" style="width:70%;">
 
 ### Persona 2 – Cliente Planejador (Ocasiões Especiais)
 
-| Categoria                       | Informação  |
-|---------------------------------|-------------|
-| Nome:                           | Fernanda Costa       | 
-| Idade:                          | 35 anos       |
-| Profissão:                      | Advogada       |
-| Descrição:                      | Fernanda utiliza o sistema em ocasiões especiais e prioriza segurança e confiabilidade no processo de reserva.       | 
-| Objetivos:                      | Garantir reservas em datas importantes, Evitar imprevistos e Escolher horários adequados.   |
-| Dores:                          | Ocorrência de reservas duplicadas (overbooking) e Falta de organização por parte do restaurante       | 
-| Necessidades:                   | Sistema confiável e sem conflitos (RF3), Confirmação e lembrete de reserva (RF7) e Experiência segura e clara      |
 
 <img src="../docs/img/Personas_Rest_page-0002.jpg" style="width:70%;">
 
 ### Persona 3 – Administradora (Gestão do Restaurante)
 
-| Categoria                       | Informação  |
-|---------------------------------|-------------|
-| Nome:                           | Maria Oliveira       | 
-| Idade:                          | 42 anos       |
-| Profissão:                      | Proprietária de Restaurante       |
-| Descrição:                      | Maria é responsável pela gestão do restaurante e busca melhorar a organização das reservas, reduzindo falhas operacionais.       | 
-| Objetivos:                      | Controlar reservas de forma eficiente (RF3), Gerenciar mesas (RF2) e Acompanhar a ocupação do restaurante.       |
-| Dores:                          | Confusão na gestão de horários, Falta de controle centralizado e Perda de clientes devido à desorganização.        | 
-| Necessidades:                   | Painel administrativo simples e funcional, Relatórios de reservas (RF8) e Controle em tempo real.       |
 
 <img src="../docs/img/Personas_Rest_page-0003.jpg" style="width:70%;">
 
 ### Persona 4 – Recepcionista Operacional
 
-| Categoria                       | Informação  |
-|---------------------------------|-------------|
-| Nome:                           | Carlos Souza       | 
-| Idade:                          | 24 anos       |
-| Profissão:                      | Recepcionista       |
-| Descrição:                      | Carlos atua na recepção do restaurante e é responsável pelo atendimento inicial dos clientes, necessitando de agilidade e organização.       | 
-| Objetivos:                      | Consultar reservas rapidamente, Evitar filas e desorganização e Confirmar a chegada dos clientes        |
-| Dores:                          | Informações desorganizadas, Pressão de clientes em espera e Falta de um sistema claro       | 
-| Necessidades:                   | Lista de reservas atualizada (RF3), Interface simples e ágil e Baixo tempo de resposta (RNF5)        |
 
 <img src="../docs/img/Personas_Rest_page-0004.jpg" style="width:70%;">
 
 ### Persona 5 – Cliente Avaliador (Experiência)
 
-| Categoria                       | Informação  |
-|---------------------------------|-------------|
-| Nome:                           | Ricardo Mendes       | 
-| Idade:                          | 38 anos       |
-| Profissão:                      | Gerente Comercial       |
-| Descrição:                      | Ricardo valoriza a experiência completa no restaurante e costuma registrar avaliações após o atendimento.       | 
-| Objetivos:                      | Avaliar restaurantes (RF4), Compartilhar experiências e Escolher estabelecimentos bem avaliados       |
-| Dores:                          | Falta de transparência sobre a qualidade do serviço e Experiências inconsistentes       | 
-| Necessidades:                   | Sistema confiável de avaliações, Histórico de reservas e Interface clara para feedback       |
 
 <img src="../docs/img/Personas_Rest_page-0005.jpg" style="width:70%;">
 
 ### Persona 6 – Cliente Digital Jovem)
 
-| Categoria                       | Informação  |
-|---------------------------------|-------------|
-| Nome:                           | Lucas Ferreira       | 
-| Idade:                          | 22 anos       |
-| Profissão:                      | Universitário       |
-| Descrição:                      | Lucas utiliza o celular como principal meio de acesso à internet e espera rapidez e eficiência nos sistemas digitais.       | 
-| Objetivos:                      | Realizar reservas via dispositivos móveis, Executar processos de forma rápida e Compartilhar experiências com amigos        |
-| Dores:                          | Sistemas lentos ou complexos e Falta de responsividade        | 
-| Necessidades:                   | Interface responsiva (RNF2), Processo de login simplificado (RF5) e Navegação intuitiva       |
 
 <img src="../docs/img/Personas_Rest_page-0006.jpg" style="width:70%;">
 
