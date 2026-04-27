@@ -49,34 +49,34 @@ O principal objetivo do protótipo é possibilitar a validação da interface po
 
 ## Visão Geral dos Princípios da Gestalt:
 
-## Proximidade
+Proximidade:
 Aplicado nas telas 1, 4, 7 e 13, onde elementos relacionados são posicionados próximos entre si, formando agrupamentos perceptivos claros. Informações de um mesmo restaurante são organizadas em cards (telas 1 e 4), assim como os dados de uma mesma reserva (tela 7). Na tela 13, a agenda semanal segue essa lógica, facilitando a leitura em blocos e a percepção de relação entre elementos.
 
-## Figura-fundo
+Figura-fundo:
 Utilizado por meio de contraste de cor, tamanho e hierarquia tipográfica, permitindo distinguir elementos interativos do conteúdo informativo. O nome do restaurante se destaca pelo tamanho e peso da fonte, enquanto áreas de ação são visualmente separadas do fundo.
 
-## Ponto focal
+Ponto focal:
 A cor vermelha é utilizada como elemento de alto contraste para direcionar a atenção do usuário às ações principais. Botões como “Reservar” e “Buscar restaurantes” (tela 1), bem como “Entrar” (tela 2), funcionam como pontos focais. Esse padrão se repete nas telas 3, 5, 6, 8 e 12.
 
-## Similaridade
+Similaridade:
 Elementos com mesma função apresentam características visuais consistentes. Os cards seguem um padrão estrutural uniforme, e os botões de horários disponíveis possuem formato e cor semelhantes (quinas arredondadas e cor amarela), enquanto os botões de ação principal utilizam vermelho. Isso reforça a categorização funcional e melhora a previsibilidade da interface.
 
-## Região comum
+Região comum:
 Aplicado por meio da delimitação visual de áreas distintas dentro da interface. Na tela 4, as seções “Minhas Reservas” e “Minhas Avaliações” são separadas por containers, permitindo que cada conjunto de informações seja percebido como independente.
 
 
 ## Visão Geral das Recomendações Ergonômicas:
 
-## Usabilidade
+Usabilidade:
 A interface apresenta estrutura simples, com organização clara das informações e uso de linguagem acessível, favorecendo a compreensão e a eficiência de uso.
 
-## Carga cognitiva
+Carga cognitiva:
 A utilização de padrões consistentes, organização visual e fluxo de navegação definido reduz a carga cognitiva, permitindo aprendizado rápido e tomada de decisão mais eficiente.
 
-## Legibilidade e acessibilidade
+Legibilidade e acessibilidade:
 O uso de contraste adequado, hierarquia tipográfica e dimensionamento apropriado de elementos interativos garante boa legibilidade e reduz a fadiga visual. A interface oferece recursos como ajuste de fonte e modo escuro.
 
-## Responsividade
+Responsividade:
 A interface adapta-se a diferentes dispositivos, mantendo consistência visual e funcional.
 
 
