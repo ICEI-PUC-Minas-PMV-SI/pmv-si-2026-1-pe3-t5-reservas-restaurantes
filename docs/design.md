@@ -80,6 +80,33 @@ Responsividade:
 A interface adapta-se a diferentes dispositivos, mantendo consistência visual e funcional.
 
 
+### Visão Geral das Regras de Ouro de Schneiderman
+
+Consistência:
+Padronização de termos, cores, ícones e componentes ao longo da interface.
+
+Atalhos:
+Menu de navegação que oferece acesso direto às principais funcionalidades do sistema.
+
+Feedback informativo:
+Alterações visuais (como mudança de cor ao clicar) e mensagens de sistema indicam o resultado das ações realizadas.
+
+Diálogo com o usuário:
+Mensagens de confirmação são apresentadas após ações importantes, como conclusão de reserva, cancelamento ou alteração de dados.
+
+Reversão de ações:
+O usuário pode cancelar, interromper ou retornar etapas durante a execução de tarefas.
+
+Prevenção de erros:
+Campos com validação e mensagens orientativas auxiliam na redução de erros durante a interação.
+
+Usuário no controle:
+O sistema permite que o usuário conduza suas ações livremente, sem imposições rígidas de fluxo.
+
+Redução da carga de memória:
+Informações inseridas são reapresentadas em etapas seguintes, evitando que o usuário precise memorizar dados.
+
+
 ## 4.4 Testes com Protótipos
 Nesta seção você deve apresentar os testes realizados com usuários utilizando os protótipos de alta fidelidade desenvolvidos na seção anterior. O objetivo é avaliar a usabilidade, a clareza das informações e a adequação do design às necessidades das personas definidas no projeto.
 
