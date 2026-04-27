@@ -14,10 +14,10 @@ O desenvolvimento da aplicação será orientado pelos princípios de Design Cen
 
 * Fábio Henrique Santos Pereira
 * Igor Ferreira Soares da Silva
-* Suelen Larissa Alvares Marchetto
 * Marcelo Silva Pedrosa
 * Matheus da Silva Almeida
 * Samuel Alexander Oliveira
+* Suelen Larissa Alvares Marchetto
 
 ## Orientador
 
