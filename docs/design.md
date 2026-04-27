@@ -47,7 +47,7 @@ Os protótipos desenvolvidos são de alta fidelidade, apresentando elevado níve
 O protótipo possui navegação estruturada e elementos interativos que permitem a realização de fluxos completos, como busca de restaurantes, realização de reservas e gerenciamento de informações pessoais.
 O principal objetivo do protótipo é possibilitar a validação da interface por meio de testes com usuários na etapa seguinte do projeto.
 
-## Visão Geral dos Princípios da Gestalt:
+### Visão Geral dos Princípios da Gestalt:
 
 Proximidade:
 Aplicado nas telas 1, 4, 7 e 13, onde elementos relacionados são posicionados próximos entre si, formando agrupamentos perceptivos claros. Informações de um mesmo restaurante são organizadas em cards (telas 1 e 4), assim como os dados de uma mesma reserva (tela 7). Na tela 13, a agenda semanal segue essa lógica, facilitando a leitura em blocos e a percepção de relação entre elementos.
@@ -65,7 +65,7 @@ Região comum:
 Aplicado por meio da delimitação visual de áreas distintas dentro da interface. Na tela 4, as seções “Minhas Reservas” e “Minhas Avaliações” são separadas por containers, permitindo que cada conjunto de informações seja percebido como independente.
 
 
-## Visão Geral das Recomendações Ergonômicas:
+### Visão Geral das Recomendações Ergonômicas:
 
 Usabilidade:
 A interface apresenta estrutura simples, com organização clara das informações e uso de linguagem acessível, favorecendo a compreensão e a eficiência de uso.
