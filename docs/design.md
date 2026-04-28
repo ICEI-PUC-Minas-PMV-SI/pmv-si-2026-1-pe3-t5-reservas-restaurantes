@@ -108,10 +108,166 @@ Informações inseridas são reapresentadas em etapas seguintes, evitando que o 
 
 
 ## 4.4 Testes com Protótipos
-Nesta seção você deve apresentar os testes realizados com usuários utilizando os protótipos de alta fidelidade desenvolvidos na seção anterior. O objetivo é avaliar a usabilidade, a clareza das informações e a adequação do design às necessidades das personas definidas no projeto.
 
-Cada integrante do grupo deverá aplicar o teste com um usuário distinto, preferencialmente alinhado ao perfil das personas criadas. Devem ser definidas previamente as tarefas que o usuário deverá executar no protótipo (por exemplo: realizar um cadastro, buscar um produto, concluir uma compra).
+# Metodologia de Avaliação de Usabilidade — ReservaFácil
 
-Durante a aplicação do teste, registre observações sobre comportamentos, dúvidas, erros e comentários feitos pelo usuário, bem como o tempo necessário para a execução de cada tarefa. Ao final, colete o feedback do participante, destacando pontos positivos e aspectos a serem melhorados.
+### Objetivo da Avaliação
 
-Os resultados obtidos por todos os integrantes devem ser consolidados, apresentando uma análise geral com os principais problemas encontrados, oportunidades de melhoria e as ações previstas para o projeto final. 
+Esta etapa teve como objetivo avaliar o protótipo de alta fidelidade **ReservaFácil**, verificando sua usabilidade, clareza das informações e adequação do design às necessidades dos perfis de usuários definidos anteriormente no projeto.
+
+A análise buscou identificar pontos fortes, dificuldades de uso e oportunidades de melhoria para a versão final da solução.
+
+---
+
+## Participantes
+
+Os testes foram realizados com **6 participantes**, distribuídos entre perfis compatíveis com as personas previamente definidas no projeto.
+
+| Perfil | Quantidade |
+|---|---:|
+| Cliente / Usuário Final | 3 |
+| Funcionário / Administrador | 3 |
+| **Total** | **6** |
+
+Essa divisão permitiu comparar percepções entre usuários externos, que realizam reservas, e usuários internos, responsáveis pela operação do restaurante.
+
+---
+
+## Método Aplicado
+
+Foi utilizado um **teste de usabilidade supervisionado**, seguido de questionário estruturado contendo perguntas objetivas e campos abertos complementares.
+
+Cada integrante do grupo aplicou o teste com participantes distintos, permitindo reunir diferentes percepções sobre a experiência de uso.
+
+Após interagir com o protótipo, cada participante respondeu ao formulário com base em sua navegação prática.
+
+---
+
+## Tarefas Executadas no Protótipo
+
+Antes da aplicação dos testes, foram definidas tarefas específicas para simular situações reais de uso.
+
+### Participantes do perfil Cliente:
+
+- acessar o sistema;
+- consultar horários disponíveis;
+- selecionar data e quantidade de pessoas;
+- realizar uma reserva;
+- confirmar a solicitação.
+
+### Participantes do perfil Funcionário / Administrador:
+
+- acessar área administrativa;
+- visualizar reservas cadastradas;
+- consultar horários ocupados e disponíveis;
+- interpretar informações operacionais;
+- analisar organização do fluxo de reservas.
+
+---
+
+## Observações Durante os Testes
+
+Durante a navegação dos participantes, foram registradas observações relacionadas a:
+
+- dúvidas recorrentes;
+- dificuldades de compreensão;
+- erros operacionais;
+- hesitações durante tarefas;
+- comentários espontâneos;
+- facilidade geral de uso.
+
+Essas observações complementaram os resultados numéricos obtidos no questionário.
+
+---
+
+## Escala de Respostas
+
+As perguntas objetivas utilizaram **escala Likert de 1 a 5**, conforme abaixo:
+
+| Valor | Significado |
+|---|---|
+| 1 | Discordo Totalmente / Muito Insatisfeito |
+| 2 | Discordo Parcialmente |
+| 3 | Neutro / Satisfatório |
+| 4 | Concordo Parcialmente |
+| 5 | Concordo Totalmente / Excelente |
+
+---
+
+## Estrutura do Questionário
+
+O formulário foi dividido em cinco dimensões principais:
+
+### 1. Navegação e Fluxo de Uso
+
+Avaliou:
+
+- facilidade para compreender o uso do sistema;
+- organização das etapas;
+- localização de menus e funções;
+- fluidez do processo.
+
+### 2. Layout e Interface Visual
+
+Avaliou:
+
+- organização visual das telas;
+- identificação de botões e áreas clicáveis;
+- uso de cores e ícones;
+- contraste e legibilidade.
+
+### 3. Clareza e Comunicação
+
+Avaliou:
+
+- clareza dos textos;
+- entendimento de mensagens;
+- coerência de nomes e comandos.
+
+### 4. Segurança e Confiança
+
+Avaliou:
+
+- confiança para utilizar o sistema;
+- aparência profissional;
+- segurança percebida durante o uso.
+
+### 5. Satisfação Geral
+
+Avaliou:
+
+- experiência geral;
+- intenção de uso futuro;
+- recomendação para outras pessoas.
+
+---
+
+## Campos Abertos Complementares
+
+Além das perguntas objetivas, o questionário contou com campos abertos para aprofundamento qualitativo.
+
+Foram coletadas respostas sobre:
+
+- dificuldades encontradas durante o processo;
+- símbolos, ícones ou elementos confusos;
+- pontos positivos da experiência;
+- melhorias sugeridas para o protótipo.
+
+---
+
+## Consolidação dos Resultados
+
+Os resultados individuais foram reunidos em uma análise geral, permitindo identificar:
+
+- principais problemas encontrados;
+- padrões entre perfis de usuários;
+- oportunidades de melhoria;
+- prioridades de ajuste para a versão final.
+
+Os dados também foram organizados em tabelas e dashboards visuais para facilitar interpretação comparativa.
+
+---
+
+## Conclusão Metodológica
+
+A metodologia combinou **observação prática**, **avaliação quantitativa** e **feedback qualitativo**, proporcionando uma visão ampla da experiência do usuário e contribuindo diretamente para o aprimoramento final do projeto ReservaFácil.
