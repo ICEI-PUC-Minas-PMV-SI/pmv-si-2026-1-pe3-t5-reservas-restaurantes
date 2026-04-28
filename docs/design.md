@@ -271,3 +271,6 @@ Os dados também foram organizados em tabelas e dashboards visuais para facilita
 ## Conclusão Metodológica
 
 A metodologia combinou **observação prática**, **avaliação quantitativa** e **feedback qualitativo**, proporcionando uma visão ampla da experiência do usuário e contribuindo diretamente para o aprimoramento final do projeto ReservaFácil.
+
+<img width="2800" height="6186" alt="reservafacil-dashboard-light-premium-ALTA" src="https://github.com/user-attachments/assets/7e5fb965-8174-4009-8fb2-b98bdb2e7a8d" />
+
