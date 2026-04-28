@@ -109,7 +109,7 @@ Informações inseridas são reapresentadas em etapas seguintes, evitando que o 
 
 ## 4.4 Testes com Protótipos
 
-# Metodologia de Avaliação de Usabilidade — ReservaFácil
+## Metodologia de Avaliação de Usabilidade — ReservaFácil
 
 ### Objetivo da Avaliação
 
