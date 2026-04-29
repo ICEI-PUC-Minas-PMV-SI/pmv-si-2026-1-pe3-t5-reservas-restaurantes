@@ -127,9 +127,8 @@ Fechamento de diálogo:
 Após preencher os dados, a ação de busca conduz naturalmente para a próxima etapa do sistema.
 
 
-<img width="1899" height="1079" alt="home-1" src="https://github.com/user-attachments/assets/99fc377a-9ade-4c02-a851-5331f24b96a5" />
-
-<img width="1902" height="1079" alt="home-2" src="https://github.com/user-attachments/assets/32549646-d744-49e0-9ee2-e82f7cbb8a28" />
+<img src="./img/prototype/home-1.png" style="width:100%;">
+<img src="./img/prototype/home-2.png" style="width:100%;">
 
 
 ---
