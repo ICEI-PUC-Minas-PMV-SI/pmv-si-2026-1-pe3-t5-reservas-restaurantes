@@ -43,69 +43,93 @@
 <img width="10890" height="11439" alt="6" src="https://github.com/user-attachments/assets/e9fd17f7-6e10-470f-9476-6c9d0de1f398" />
 
 ## 4.3 Protótipos das Interfaces
-Os protótipos desenvolvidos são de alta fidelidade, apresentando elevado nível de detalhamento visual e funcional, com forte aproximação ao produto final. Foram projetados para ambiente digital (web/mobile), com foco na simulação realista da interação do usuário.
-O protótipo possui navegação estruturada e elementos interativos que permitem a realização de fluxos completos, como busca de restaurantes, realização de reservas e gerenciamento de informações pessoais.
-O principal objetivo do protótipo é possibilitar a validação da interface por meio de testes com usuários na etapa seguinte do projeto.
 
-### Visão Geral dos Princípios da Gestalt:
+Nesta seção são apresentados os protótipos de alta fidelidade desenvolvidos para o sistema Reserva Fácil. Esses protótipos possuem elevado nível de detalhamento visual e funcional, buscando representar de forma próxima o produto final a ser implementado.
+
+O sistema foi projetado com o objetivo de facilitar a busca por restaurantes, a realização de reservas on-line e o gerenciamento de informações por clientes e estabelecimentos cadastrados. As interfaces contemplam fluxos completos de navegação, incluindo cadastro, login, consulta de restaurantes, reservas e funcionalidades administrativas.
+
+Durante o desenvolvimento das telas, foram aplicados princípios de Interação Humano-Computador, considerando os princípios da Gestalt, recomendações ergonômicas e as Regras de Ouro de Ben Shneiderman. Esses conceitos contribuem para tornar a navegação mais intuitiva, organizada e eficiente.
+
+Entre os princípios utilizados, destacam-se a proximidade e similaridade no agrupamento de elementos relacionados, figura-fundo para melhor distinção das áreas interativas e ponto focal em botões de ações principais. No aspecto ergonômico, buscou-se reduzir a carga cognitiva do usuário por meio de organização clara das informações, boa legibilidade e navegação simplificada.
+
+Quanto às Regras de Ouro, o sistema prioriza consistência entre telas, feedback informativo após ações realizadas, prevenção de erros por validações, liberdade de navegação e redução da necessidade de memorização de informações.
+
+Os protótipos apresentados a seguir são importantes para validar a usabilidade do sistema e identificar melhorias antes da implementação final da solução.
+
+---
+
+## Protótipo 1 – Tela Inicial / Landing Page
+
+### 1. Objetivo da Tela
+
+A tela inicial do sistema Reserva Fácil tem como objetivo apresentar a proposta da plataforma e permitir que o usuário inicie rapidamente a busca por restaurantes disponíveis. Nessa interface, o usuário pode informar cidade, data, horário e quantidade de pessoas, facilitando a localização de estabelecimentos compatíveis com sua necessidade.
+
+Além disso, a tela apresenta seções explicativas sobre o funcionamento do sistema, perguntas frequentes e atalhos para autenticação, contribuindo para uma navegação clara desde o primeiro acesso.
+
+### 2. Princípios Gestálticos Aplicados
 
 Proximidade:
-Aplicado nas telas 1, 4, 7 e 13, onde elementos relacionados são posicionados próximos entre si, formando agrupamentos perceptivos claros. Informações de um mesmo restaurante são organizadas em cards (telas 1 e 4), assim como os dados de uma mesma reserva (tela 7). Na tela 13, a agenda semanal segue essa lógica, facilitando a leitura em blocos e a percepção de relação entre elementos.
-
-Figura-fundo:
-Utilizado por meio de contraste de cor, tamanho e hierarquia tipográfica, permitindo distinguir elementos interativos do conteúdo informativo. O nome do restaurante se destaca pelo tamanho e peso da fonte, enquanto áreas de ação são visualmente separadas do fundo.
-
-Ponto focal:
-A cor vermelha é utilizada como elemento de alto contraste para direcionar a atenção do usuário às ações principais. Botões como “Reservar” e “Buscar restaurantes” (tela 1), bem como “Entrar” (tela 2), funcionam como pontos focais. Esse padrão se repete nas telas 3, 5, 6, 8 e 12.
+Os campos de pesquisa (cidade, data, horário e pessoas) estão posicionados próximos entre si, formando um grupo visual único relacionado ao processo de busca.
 
 Similaridade:
-Elementos com mesma função apresentam características visuais consistentes. Os cards seguem um padrão estrutural uniforme, e os botões de horários disponíveis possuem formato e cor semelhantes (quinas arredondadas e cor amarela), enquanto os botões de ação principal utilizam vermelho. Isso reforça a categorização funcional e melhora a previsibilidade da interface.
+Os campos de entrada seguem o mesmo padrão visual, com dimensões semelhantes, bordas arredondadas e alinhamento uniforme. Os cards informativos também mantêm padronização estética.
+
+Figura-fundo:
+O formulário central se destaca do plano de fundo por meio do contraste entre cores suaves e elementos brancos, facilitando a identificação da área principal de interação.
+
+Ponto focal:
+O botão “Buscar restaurantes” apresenta cor de destaque, chamando a atenção do usuário para a principal ação da tela.
+
+Continuidade:
+A organização vertical dos elementos conduz naturalmente o olhar do usuário: cabeçalho → área de busca → seção explicativa → perguntas frequentes → rodapé.
 
 Região comum:
-Aplicado por meio da delimitação visual de áreas distintas dentro da interface. Na tela 4, as seções “Minhas Reservas” e “Minhas Avaliações” são separadas por containers, permitindo que cada conjunto de informações seja percebido como independente.
+As seções “Como funciona” e “Perguntas frequentes” estão agrupadas em áreas próprias, permitindo melhor organização do conteúdo.
 
-
-### Visão Geral das Recomendações Ergonômicas:
+### 3. Recomendações Ergonômicas
 
 Usabilidade:
-A interface apresenta estrutura simples, com organização clara das informações e uso de linguagem acessível, favorecendo a compreensão e a eficiência de uso.
+A interface apresenta navegação simples e objetiva, permitindo que o usuário compreenda rapidamente como utilizar o sistema.
 
-Carga cognitiva:
-A utilização de padrões consistentes, organização visual e fluxo de navegação definido reduz a carga cognitiva, permitindo aprendizado rápido e tomada de decisão mais eficiente.
+Carga cognitiva reduzida:
+As informações estão distribuídas em blocos claros e organizados, evitando excesso de elementos simultâneos.
 
-Legibilidade e acessibilidade:
-O uso de contraste adequado, hierarquia tipográfica e dimensionamento apropriado de elementos interativos garante boa legibilidade e reduz a fadiga visual. A interface oferece recursos como ajuste de fonte e modo escuro.
+Legibilidade:
+Há boa hierarquia tipográfica, contraste adequado entre texto e fundo e tamanhos de fonte confortáveis para leitura.
 
-Responsividade:
-A interface adapta-se a diferentes dispositivos, mantendo consistência visual e funcional.
+Eficiência de uso:
+O usuário consegue iniciar sua busca em poucos passos, sem necessidade de cadastro prévio.
 
+Aprendizado rápido:
+Os textos explicativos e perguntas frequentes auxiliam novos usuários no entendimento do funcionamento da plataforma.
 
-### Visão Geral das Regras de Ouro de Schneiderman
+### 4. Regras de Ouro de Shneiderman
 
 Consistência:
-Padronização de termos, cores, ícones e componentes ao longo da interface.
-
-Atalhos:
-Menu de navegação que oferece acesso direto às principais funcionalidades do sistema.
+Botões, campos e seções seguem padrão visual uniforme em toda a interface.
 
 Feedback informativo:
-Alterações visuais (como mudança de cor ao clicar) e mensagens de sistema indicam o resultado das ações realizadas.
+Os campos respondem à interação do usuário e os botões indicam claramente ações executáveis.
 
-Diálogo com o usuário:
-Mensagens de confirmação são apresentadas após ações importantes, como conclusão de reserva, cancelamento ou alteração de dados.
-
-Reversão de ações:
-O usuário pode cancelar, interromper ou retornar etapas durante a execução de tarefas.
+Atalhos:
+Os botões “Entrar” e “Criar conta” permitem acesso rápido às funcionalidades de autenticação.
 
 Prevenção de erros:
-Campos com validação e mensagens orientativas auxiliam na redução de erros durante a interação.
+A divisão lógica dos campos reduz chances de preenchimento incorreto.
 
 Usuário no controle:
-O sistema permite que o usuário conduza suas ações livremente, sem imposições rígidas de fluxo.
+O usuário escolhe livremente os critérios de busca antes de prosseguir.
 
 Redução da carga de memória:
-Informações inseridas são reapresentadas em etapas seguintes, evitando que o usuário precise memorizar dados.
+As opções necessárias estão visíveis na própria tela, sem exigir memorização de etapas.
 
+Fechamento de diálogo:
+Após preencher os dados, a ação de busca conduz naturalmente para a próxima etapa do sistema.
+
+<img src="./img/prototype/home-1.png" style="width:100%;">
+<img src="./img/prototype/home-2.png" style="width:100%;">
+
+---
 
 ## 4.4 Testes com Protótipos
 
