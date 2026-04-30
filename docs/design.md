@@ -911,7 +911,7 @@ Apesar da ação já ter sido concluída, o sistema mantém a navegação dispon
 
 ## Protótipo 13 – Tela de Minhas Reservas
 
-<img src="./img/prototype/login-reservations" style="width:100%;">
+<img src="./img/prototype/login-reservations.png" style="width:100%;">
 
 ### 1. Objetivo da Tela
 
