@@ -248,7 +248,7 @@ O usuário pode rapidamente escolher entre fazer login, criar conta ou cancelar 
 Manutenção de contexto:
 O modal permite que o usuário permaneça na mesma tela após fechá-lo, sem perder o estado da busca realizada.
 
-4. Regras de Ouro de Shneiderman
+### 4. Regras de Ouro de Shneiderman
 
 Prevenção de erros:
 O sistema impede a realização de reservas sem autenticação, evitando inconsistências nos dados.
