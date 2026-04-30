@@ -909,6 +909,492 @@ Apesar da ação já ter sido concluída, o sistema mantém a navegação dispon
 
 ---
 
+## Protótipo 13 – Tela de Minhas Reservas
+
+<img src="./img/prototype/login-reservations" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+A tela de “Minhas reservas” tem como objetivo permitir que o usuário visualize e gerencie todas as suas reservas realizadas no sistema Reserva Fácil.
+
+Nesta interface, o usuário pode acompanhar o status das reservas, organizadas em categorias como pendentes, concluídas e canceladas, além de utilizar um filtro para visualizar tipos específicos. Também é possível cancelar reservas pendentes diretamente pela interface, proporcionando maior controle sobre suas ações.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+As reservas são agrupadas por status (pendentes, concluídas e canceladas), facilitando a leitura e organização das informações.
+
+Similaridade:
+Os cards de reserva seguem o mesmo padrão visual, com nome do restaurante, data, horário, quantidade de pessoas e status, permitindo fácil comparação.
+
+Figura-fundo:
+Os cards se destacam sobre o fundo da página, garantindo boa visibilidade dos itens.
+
+Ponto focal:
+Os indicadores de status (cores como verde, amarelo e vermelho) chamam atenção para a situação de cada reserva.
+
+Continuidade:
+A disposição vertical das seções permite uma navegação fluida entre os diferentes estados das reservas.
+
+Região comum:
+Cada grupo de reservas (pendentes, concluídas e canceladas) forma uma área distinta, facilitando a segmentação das informações.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A interface permite que o usuário compreenda rapidamente o estado de suas reservas.
+
+Carga cognitiva reduzida:
+A separação por categorias evita sobrecarga visual e melhora a organização.
+
+Legibilidade:
+Os dados são apresentados de forma clara, com boa hierarquia visual e uso de cores para reforçar informações.
+
+Eficiência de uso:
+O usuário consegue localizar e gerenciar reservas rapidamente.
+
+Controle do usuário:
+A possibilidade de cancelar reservas pendentes diretamente na tela aumenta a autonomia do usuário.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+A tela mantém o padrão visual das demais interfaces do sistema.
+
+Feedback informativo:
+Os status das reservas são exibidos de forma clara por meio de cores e etiquetas.
+
+Prevenção de erros:
+A organização das reservas reduz a chance de ações equivocadas.
+
+Usuário no controle:
+O usuário pode visualizar, filtrar e cancelar reservas conforme necessário.
+
+Redução da carga de memória:
+Todas as informações relevantes estão disponíveis na tela, sem necessidade de memorização.
+
+Reversão de ações:
+O cancelamento de reservas permite controle sobre ações já realizadas.
+
+Fechamento de diálogo:
+Cada ação, como cancelamento ou visualização, possui um fluxo claro e compreensível.
+
+---
+
+## Protótipo 14 – Tela de Minhas Reservas (Reserva confirmada e notificação)
+
+<img src="./img/prototype/login-reservations-confirmed.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo representa a visualização de reservas confirmadas na tela “Minhas reservas”, bem como a notificação recebida pelo usuário após a confirmação da reserva no sistema Reserva Fácil.
+
+Nesta interface, o usuário pode identificar facilmente reservas com status confirmado, além de manter a possibilidade de cancelamento. A presença do indicador de notificação na navbar reforça que houve uma atualização relevante no sistema, mantendo o usuário informado sobre o andamento de suas reservas.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+As reservas continuam organizadas por status, com destaque para a seção “Confirmadas”, facilitando a leitura.
+
+Similaridade:
+Os cards mantêm o mesmo padrão visual, independentemente do status, com diferenciação feita apenas por cores e etiquetas.
+
+Figura-fundo:
+Os cards se destacam sobre o fundo neutro, garantindo boa visibilidade das informações.
+
+Ponto focal:
+O selo “Confirmada” em destaque e o indicador de notificação na navbar direcionam a atenção do usuário.
+
+Continuidade:
+A organização da página mantém fluxo lógico entre as diferentes categorias de reservas.
+
+Região comum:
+Cada grupo de reservas (confirmadas, concluídas, canceladas) permanece organizado em blocos distintos.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A interface permite rápida identificação do status atualizado da reserva.
+
+Carga cognitiva reduzida:
+A utilização de cores e agrupamento por categorias facilita a compreensão.
+
+Legibilidade:
+As informações são apresentadas de forma clara, com boa hierarquia visual.
+
+Eficiência de uso:
+O usuário consegue visualizar rapidamente reservas confirmadas e tomar ações, como cancelamento.
+
+Atualização de estado:
+A notificação auxilia o usuário a perceber mudanças importantes no sistema.
+
+### 4. Regras de Ouro de Shneiderman
+
+Feedback informativo:
+O sistema informa claramente que a reserva foi confirmada por meio de etiquetas e notificações.
+
+Consistência:
+O layout e os componentes seguem o padrão visual das demais telas.
+
+Usuário no controle:
+Mesmo com a reserva confirmada, o usuário ainda pode optar por cancelá-la.
+
+Prevenção de erros:
+A distinção visual entre os status reduz a chance de ações equivocadas.
+
+Redução da carga de memória:
+As informações estão visíveis e organizadas, dispensando memorização.
+
+Reversão de ações:
+A possibilidade de cancelamento mantém o controle nas mãos do usuário.
+
+Fechamento de diálogo:
+A confirmação da reserva representa uma etapa concluída no fluxo, devidamente sinalizada ao usuário.
+
+---
+
+## Protótipo 15 – Notificação de Reserva Confirmada
+
+<img src="./img/prototype/login-reservations-confirmed-notification.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo representa a exibição detalhada da notificação de atualização de status de reserva no sistema Reserva Fácil.
+
+Ao acessar o painel de notificações, o usuário visualiza mensagens informando alterações importantes, como a confirmação ou cancelamento de reservas. Essa funcionalidade tem como objetivo manter o usuário atualizado em tempo real sobre o status de suas solicitações, melhorando a comunicação entre o sistema e o usuário.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+As notificações são agrupadas em um mesmo painel, organizadas de forma sequencial para fácil leitura.
+
+Similaridade:
+Os cards de notificação seguem um padrão visual consistente, com diferenciação por conteúdo e estado.
+
+Figura-fundo:
+O painel de notificações se destaca sobre o restante da interface, permitindo fácil identificação.
+
+Ponto focal:
+A notificação mais recente (como “Reserva confirmada”) é destacada, chamando a atenção do usuário.
+
+Continuidade:
+A organização vertical das notificações permite leitura natural e progressiva.
+
+Região comum:
+O painel lateral agrupa todas as notificações, separando-as do restante da interface principal.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A interface apresenta informações claras e organizadas sobre eventos importantes.
+
+Carga cognitiva reduzida:
+As mensagens são curtas e diretas, facilitando a compreensão.
+
+Legibilidade:
+O contraste e a estrutura dos cards permitem leitura rápida.
+
+Eficiência de uso:
+O usuário consegue acessar rapidamente informações relevantes sem navegar para outras telas.
+
+Atualização contínua:
+As notificações mantêm o usuário informado sobre mudanças no sistema.
+
+### 4. Regras de Ouro de Shneiderman
+
+Feedback informativo:
+O sistema comunica alterações importantes, como confirmação ou cancelamento de reservas.
+
+Consistência:
+O painel segue o padrão visual do sistema.
+
+Usuário no controle:
+O usuário pode acessar ou ignorar as notificações conforme desejar.
+
+Redução da carga de memória:
+As informações são apresentadas diretamente, sem exigir memorização.
+
+Prevenção de erros:
+A notificação evita dúvidas quanto ao status da reserva.
+
+Fechamento de diálogo:
+A confirmação da reserva é apresentada como conclusão de uma etapa do fluxo.
+
+Reversão de ações:
+A partir da notificação, o usuário pode tomar decisões adicionais, como avaliar ou gerenciar reservas.
+
+---
+
+## Protótipo 16 – Notificação de Avaliação de Experiência
+
+<img src="./img/prototype/login-reservations-concluida.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+Este protótipo representa a notificação exibida ao usuário após a conclusão de uma reserva no sistema Reserva Fácil.
+Quando o restaurante finaliza o atendimento (reserva concluída), o sistema envia uma notificação convidando o usuário a avaliar sua experiência. O objetivo é incentivar o feedback dos clientes, contribuindo para a melhoria contínua dos serviços e auxiliando outros usuários na tomada de decisão.
+
+### 2. Princípios Gestálticos Aplicados
+Proximidade:
+Os elementos da notificação (título, descrição e botões) estão organizados de forma agrupada, facilitando a leitura.
+Similaridade:
+As notificações seguem o mesmo padrão visual, com diferenciação apenas no conteúdo e destaque da ação principal.
+Figura-fundo:
+O painel de notificações se destaca sobre o restante da interface, direcionando a atenção do usuário.
+Ponto focal:
+A notificação de avaliação é destacada visualmente, chamando atenção para a ação desejada.
+Continuidade:
+As notificações são organizadas verticalmente, permitindo leitura fluida e sequencial.
+Região comum:
+O painel lateral agrupa todas as notificações, separando-as do conteúdo principal da página.
+
+### 3. Recomendações Ergonômicas
+Usabilidade:
+A interface apresenta de forma clara a ação esperada do usuário (avaliar a experiência).
+Carga cognitiva reduzida:
+A mensagem é direta e objetiva, facilitando o entendimento.
+Legibilidade:
+O contraste e o layout permitem leitura rápida da notificação.
+Eficiência de uso:
+O usuário pode acessar rapidamente a funcionalidade de avaliação por meio do botão “Avaliar”.
+Engajamento do usuário:
+A notificação incentiva a participação ativa do usuário no sistema.
+
+### 4. Regras de Ouro de Shneiderman
+Feedback informativo:
+O sistema informa que a experiência foi concluída e solicita uma avaliação.
+Consistência:
+O painel de notificações mantém o padrão visual do sistema.
+Usuário no controle:
+O usuário pode optar por avaliar ou ignorar a notificação.
+Redução da carga de memória:
+As informações são apresentadas diretamente, sem exigir memorização.
+Prevenção de erros:
+A clareza da mensagem evita interpretações equivocadas.
+Fechamento de diálogo:
+A notificação representa o encerramento do ciclo da reserva e início de uma nova interação (avaliação).
+Reversão de ações:
+O usuário pode decidir posteriormente realizar a avaliação, mantendo flexibilidade no fluxo.
+
+---
+
+## Protótipo 17 – Modal de Avaliação de Restaurante
+
+<img src="./img/prototype/login-reservations-concluida-avaliacao" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta o modal de avaliação acessado a partir do painel de notificações do sistema Reserva Fácil.
+
+O objetivo da tela é permitir que o usuário registre sua experiência após a conclusão de uma reserva, fornecendo uma nota e um comentário. Essa funcionalidade contribui para a geração de feedbacks, auxiliando outros usuários e melhorando a qualidade dos serviços oferecidos pelos restaurantes.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+Os campos de avaliação (nome do restaurante, nota e comentário) estão organizados próximos entre si, formando um grupo lógico de preenchimento.
+
+Similaridade:
+Os campos seguem o mesmo padrão visual (inputs com bordas arredondadas), reforçando sua função como elementos de entrada de dados.
+
+Figura-fundo:
+O modal se destaca do fundo escurecido da página, evidenciando que se trata de uma ação em foco.
+
+Ponto focal:
+O botão “Enviar avaliação” é destacado pela cor vermelha, indicando a ação principal da tela.
+
+Continuidade:
+A disposição vertical dos elementos orienta o usuário de forma natural no preenchimento: seleção → avaliação → envio.
+
+Região comum:
+O modal delimita claramente a área de interação, separando-a do restante da interface.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A interface é simples e objetiva, permitindo que o usuário avalie rapidamente sua experiência.
+
+Carga cognitiva reduzida:
+O número limitado de campos facilita o preenchimento e evita sobrecarga de informações.
+
+Legibilidade:
+Os textos e campos são claros, com bom espaçamento e contraste adequado.
+
+Eficiência de uso:
+O usuário pode concluir a avaliação em poucos passos, com interação direta.
+
+Satisfação do usuário:
+A funcionalidade permite que o usuário expresse sua opinião, aumentando o engajamento com o sistema.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+O modal segue o padrão visual utilizado em outras interações do sistema.
+
+Feedback informativo:
+Após o envio, o sistema pode apresentar confirmação da avaliação realizada.
+
+Usuário no controle:
+O usuário pode optar por enviar a avaliação ou fechar o modal sem concluir a ação.
+
+Prevenção de erros:
+A estrutura simples reduz a chance de preenchimento incorreto.
+
+Redução da carga de memória:
+O nome do restaurante já é apresentado, evitando necessidade de lembrança.
+
+Fechamento de diálogo:
+O envio da avaliação conclui o ciclo iniciado pela notificação.
+
+Reversão de ações:
+O usuário pode cancelar o processo antes de enviar a avaliação.
+
+---
+
+## Protótipo 18 – Tela de Minhas Avaliações
+
+<img src="./img/prototype/login-reservations-concluida-avaliacao" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta a tela de visualização das avaliações realizadas pelo usuário no sistema Reserva Fácil.
+
+O objetivo é permitir que o usuário acompanhe todo o histórico de feedbacks já enviados, possibilitando revisão de suas experiências em diferentes restaurantes. A tela também reforça a transparência e o engajamento do usuário com a plataforma.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+Cada avaliação é organizada em um card, agrupando nome do usuário, nota, restaurante e comentário.
+
+Similaridade:
+Todos os cards seguem o mesmo padrão visual, facilitando a identificação e leitura das avaliações.
+
+Figura-fundo:
+Os cards se destacam do fundo da página, evidenciando as informações principais.
+
+Ponto focal:
+As estrelas de avaliação funcionam como ponto focal, destacando rapidamente a nota atribuída.
+
+Continuidade:
+As avaliações são organizadas verticalmente, permitindo leitura sequencial e fluida.
+
+Região comum:
+Cada card delimita claramente uma avaliação individual, separando-a das demais.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A organização em lista facilita a navegação e compreensão das avaliações.
+
+Carga cognitiva reduzida:
+A padronização dos cards permite rápida identificação das informações relevantes.
+
+Legibilidade:
+Os textos são claros e bem espaçados, garantindo boa leitura.
+
+Eficiência de uso:
+O usuário pode visualizar rapidamente todas as suas avaliações sem necessidade de múltiplas ações.
+
+Satisfação do usuário:
+A tela reforça a sensação de participação ativa do usuário no sistema.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+A interface mantém o padrão visual utilizado em outras telas do sistema.
+
+Feedback informativo:
+As avaliações exibem claramente as informações inseridas anteriormente pelo usuário.
+
+Usuário no controle:
+O usuário acessa suas avaliações livremente a partir do menu de perfil.
+
+Redução da carga de memória:
+Todas as avaliações são apresentadas, evitando necessidade de lembrança.
+
+Prevenção de erros:
+Como se trata de visualização, não há risco de erro na interação.
+
+Fechamento de diálogo:
+A tela representa o encerramento do ciclo de avaliação iniciado após a reserva.
+
+Reversão de ações:
+Caso implementado futuramente, o sistema pode permitir edição ou exclusão de avaliações.
+
+---
+
+## Protótipo 19 – Modal de Edição de Perfil do Usuário
+
+<img src="./img/prototype/login-profile-edit" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta o modal de edição de perfil do usuário no sistema Reserva Fácil.
+
+O objetivo da tela é permitir que o usuário atualize suas informações pessoais, como nome, email, idade, telefone e foto de perfil. Essa funcionalidade contribui para a personalização da experiência e para a melhoria da comunicação dentro da plataforma.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+Os campos de entrada estão organizados em sequência lógica, agrupando informações pessoais relacionadas.
+
+Similaridade:
+Todos os inputs seguem o mesmo padrão visual, facilitando a identificação como campos editáveis.
+
+Figura-fundo:
+O modal se destaca do fundo escurecido, indicando foco na ação de edição.
+
+Ponto focal:
+O botão “Salvar” se destaca pela cor vermelha, orientando o usuário para a ação principal.
+
+Continuidade:
+A organização vertical conduz o usuário de forma intuitiva no preenchimento dos dados.
+
+Região comum:
+O modal delimita claramente a área de edição, separando-a do restante da interface.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A interface é simples e direta, permitindo edição rápida dos dados.
+
+Carga cognitiva reduzida:
+Os campos são claros e organizados, evitando confusão durante o preenchimento.
+
+Legibilidade:
+Os textos possuem bom contraste e espaçamento adequado.
+
+Eficiência de uso:
+O usuário pode atualizar múltiplas informações em uma única interação.
+
+Flexibilidade:
+Campos opcionais, como foto e telefone, permitem personalização sem obrigatoriedade.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+O modal segue o padrão visual dos demais formulários do sistema.
+
+Feedback informativo:
+Após salvar, o sistema pode apresentar confirmação da atualização.
+
+Usuário no controle:
+O usuário pode editar livremente seus dados ou cancelar a operação.
+
+Prevenção de erros:
+Campos estruturados reduzem a chance de preenchimento incorreto.
+
+Redução da carga de memória:
+Os dados atuais já são exibidos, evitando necessidade de lembrança.
+
+Fechamento de diálogo:
+O botão “Salvar” conclui a edição de perfil.
+
+Reversão de ações:
+O botão “Fechar” permite cancelar alterações antes da confirmação.
+
+---
+
+
+
 ## 4.4 Testes com Protótipos
 
 ## Metodologia de Avaliação de Usabilidade — ReservaFácil
