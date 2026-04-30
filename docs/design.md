@@ -130,6 +130,78 @@ Após preencher os dados, a ação de busca conduz naturalmente para a próxima 
 
 ---
 
+## Protótipo 2 – Tela de Descoberta de Restaurantes
+
+<img src="./img/prototype/discover.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+A tela de descoberta de restaurantes tem como objetivo apresentar ao usuário os estabelecimentos disponíveis de acordo com os critérios de busca informados, como data, horário, quantidade de pessoas, tipo de cozinha e faixa de preço.
+
+Nessa interface, o usuário pode visualizar os restaurantes em formato de cards, consultar horários disponíveis, acessar mais detalhes sobre cada estabelecimento ou iniciar o processo de reserva. A tela também permite refinar a busca por meio de filtros, facilitando a comparação entre opções antes da tomada de decisão.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+Os filtros de busca estão agrupados em uma mesma área, indicando que fazem parte de uma única funcionalidade. Da mesma forma, as informações de cada restaurante aparecem próximas dentro de seus respectivos cards.
+
+Similaridade:
+Os cards dos restaurantes seguem o mesmo padrão visual, com imagem, nome, categoria, localização, horários e botões de ação. Isso facilita a comparação entre os estabelecimentos.
+
+Figura-fundo:
+Os cards brancos se destacam sobre o fundo claro da página, permitindo que o usuário identifique rapidamente os restaurantes disponíveis.
+
+Ponto focal:
+Os botões vermelhos, como “Buscar mesa” e “Ver detalhes”, direcionam a atenção do usuário para as principais ações da tela.
+
+Continuidade:
+A disposição dos filtros na parte superior e dos cards logo abaixo conduz o usuário de forma lógica: primeiro refinar a busca, depois analisar os resultados.
+
+Região comum:
+Cada card funciona como uma região visual independente, agrupando todas as informações relacionadas a um mesmo restaurante.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A tela apresenta estrutura clara, permitindo que o usuário encontre restaurantes e compare opções de maneira simples.
+
+Carga cognitiva reduzida:
+As informações são organizadas em blocos visuais padronizados, evitando confusão e facilitando a leitura.
+
+Legibilidade:
+A hierarquia entre título, descrição, horários e botões contribui para boa compreensão das informações.
+
+Eficiência de uso:
+Os filtros e botões de ação permitem que o usuário refine sua busca e avance rapidamente para os detalhes ou reserva.
+
+Facilidade de decisão:
+A apresentação de horários, categorias, localização e faixa de preço auxilia o usuário na escolha do restaurante mais adequado.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+A tela mantém o mesmo padrão visual da tela inicial, com navbar, botões arredondados, cores e tipografia consistentes.
+
+Feedback informativo:
+Os filtros selecionados e botões clicáveis indicam visualmente as possibilidades de interação.
+
+Atalhos:
+Os botões “Ver detalhes” e “Reservar” permitem acesso direto às principais ações do fluxo.
+
+Prevenção de erros:
+A separação dos filtros por categoria reduz a chance de escolhas equivocadas durante a busca.
+
+Usuário no controle:
+O usuário pode alterar os critérios de busca, limpar filtros, visualizar detalhes ou escolher iniciar uma reserva.
+
+Redução da carga de memória:
+As informações principais de cada restaurante ficam visíveis no card, sem exigir que o usuário memorize dados da busca anterior.
+
+Fechamento de diálogo:
+Após selecionar um restaurante ou horário, o sistema conduz o usuário para a próxima etapa do processo de reserva.
+
+---
+
 ## 4.4 Testes com Protótipos
 
 ## Metodologia de Avaliação de Usabilidade — ReservaFácil
