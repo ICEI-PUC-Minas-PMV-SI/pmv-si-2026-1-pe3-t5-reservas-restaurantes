@@ -414,6 +414,501 @@ O fluxo é claro: autenticar-se para continuar ou cancelar e permanecer na naveg
 
 ---
 
+## Protótipo 6 – Tela de Cadastro de Conta
+
+<img src="./img/prototype/create-account.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+A tela de cadastro tem como objetivo permitir que novos usuários criem uma conta no sistema Reserva Fácil, possibilitando o acesso às funcionalidades completas da plataforma.
+
+O usuário pode optar por se cadastrar como cliente ou restaurante (administrador), definindo assim o tipo de acesso e funcionalidades disponíveis após o login. A tela coleta informações essenciais como nome, sobrenome, idade, e-mail e senha, garantindo a identificação adequada do usuário no sistema.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+Os campos do formulário estão organizados de forma sequencial e agrupados, facilitando o preenchimento e entendimento da ordem das informações.
+
+Similaridade:
+Todos os campos de entrada seguem o mesmo padrão visual, com dimensões, bordas e espaçamento consistentes, reforçando a uniformidade da interface.
+
+Figura-fundo:
+O formulário central se destaca do fundo neutro, direcionando o foco do usuário para a área de cadastro.
+
+Ponto focal:
+O botão “Cadastrar”, com cor de destaque, evidencia a principal ação da tela.
+
+Continuidade:
+A disposição vertical dos campos conduz o usuário de forma natural do início ao fim do formulário.
+
+Região comum:
+A seleção entre “Cliente” e “Restaurante” está agrupada em uma mesma área, indicando uma escolha única e relacionada ao tipo de conta.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A interface é simples e intuitiva, permitindo que o usuário compreenda facilmente como realizar o cadastro.
+
+Carga cognitiva reduzida:
+O número de campos é adequado e organizado, evitando sobrecarga de informações.
+
+Legibilidade:
+Os campos possuem boa visibilidade, com espaçamento adequado e rótulos claros.
+
+Eficiência de uso:
+O usuário consegue realizar o cadastro rapidamente, sem etapas desnecessárias.
+
+Orientação ao usuário:
+A opção de alternar entre tipos de conta facilita a compreensão das diferentes formas de uso do sistema.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+A tela mantém o padrão visual do sistema, com cores, tipografia e componentes consistentes.
+
+Feedback informativo:
+Os campos indicam foco e interação, permitindo ao usuário compreender onde está inserindo informações.
+
+Prevenção de erros:
+A estrutura do formulário reduz a possibilidade de preenchimento incorreto.
+
+Usuário no controle:
+O usuário pode escolher o tipo de conta antes de concluir o cadastro.
+
+Redução da carga de memória:
+Todas as informações necessárias estão visíveis, sem exigir memorização de etapas.
+
+Reversão de ações:
+O usuário pode interromper o cadastro ou retornar à tela de login facilmente.
+
+Fechamento de diálogo:
+Após o cadastro, o sistema conduz o usuário para o próximo passo lógico, como autenticação ou acesso ao sistema.
+
+---
+
+## Protótipo 7 – Tela de Login (Cliente e Restaurante)
+
+<img src="./img/prototype/login.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+A tela de login tem como objetivo permitir que usuários previamente cadastrados acessem suas contas no sistema Reserva Fácil.
+
+O usuário pode escolher o tipo de acesso — cliente ou restaurante (administrador) — e, em seguida, inserir suas credenciais (e-mail e senha) para autenticação. Após o login, o sistema direciona o usuário para as funcionalidades específicas de acordo com o perfil selecionado, como gerenciamento de reservas ou administração do estabelecimento.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+Os campos de e-mail e senha estão agrupados, formando um conjunto lógico de autenticação.
+
+Similaridade:
+Os campos de entrada possuem o mesmo estilo visual, assim como os botões de seleção de perfil, reforçando consistência e previsibilidade.
+
+Figura-fundo:
+O formulário central se destaca claramente do fundo neutro, facilitando o foco do usuário na ação de login.
+
+Ponto focal:
+O botão “Entrar” apresenta cor de destaque, indicando a principal ação da tela.
+
+Continuidade:
+A organização vertical dos elementos (seleção de perfil → campos → botão → link de cadastro) conduz o usuário de forma fluida.
+
+Região comum:
+A seleção entre “Sou Cliente” e “Sou Restaurante” está agrupada, indicando escolha exclusiva entre os tipos de acesso.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A interface é simples e objetiva, permitindo rápida compreensão do processo de login.
+
+Carga cognitiva reduzida:
+A tela apresenta apenas os elementos essenciais, evitando distrações e excesso de informação.
+
+Legibilidade:
+Os campos e textos possuem bom contraste e espaçamento adequado, facilitando a leitura.
+
+Eficiência de uso:
+O usuário consegue realizar o login em poucos passos.
+
+Orientação ao usuário:
+A opção de escolha do perfil antes da autenticação evita confusão sobre o tipo de acesso.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+A tela mantém o padrão visual adotado nas demais interfaces do sistema.
+
+Feedback informativo:
+Os campos respondem ao foco e interação, indicando claramente onde o usuário está inserindo dados.
+
+Prevenção de erros:
+A separação entre perfis evita acessos incorretos a funcionalidades indevidas.
+
+Usuário no controle:
+O usuário escolhe o tipo de acesso e pode decidir entre realizar login ou navegar para o cadastro.
+
+Redução da carga de memória:
+As informações necessárias estão visíveis, sem exigir memorização de etapas.
+
+Reversão de ações:
+O usuário pode retornar à tela inicial ou optar por criar uma conta.
+
+Fechamento de diálogo:
+Após inserir os dados e clicar em “Entrar”, o sistema conduz o usuário para sua área correspondente.
+
+---
+
+## Protótipo 8 – Tela de Descoberta de Restaurantes (Usuário autenticado)
+
+<img src="./img/prototype/login-discover.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+A tela de descoberta de restaurantes, após autenticação no sistema Reserva Fácil, tem como objetivo permitir que o usuário visualize, filtre e selecione restaurantes disponíveis para reserva.
+
+Diferente da versão para usuários não autenticados, esta interface apresenta funcionalidades adicionais, como acesso ao perfil do usuário, notificações e gerenciamento de reservas por meio do botão “Minhas reservas”. O usuário autenticado pode iniciar diretamente o processo de reserva sem interrupções, tornando a navegação mais fluida e eficiente.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+Os filtros de busca permanecem agrupados na parte superior da tela, enquanto os cards de restaurantes estão organizados logo abaixo, facilitando a relação entre filtros e resultados.
+
+Similaridade:
+Os cards seguem o mesmo padrão visual, permitindo comparação entre restaurantes de forma rápida. Os botões e elementos da navbar também mantêm consistência visual.
+
+Figura-fundo:
+Os cards se destacam sobre o fundo neutro, garantindo clareza na identificação das opções disponíveis.
+
+Ponto focal:
+O botão “Buscar mesa” e os botões “Ver detalhes” direcionam a atenção para as principais ações da tela.
+
+Continuidade:
+A estrutura da tela conduz o usuário naturalmente do topo (filtros) para os resultados (restaurantes).
+
+Região comum:
+A navbar superior agrupa funcionalidades do usuário autenticado, como perfil, notificações e acesso às reservas.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A interface mantém simplicidade e clareza, agora com funcionalidades adicionais sem comprometer a navegação.
+
+Carga cognitiva reduzida:
+Mesmo com novos elementos (perfil, notificações), a organização da tela evita sobrecarga visual.
+
+Legibilidade:
+Os elementos continuam bem distribuídos, com boa hierarquia visual e fácil leitura.
+
+Eficiência de uso:
+O usuário autenticado pode realizar reservas diretamente, sem necessidade de etapas adicionais.
+
+Acesso rápido a funcionalidades:
+A navbar permite acesso imediato ao perfil, notificações e reservas.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+A tela mantém o mesmo padrão visual das demais interfaces do sistema.
+
+Feedback informativo:
+A presença do nome do usuário e ícone de perfil indica claramente que o login foi realizado com sucesso.
+
+Atalhos:
+Botões como “Minhas reservas” e ícone de notificações permitem acesso rápido às funcionalidades principais.
+
+Usuário no controle:
+O usuário pode navegar livremente, aplicar filtros, visualizar detalhes ou iniciar reservas.
+
+Prevenção de erros:
+Com o usuário autenticado, o sistema garante que as ações realizadas estejam vinculadas corretamente à conta.
+
+Redução da carga de memória:
+Informações relevantes permanecem visíveis, sem necessidade de memorização.
+
+Fechamento de diálogo:
+As ações realizadas, como selecionar um restaurante ou iniciar uma reserva, conduzem naturalmente para as próximas etapas do fluxo.
+
+---
+
+## Protótipo 9 – Realização de Reserva na Tela de Descoberta (Usuário autenticado)
+
+<img src="./img/prototype/login-discover-reservation.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo representa o fluxo de realização de reserva diretamente na tela de descoberta de restaurantes, disponível para usuários autenticados no sistema Reserva Fácil.
+
+Ao selecionar um restaurante e acionar a opção de reserva, o sistema exibe um modal onde o usuário pode confirmar as informações essenciais, como data, horário e quantidade de pessoas. Essa funcionalidade tem como objetivo agilizar o processo de reserva, especialmente para usuários que já conhecem o restaurante e desejam concluir a ação de forma rápida, sem acessar a página de detalhes.
+
+### 2. Princípios Gestálticos Aplicados
+
+Figura-fundo:
+O fundo escurecido destaca o modal de reserva, direcionando a atenção do usuário para a ação principal.
+
+Ponto focal:
+O modal centralizado, juntamente com o botão “Confirmar”, cria um ponto de destaque claro na interface.
+
+Proximidade:
+Os campos de informações da reserva estão agrupados, facilitando a leitura e compreensão dos dados.
+
+Similaridade:
+Os campos seguem o mesmo padrão visual dos demais formulários do sistema, garantindo consistência.
+
+Região comum:
+O modal atua como uma área isolada, reunindo todas as informações necessárias para a confirmação da reserva.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A interface é simples e direta, permitindo que o usuário finalize a reserva com poucos passos.
+
+Carga cognitiva reduzida:
+As informações apresentadas são objetivas e já preenchidas com base na seleção anterior.
+
+Legibilidade:
+Os campos possuem boa organização e contraste adequado para leitura.
+
+Eficiência de uso:
+O processo de reserva é otimizado, evitando navegação desnecessária para outras telas.
+
+Agilidade no fluxo:
+O modal reduz etapas, facilitando a conclusão rápida da ação.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+O modal segue o padrão visual adotado nas demais interações do sistema.
+
+Feedback informativo:
+As informações da reserva são apresentadas claramente antes da confirmação.
+
+Prevenção de erros:
+Os dados são exibidos para conferência antes da finalização da reserva.
+
+Usuário no controle:
+O usuário pode confirmar ou cancelar a ação por meio dos botões “Confirmar” e “Fechar”.
+
+Reversão de ações:
+A opção “Fechar” permite interromper o processo sem impacto.
+
+Redução da carga de memória:
+Os dados da reserva são exibidos no modal, evitando necessidade de memorização.
+
+Fechamento de diálogo:
+Após confirmar, o sistema conclui a ação e segue para o próximo estado do fluxo (confirmação da reserva).
+
+---
+
+## Protótipo 10 – Confirmação de Reserva Realizada
+
+<img src="./img/prototype/login-discover-reservation-confirmed.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo representa o feedback visual apresentado ao usuário após a conclusão de uma reserva no sistema Reserva Fácil.
+
+Após confirmar os dados da reserva, o sistema exibe um modal informando que a solicitação foi enviada com sucesso para o restaurante. O objetivo principal dessa interface é fornecer uma confirmação clara da ação realizada, garantindo que o usuário compreenda que o processo foi concluído corretamente.
+
+### 2. Princípios Gestálticos Aplicados
+
+Figura-fundo:
+O fundo da tela é escurecido, destacando o modal de confirmação como elemento principal da interface.
+
+Ponto focal:
+O ícone de confirmação (check) e a mensagem “Reserva enviada!” funcionam como elementos centrais de atenção.
+
+Proximidade:
+Os elementos do modal (ícone, título, descrição e botão) estão organizados de forma próxima, facilitando a leitura e compreensão.
+
+Similaridade:
+O botão “Entendi” segue o padrão visual dos demais botões do sistema, mantendo consistência.
+
+Região comum:
+O modal atua como uma área isolada, agrupando todas as informações relacionadas ao feedback da ação.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A mensagem é clara e direta, informando o sucesso da operação.
+
+Carga cognitiva reduzida:
+A interface apresenta apenas as informações essenciais, evitando excesso de conteúdo.
+
+Legibilidade:
+O contraste entre o modal e o fundo facilita a leitura e compreensão da mensagem.
+
+Eficiência de uso:
+O usuário compreende rapidamente o resultado da ação e pode prosseguir sem dúvidas.
+
+Confiança do usuário:
+A confirmação visual reforça a segurança e confiabilidade do sistema.
+
+### 4. Regras de Ouro de Shneiderman
+
+Feedback informativo:
+O sistema comunica claramente que a reserva foi realizada com sucesso.
+
+Fechamento de diálogo:
+A interação é concluída com uma mensagem clara, indicando o fim do processo.
+
+Consistência:
+O modal segue o padrão visual utilizado nas demais interações do sistema.
+
+Usuário no controle:
+O usuário pode fechar o modal por meio do botão “Entendi”.
+
+Redução da carga de memória:
+A mensagem apresenta todas as informações necessárias sem exigir interpretação adicional.
+
+Prevenção de erros:
+O feedback evita dúvidas sobre o status da reserva realizada.
+
+Reversão de ações:
+Embora a ação já tenha sido concluída, o sistema mantém a navegação acessível para futuras interações.
+
+---
+
+## Protótipo 11 – Tela de Detalhes do Restaurante (Usuário autenticado)
+
+<img src="./img/prototype/login-details.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+A tela de detalhes do restaurante, após autenticação no sistema Reserva Fácil, tem como objetivo permitir que o usuário visualize todas as informações do estabelecimento e realize reservas diretamente na própria página.
+
+Nesta interface, o usuário pode acessar descrição do restaurante, experiências, fotos, cardápio e avaliações de outros clientes, além de selecionar data, horário e quantidade de pessoas por meio do painel lateral de reserva. Diferente da versão sem login, o usuário autenticado pode concluir a reserva sem interrupções, tornando o processo mais direto e eficiente.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+As informações do restaurante estão organizadas em seções bem definidas, enquanto o painel de reserva agrupa todos os elementos necessários para a ação.
+
+Similaridade:
+Os elementos visuais, como botões de horários, cards de avaliações e seções informativas, seguem um padrão consistente.
+
+Figura-fundo:
+Os conteúdos são apresentados em containers claros sobre fundo neutro, facilitando a separação visual das seções.
+
+Ponto focal:
+O painel lateral de reserva e o botão “Concluir reserva” se destacam como principais pontos de interação.
+
+Continuidade:
+A estrutura da página conduz o usuário de forma natural: informações → análise → ação (reserva).
+
+Região comum:
+O painel de reserva funciona como uma área independente, reunindo todos os elementos necessários para a realização da reserva.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A interface permite acesso rápido às informações e à ação de reserva em uma única tela.
+
+Carga cognitiva reduzida:
+A divisão por seções evita sobrecarga de informações.
+
+Legibilidade:
+Os conteúdos são bem organizados, com boa hierarquia visual e contraste adequado.
+
+Eficiência de uso:
+O usuário consegue visualizar horários disponíveis e concluir a reserva sem navegar para outras páginas.
+
+Apoio à decisão:
+A presença de avaliações, fotos e descrição auxilia na escolha antes da reserva.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+A interface mantém o padrão visual das demais telas do sistema.
+
+Feedback informativo:
+Os horários selecionados e botões indicam claramente as ações disponíveis.
+
+Prevenção de erros:
+A seleção de horários disponíveis evita conflitos e inconsistências na reserva.
+
+Usuário no controle:
+O usuário pode escolher livremente os parâmetros da reserva antes de confirmar.
+
+Redução da carga de memória:
+Todas as informações necessárias estão visíveis na tela.
+
+Reversão de ações:
+O usuário pode alterar os dados da reserva antes de concluir.
+
+Fechamento de diálogo:
+A ação de “Concluir reserva” conduz diretamente para a confirmação da reserva.
+
+---
+
+## Protótipo 12 – Confirmação de Reserva na Tela de Detalhes (Usuário autenticado)
+
+<img src="./img/prototype/login-details-confirmed.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo representa o feedback apresentado ao usuário após a conclusão de uma reserva diretamente na tela de detalhes do restaurante no sistema Reserva Fácil.
+
+Após selecionar data, horário e quantidade de pessoas e confirmar a ação, o sistema exibe um modal indicando que a reserva foi enviada com sucesso para o restaurante. O objetivo é garantir que o usuário tenha uma confirmação clara da operação realizada, reforçando a confiabilidade do sistema.
+
+### 2. Princípios Gestálticos Aplicados
+
+Figura-fundo:
+O fundo da interface é escurecido, destacando o modal de confirmação como elemento principal.
+
+Ponto focal:
+O ícone de confirmação (check) e a mensagem “Reserva enviada!” centralizam a atenção do usuário.
+
+Proximidade:
+Os elementos do modal (ícone, título, descrição e botão) estão organizados de forma próxima e coesa.
+
+Similaridade:
+O botão “Entendi” segue o padrão visual do sistema, mantendo consistência com outras telas.
+
+Região comum:
+O modal agrupa todas as informações relacionadas à confirmação da reserva em uma área isolada.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A mensagem é clara e objetiva, informando o sucesso da ação realizada.
+
+Carga cognitiva reduzida:
+A interface apresenta apenas o essencial, evitando excesso de informação.
+
+Legibilidade:
+O contraste entre o modal e o fundo facilita a leitura e compreensão da mensagem.
+
+Eficiência de uso:
+O usuário entende rapidamente o resultado da ação e pode prosseguir na navegação.
+
+Confiança do usuário:
+A confirmação visual reforça a segurança e previsibilidade do sistema.
+
+### 4. Regras de Ouro de Shneiderman
+
+Feedback informativo:
+O sistema comunica de forma clara que a reserva foi realizada com sucesso.
+
+Fechamento de diálogo:
+A interação é finalizada com uma mensagem objetiva, indicando o fim do processo.
+
+Consistência:
+O padrão visual do modal é mantido em relação às demais interações do sistema.
+
+Usuário no controle:
+O usuário pode fechar o modal por meio do botão “Entendi”.
+
+Redução da carga de memória:
+A mensagem apresenta todas as informações necessárias sem exigir interpretação adicional.
+
+Prevenção de erros:
+O feedback evita dúvidas quanto ao status da reserva.
+
+Reversão de ações:
+Apesar da ação já ter sido concluída, o sistema mantém a navegação disponível para novas interações.
+
+---
+
 ## 4.4 Testes com Protótipos
 
 ## Metodologia de Avaliação de Usabilidade — ReservaFácil
