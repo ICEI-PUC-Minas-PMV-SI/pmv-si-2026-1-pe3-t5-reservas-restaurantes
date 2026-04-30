@@ -1393,7 +1393,916 @@ O botão “Fechar” permite cancelar alterações antes da confirmação.
 
 ---
 
+## Protótipo 20 – Dashboard Administrativo
 
+<img src="./img/prototype/adm-1.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta o dashboard do administrador no sistema Reserva Fácil.
+
+O objetivo da tela é fornecer uma visão geral rápida das principais métricas do sistema, como quantidade de restaurantes cadastrados, reservas recebidas, mesas disponíveis e avaliações dos usuários. Além disso, o dashboard serve como ponto central de navegação para as funcionalidades administrativas.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+Os indicadores (restaurantes, reservas, mesas e avaliações) estão agrupados em cards próximos, facilitando leitura e comparação.
+
+Similaridade:
+Os cards seguem o mesmo padrão visual, com variação de cores para diferenciar cada métrica.
+
+Figura-fundo:
+Os cards coloridos se destacam do fundo neutro, evidenciando as informações principais.
+
+Ponto focal:
+Os números exibidos em cada card funcionam como principal ponto de atenção.
+
+Continuidade:
+A disposição horizontal dos cards cria uma leitura fluida das métricas.
+
+Região comum:
+O menu lateral delimita a área de navegação, separando funcionalidades administrativas do conteúdo principal.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A interface apresenta informações claras e objetivas, facilitando o entendimento rápido do sistema.
+
+Carga cognitiva reduzida:
+A visualização resumida evita sobrecarga de dados desnecessários.
+
+Legibilidade:
+Os textos possuem bom contraste e tamanho adequado para leitura.
+
+Eficiência de uso:
+O administrador pode acessar rapidamente qualquer funcionalidade através do menu lateral.
+
+Organização:
+A separação entre menu e conteúdo melhora a navegação e o controle do sistema.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+O layout segue um padrão visual uniforme com o restante do sistema.
+
+Atalhos:
+O menu lateral permite acesso direto às funcionalidades principais.
+
+Feedback informativo:
+Os indicadores mostram o estado atual do sistema em tempo real.
+
+Usuário no controle:
+O administrador pode navegar livremente entre as opções disponíveis.
+
+Redução da carga de memória:
+As informações principais são exibidas de forma clara, sem necessidade de memorização.
+
+Prevenção de erros:
+A organização clara reduz chances de navegação incorreta.
+
+Fechamento de diálogo:
+O dashboard funciona como ponto inicial para execução de tarefas administrativas.
+
+---
+
+## Protótipo 21 – Cadastro de Restaurante (Administrador)
+
+<img src="./img/prototype/adm-2.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta a tela de cadastro de novos restaurantes no sistema Reserva Fácil.
+
+O objetivo é permitir que o administrador insira todas as informações necessárias para disponibilizar um restaurante na plataforma, incluindo dados básicos, horários, imagens e descrições. Essa funcionalidade é essencial para alimentar o sistema com novos estabelecimentos.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+Os campos são organizados em blocos lógicos (informações básicas, horários, imagens e descrições), facilitando o preenchimento.
+
+Similaridade:
+Todos os campos seguem o mesmo padrão visual, reforçando sua função como inputs.
+
+Figura-fundo:
+O formulário se destaca dentro de um container central, facilitando o foco do usuário.
+
+Ponto focal:
+O botão “Salvar restaurante” é destacado pela cor vermelha, indicando a ação principal.
+
+Continuidade:
+A disposição dos campos orienta o usuário em um fluxo natural de preenchimento, de cima para baixo.
+
+Região comum:
+O formulário está agrupado em uma área delimitada, separando-o do menu lateral.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A organização dos campos facilita o entendimento e preenchimento das informações.
+
+Carga cognitiva reduzida:
+Os campos possuem exemplos e descrições, auxiliando o usuário.
+
+Legibilidade:
+Os textos e inputs possuem bom espaçamento e contraste adequado.
+
+Eficiência de uso:
+O administrador pode cadastrar todas as informações em uma única tela.
+
+Prevenção de erros:
+Os exemplos nos campos ajudam a evitar preenchimentos incorretos.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+O formulário segue o padrão visual do sistema.
+
+Feedback informativo:
+Após salvar, o sistema pode indicar sucesso no cadastro.
+
+Usuário no controle:
+O administrador pode preencher, editar ou cancelar o cadastro.
+
+Prevenção de erros:
+Campos orientados com exemplos reduzem erros de entrada.
+
+Redução da carga de memória:
+Os placeholders auxiliam o usuário durante o preenchimento.
+
+Fechamento de diálogo:
+O botão “Salvar restaurante” conclui o processo de cadastro.
+
+Reversão de ações:
+O administrador pode ajustar informações antes de salvar.
+
+---
+
+## Protótipo 22 – Visualização de Restaurantes Cadastrados (Administrador)
+
+<img src="./img/prototype/adm-3.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta a tela de listagem dos restaurantes cadastrados pelo administrador no sistema Reserva Fácil.
+
+O objetivo é permitir a visualização, edição e exclusão dos restaurantes registrados, oferecendo controle total sobre os estabelecimentos disponíveis na plataforma.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+Cada restaurante é apresentado em um card, agrupando imagem, nome, categoria, horários e ações.
+
+Similaridade:
+Os cards seguem o mesmo padrão visual, facilitando a identificação e comparação entre restaurantes.
+
+Figura-fundo:
+Os cards se destacam do fundo da interface, evidenciando o conteúdo principal.
+
+Ponto focal:
+O nome do restaurante e sua imagem funcionam como principais pontos de atenção.
+
+Continuidade:
+A disposição vertical dos cards permite leitura fluida e navegação natural.
+
+Região comum:
+Cada card delimita claramente as informações de um restaurante específico.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A organização em cards facilita a visualização e gestão dos restaurantes.
+
+Carga cognitiva reduzida:
+As informações são apresentadas de forma resumida e objetiva.
+
+Legibilidade:
+Os textos possuem bom contraste e hierarquia visual adequada.
+
+Eficiência de uso:
+O administrador pode acessar rapidamente as ações de editar ou excluir.
+
+Clareza:
+As ações disponíveis são bem destacadas e de fácil compreensão.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+O layout segue o padrão visual do sistema administrativo.
+
+Atalhos:
+Botões de ação direta (“Editar” e “Excluir”) facilitam a gestão.
+
+Feedback informativo:
+As informações exibidas refletem o estado atual dos restaurantes cadastrados.
+
+Usuário no controle:
+O administrador pode gerenciar livremente os restaurantes.
+
+Redução da carga de memória:
+Todas as informações relevantes estão visíveis na tela.
+
+Prevenção de erros:
+A separação clara entre ações evita operações incorretas.
+
+Reversão de ações:
+Pode ser implementada confirmação antes da exclusão.
+
+---
+
+## Protótipo 23 – Edição de Restaurante (Administrador)
+
+<img src="./img/prototype/adm-3-edit.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta a funcionalidade de edição de restaurantes dentro do painel administrativo do Reserva Fácil.
+
+O objetivo é permitir que o administrador atualize todas as informações previamente cadastradas, como nome, categoria, horários, imagens, descrição e cardápio, garantindo que os dados exibidos aos usuários estejam sempre atualizados.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+Os campos de edição estão agrupados dentro de um formulário único, facilitando a compreensão de que pertencem ao mesmo contexto.
+
+Similaridade:
+Os inputs seguem o mesmo padrão visual, reforçando consistência e previsibilidade.
+
+Região comum:
+O formulário de edição aparece dentro do próprio card do restaurante, deixando claro que as alterações são específicas daquele item.
+
+Figura-fundo:
+O formulário se destaca do restante da interface, direcionando o foco do usuário para a ação de edição.
+
+Continuidade:
+A organização vertical dos campos permite um fluxo natural de preenchimento.
+
+Ponto focal:
+O botão “Salvar alterações” atua como principal ação da tela.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A edição ocorre inline (na própria lista), evitando navegação desnecessária.
+
+Eficiência:
+Permite ajustes rápidos sem sair da tela de gerenciamento.
+
+Legibilidade:
+Os campos possuem labels claros e conteúdo pré-preenchido.
+
+Prevenção de erros:
+Os dados já existentes ajudam o usuário a evitar inconsistências.
+
+Feedback:
+O sistema pode indicar sucesso após salvar alterações (ex: toast ou modal).
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+O formulário segue o mesmo padrão da tela de cadastro.
+
+Atalhos:
+Edição direta sem redirecionamento melhora a produtividade.
+
+Feedback informativo:
+Alterações devem gerar confirmação visual ao usuário.
+
+Controle do usuário:
+Possibilidade de salvar ou cancelar a edição.
+
+Redução da carga de memória:
+Campos pré-preenchidos evitam necessidade de lembrar informações.
+
+Prevenção de erros:
+Estrutura organizada reduz chance de preenchimento incorreto.
+
+Reversão de ações:
+Botão “Fechar edição” permite desistir sem salvar alterações.
+
+---
+
+## Protótipo 24 – Exclusão de Restaurante (Danger Zone)
+
+<img src="./img/prototype/adm-3-delete.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta a confirmação de exclusão de um restaurante dentro do painel administrativo do Reserva Fácil.
+
+O objetivo é evitar ações acidentais ao excluir um restaurante, garantindo que o administrador esteja totalmente ciente de que essa ação é irreversível.
+
+### 2. Princípios Gestálticos Aplicados
+
+Figura-fundo:
+O fundo escurecido (overlay) destaca o modal de confirmação, focando a atenção do usuário na decisão crítica.
+
+Proximidade:
+Os elementos do modal (título, descrição e botões) estão agrupados, reforçando que fazem parte de uma única ação.
+
+Similaridade:
+Os botões seguem padrões visuais claros:
+
+Vermelho → ação destrutiva
+Cinza → ação segura (cancelar)
+
+Ponto focal:
+O botão “Excluir definitivamente” é o principal destaque visual.
+
+Região comum:
+O modal cria um espaço isolado, separado da interface principal.
+
+### 3. Recomendações Ergonômicas
+
+Prevenção de erros:
+A confirmação evita exclusões acidentais.
+
+Clareza:
+A mensagem informa explicitamente que a ação não pode ser desfeita.
+
+Controle do usuário:
+O botão “Cancelar” permite interromper a ação facilmente.
+
+Feedback:
+Após a exclusão, o sistema deve atualizar a lista de restaurantes automaticamente.
+
+Segurança:
+Uso de linguagem forte (“Danger zone”) reforça o risco da ação.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+Uso do padrão de modais para ações críticas.
+
+Feedback informativo:
+Mensagem clara sobre irreversibilidade.
+
+Prevenção de erros:
+Confirmação obrigatória antes da ação.
+
+Controle do usuário:
+Opção de cancelar sempre visível.
+
+Redução da carga de memória:
+Mensagem direta, sem exigir interpretação.
+
+Tratamento de erros:
+Evita perda de dados por ações impulsivas.
+
+---
+
+## Protótipo 25 – Gerenciamento de Mesas (Seleção de Restaurante)
+
+<img src="./img/prototype/adm-4.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta a tela inicial de gerenciamento de mesas no painel administrativo do Reserva Fácil.
+
+O objetivo é permitir que o administrador selecione um restaurante específico antes de visualizar, cadastrar, editar ou excluir mesas, garantindo organização e contexto correto das operações.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+O campo de seleção (dropdown) está isolado e centralizado, deixando claro que é a primeira ação necessária.
+
+Figura-fundo:
+A área vazia com mensagem orientativa destaca que ainda não há conteúdo ativo até a seleção.
+
+Região comum:
+O bloco de seleção cria um espaço bem definido para a ação inicial.
+
+Ponto focal:
+O dropdown “Selecione um restaurante” é o principal elemento da tela.
+
+Simplicidade (Prägnanz):
+Interface limpa, sem distrações, reforçando clareza e foco na tarefa.
+
+### 3. Recomendações Ergonômicas
+
+Orientação:
+A mensagem “Selecione um restaurante para gerenciar as mesas” guia o usuário.
+
+Redução de complexidade:
+Evita exibir todas as mesas de todos os restaurantes ao mesmo tempo.
+
+Eficiência:
+Fluxo progressivo: primeiro selecionar → depois gerenciar.
+
+Prevenção de erros:
+Impede ações sem contexto (ex: criar mesa sem restaurante selecionado).
+
+Clareza:
+Uso de placeholder no dropdown facilita entendimento imediato.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+Uso de dropdown segue padrão comum do sistema.
+
+Feedback informativo:
+Mensagem indica claramente o próximo passo.
+
+Controle do usuário:
+Administrador escolhe qual restaurante deseja gerenciar.
+
+Redução da carga de memória:
+Lista de restaurantes disponível no seletor.
+
+Prevenção de erros:
+Bloqueia ações antes da seleção.
+
+Flexibilidade:
+Permite alternar rapidamente entre diferentes restaurantes.
+
+---
+
+## Protótipo 26 – Gerenciamento de Mesas (Com Restaurante Selecionado)
+
+<img src="./img/prototype/adm-4-select.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta a tela de gerenciamento de mesas após a seleção de um restaurante no painel administrativo do Reserva Fácil.
+
+O objetivo é permitir que o administrador visualize todas as mesas cadastradas e realize operações de cadastro, edição e exclusão de forma centralizada e eficiente.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+O formulário de cadastro e a lista de mesas estão organizados em blocos distintos, facilitando a separação entre ações (criar) e visualização (gerenciar).
+
+Região comum:
+Cada mesa é exibida dentro de um card, agrupando suas informações (número, capacidade e localização).
+
+Similaridade:
+Os cards seguem o mesmo padrão visual, reforçando consistência.
+
+Figura-fundo:
+Os cards das mesas se destacam do fundo, facilitando a leitura.
+
+Ponto focal:
+O botão “Adicionar mesa” direciona a ação principal de cadastro.
+
+### 3. Recomendações Ergonômicas
+
+Eficiência:
+Cadastro e gerenciamento na mesma tela reduzem navegação.
+
+Visibilidade do sistema:
+O usuário visualiza imediatamente todas as mesas cadastradas.
+
+Facilidade de uso:
+Campos simples (número, capacidade e localização).
+
+Controle:
+Botões claros de “Editar” e “Excluir” para cada mesa.
+
+Feedback esperado:
+Após adicionar, editar ou excluir, a lista deve ser atualizada automaticamente.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+Padrão visual alinhado com outras telas administrativas.
+
+Feedback informativo:
+Ações devem gerar retorno visual (ex: sucesso ao adicionar mesa).
+
+Controle do usuário:
+Permite criar, editar e excluir mesas livremente.
+
+Redução da carga de memória:
+Informações visíveis em cada card evitam necessidade de lembrar dados.
+
+Prevenção de erros:
+Estrutura simples reduz preenchimentos incorretos.
+
+Flexibilidade:
+Administrador pode gerenciar rapidamente múltiplas mesas.
+
+---
+
+## Protótipo 27 – Edição de Mesa (Administrador)
+
+<img src="./img/prototype/adm-4-edit.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta o modal de edição de mesas dentro do painel administrativo do Reserva Fácil.
+
+O objetivo é permitir que o administrador atualize rapidamente as informações de uma mesa específica, como número, capacidade e localização, sem sair da tela de gerenciamento.
+
+### 2. Princípios Gestálticos Aplicados
+
+Figura-fundo:
+O overlay escurecido destaca o modal, focando totalmente na ação de edição.
+
+Proximidade:
+Os campos (número, capacidade e localização) estão agrupados, facilitando a compreensão.
+
+Região comum:
+O modal cria um espaço isolado, indicando claramente uma ação específica.
+
+Similaridade:
+Os inputs seguem o mesmo padrão visual do restante do sistema.
+
+Ponto focal:
+O botão “Salvar alterações” é o principal elemento de ação.
+
+### 3. Recomendações Ergonômicas
+
+Eficiência:
+Edição via modal evita navegação para outra página.
+
+Rapidez:
+Alterações podem ser feitas de forma direta e simples.
+
+Clareza:
+Campos já vêm preenchidos com os dados atuais.
+
+Controle:
+Botões “Salvar alterações” e “Fechar” oferecem opções claras.
+
+Feedback esperado:
+Após salvar, a lista de mesas deve ser atualizada automaticamente.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+Segue padrão de modais usado em outras ações (ex: exclusão).
+
+Feedback informativo:
+Sistema deve confirmar sucesso da edição.
+
+Controle do usuário:
+Possibilidade de cancelar a edição a qualquer momento.
+
+Redução da carga de memória:
+Campos preenchidos evitam necessidade de lembrar dados.
+
+Prevenção de erros:
+Edição estruturada reduz inconsistências.
+
+Flexibilidade:
+Permite ajustes rápidos sem interromper o fluxo.
+
+---
+
+## Protótipo 28 – Exclusão de Mesa (Danger Zone)
+
+<img src="./img/prototype/adm-4-delete.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta o modal de confirmação para exclusão de uma mesa no painel administrativo do Reserva Fácil.
+
+O objetivo é garantir que o administrador confirme conscientemente a remoção da mesa, evitando exclusões acidentais que possam impactar o controle de reservas.
+
+### 2. Princípios Gestálticos Aplicados
+
+Figura-fundo:
+O fundo escurecido (overlay) destaca o modal, direcionando a atenção para a ação crítica.
+
+Proximidade:
+Título, mensagem e botões estão agrupados, reforçando que fazem parte de uma decisão única.
+
+Similaridade:
+
+Botão vermelho → ação destrutiva (Excluir)
+Botão neutro → ação segura (Cancelar)
+
+Região comum:
+O modal cria um espaço isolado, separado do restante da interface.
+
+Ponto focal:
+O botão “Excluir” é o elemento mais chamativo, indicando a ação principal.
+
+### 3. Recomendações Ergonômicas
+
+Prevenção de erros:
+Confirmação obrigatória antes da exclusão.
+
+Clareza:
+Mensagem direta: “Tem certeza que deseja excluir esta mesa?”
+
+Controle do usuário:
+Opção clara de cancelar a ação.
+
+Segurança:
+Uso de cores (vermelho) reforça o risco da ação.
+
+Feedback esperado:
+Após excluir, a mesa deve desaparecer da lista automaticamente.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+Segue o mesmo padrão de exclusão de restaurantes.
+
+Feedback informativo:
+Mensagem simples e objetiva sobre a ação.
+
+Prevenção de erros:
+Exige confirmação antes de executar.
+
+Controle do usuário:
+Permite cancelar facilmente.
+
+Redução da carga de memória:
+Mensagem clara, sem ambiguidade.
+
+Tratamento de erros:
+Evita exclusões indevidas que afetariam reservas vinculadas.
+
+---
+
+## Protótipo 29 – Agenda Semanal (Administrador)
+
+<img src="./img/prototype/adm-5.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta a agenda semanal do painel administrativo do Reserva Fácil.
+
+O objetivo é permitir que o administrador visualize todas as reservas distribuídas ao longo da semana, facilitando o acompanhamento operacional, controle de fluxo e tomada de decisões.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+As reservas são organizadas por colunas (dias da semana), agrupando informações relacionadas.
+
+Região comum:
+Cada dia possui sua própria coluna, delimitando claramente os agrupamentos.
+
+Similaridade:
+Os cards de reserva seguem o mesmo padrão visual, independentemente do status.
+
+Figura-fundo:
+O destaque em amarelo no dia atual cria contraste e direciona o foco.
+
+Continuidade:
+A leitura segue um fluxo natural da esquerda para a direita (linha do tempo semanal).
+
+Ponto focal:
+O dia atual destacado orienta rapidamente o administrador.
+
+### 3. Recomendações Ergonômicas
+
+Visão geral:
+Permite identificar rapidamente volume de reservas por dia.
+
+Tomada de decisão:
+Facilita planejamento operacional (ex: dias mais cheios).
+
+Clareza:
+Cada reserva mostra: restaurante, horário, cliente, mesa e status.
+
+Uso de cores:
+
+Verde → Concluída
+Vermelho → Cancelada
+Outros estados visíveis conforme padrão
+
+Eficiência:
+Evita navegação entre múltiplas telas para análise semanal.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+Cards seguem padrão das outras telas de reservas.
+
+Feedback informativo:
+Status visuais claros em cada reserva.
+
+Redução da carga de memória:
+Todas as informações relevantes estão visíveis.
+
+Controle do usuário:
+Permite rápida análise e acompanhamento.
+
+Prevenção de erros:
+Visualização clara reduz confusão operacional.
+
+Flexibilidade:
+Permite adaptação para diferentes cenários (dias cheios/vazios).
+
+---
+
+### Protótipo 30 – Tela de Reservas Recebidas
+
+<img src="./img/prototype/adm-6.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta a tela de gerenciamento de reservas recebidas pelo administrador no sistema Reserva Fácil.
+
+O objetivo é permitir que o administrador visualize todas as reservas realizadas pelos usuários, organizadas por status (concluídas, canceladas, pendentes, entre outros), possibilitando o acompanhamento completo do fluxo de reservas. A tela também permite a aplicação de filtros para facilitar a análise e gestão das solicitações.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+As informações de cada reserva são agrupadas em cards individuais, contendo dados como nome do restaurante, cliente, data, horário e status.
+
+Similaridade:
+Todos os cards seguem o mesmo padrão visual, diferenciando-se apenas pelo status da reserva, o que facilita a identificação e comparação.
+
+Figura-fundo:
+Os cards se destacam do fundo da interface, evidenciando as informações principais de cada reserva.
+
+Ponto focal:
+Os indicadores de status (como “Concluída” e “Cancelada”) funcionam como ponto focal, permitindo rápida identificação da situação da reserva.
+
+Continuidade:
+As reservas são organizadas verticalmente, promovendo uma leitura sequencial e fluida.
+
+Região comum:
+Cada card delimita claramente uma reserva, separando-a das demais e evitando confusão visual.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A estrutura em cards facilita a leitura e o entendimento das reservas.
+
+Carga cognitiva reduzida:
+A padronização visual permite identificar rapidamente as informações relevantes.
+
+Legibilidade:
+Os textos possuem boa hierarquia visual e espaçamento adequado.
+
+Eficiência de uso:
+O filtro por status permite que o administrador encontre rapidamente as reservas desejadas.
+
+Satisfação do usuário:
+A organização clara contribui para uma experiência de gestão mais eficiente.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+A interface mantém o padrão visual das demais telas administrativas.
+
+Feedback informativo:
+Cada reserva apresenta claramente seu status atual.
+
+Usuário no controle:
+O administrador pode filtrar e navegar livremente pelas reservas.
+
+Redução da carga de memória:
+As informações estão visíveis, evitando necessidade de memorização.
+
+Prevenção de erros:
+A separação por status reduz interpretações equivocadas.
+
+Fechamento de diálogo:
+A visualização completa permite o encerramento do acompanhamento da reserva.
+
+Reversão de ações:
+Caso implementado, o sistema pode permitir alterações no status das reservas.
+
+---
+
+## Protótipo 31 – Tela de Avaliações Recebidas
+
+<img src="./img/prototype/adm-7.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta a tela de visualização das avaliações recebidas pelos restaurantes cadastrados no sistema Reserva Fácil.
+
+O objetivo é permitir que o administrador acompanhe o feedback dos usuários, analisando notas e comentários deixados após a experiência nos restaurantes. Essa funcionalidade auxilia na avaliação da qualidade do serviço e na identificação de melhorias.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+Cada avaliação é organizada em um card contendo nome do usuário, nota atribuída, restaurante e comentário.
+
+Similaridade:
+Todos os cards seguem o mesmo padrão visual, facilitando a identificação das avaliações.
+
+Figura-fundo:
+Os cards se destacam do fundo da página, evidenciando as informações.
+
+Ponto focal:
+As estrelas de avaliação funcionam como principal ponto de atenção.
+
+Continuidade:
+As avaliações são organizadas verticalmente, permitindo leitura sequencial.
+
+Região comum:
+Cada card delimita claramente uma avaliação individual.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A organização em lista facilita a leitura e análise das avaliações.
+
+Carga cognitiva reduzida:
+A padronização dos cards permite rápida interpretação.
+
+Legibilidade:
+Os textos são claros e bem espaçados.
+
+Eficiência de uso:
+O administrador consegue visualizar rapidamente múltiplos feedbacks.
+
+Satisfação do usuário:
+A visualização clara contribui para melhor tomada de decisão.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+A tela mantém o padrão visual do sistema.
+
+Feedback informativo:
+As avaliações apresentam claramente as informações inseridas pelos usuários.
+
+Usuário no controle:
+O administrador pode navegar livremente pelas avaliações.
+
+Redução da carga de memória:
+Todas as avaliações estão visíveis.
+
+Prevenção de erros:
+A estrutura clara evita interpretação incorreta.
+
+Fechamento de diálogo:
+A tela representa o encerramento do ciclo de feedback do usuário.
+
+Reversão de ações:
+Futuramente pode permitir moderação ou exclusão de avaliações.
+
+---
+
+## Protótipo 32 – Tela de Relatórios
+
+<img src="./img/prototype/adm-8.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo apresenta a tela de relatórios do sistema Reserva Fácil.
+
+O objetivo é fornecer ao administrador uma visão analítica e consolidada das reservas, incluindo métricas gerais, distribuição por status, ocupação das mesas e desempenho dos restaurantes cadastrados. A tela auxilia na tomada de decisões estratégicas e no acompanhamento do desempenho do sistema.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+Os dados são organizados em blocos distintos, como indicadores principais, resumo por status e ocupação.
+
+Similaridade:
+Os cards de métricas seguem o mesmo padrão visual, diferenciando-se por cores.
+
+Figura-fundo:
+Os elementos informativos se destacam do fundo, facilitando a visualização.
+
+Ponto focal:
+Os números principais e gráficos funcionam como elementos de destaque.
+
+Continuidade:
+A organização da tela conduz o usuário de forma lógica entre métricas e gráficos.
+
+Região comum:
+Cada bloco delimita um conjunto específico de informações.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A divisão em seções facilita a compreensão dos dados.
+
+Carga cognitiva reduzida:
+Os dados são apresentados de forma resumida e visual.
+
+Legibilidade:
+Boa hierarquia visual com uso adequado de cores e espaçamento.
+
+Eficiência de uso:
+O administrador consegue interpretar rapidamente os dados do sistema.
+
+Satisfação do usuário:
+A apresentação visual dos dados melhora a experiência de análise.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+A interface mantém o padrão visual do sistema.
+
+Feedback informativo:
+Os dados refletem o estado atual das reservas e ocupação.
+
+Usuário no controle:
+O administrador pode utilizar as informações para tomada de decisão.
+
+Redução da carga de memória:
+As informações estão organizadas e visíveis.
+
+Prevenção de erros:
+A clareza dos dados reduz interpretações equivocadas.
+
+Fechamento de diálogo:
+A tela fornece uma visão completa do desempenho do sistema.
+
+Reversão de ações:
+Embora seja uma tela informativa, pode futuramente incluir exportação ou filtros avançados.
+
+---
 
 ## 4.4 Testes com Protótipos
 
