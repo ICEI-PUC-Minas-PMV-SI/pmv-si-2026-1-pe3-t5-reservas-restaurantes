@@ -273,6 +273,147 @@ A interação possui um fluxo claro: autenticar-se para prosseguir ou cancelar e
 
 ---
 
+## Protótipo 4 – Tela de Detalhes do Restaurante (Usuário não autenticado)
+
+<img src="./img/prototype/logout-details.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+A tela de detalhes do restaurante tem como objetivo apresentar ao usuário todas as informações relevantes sobre um estabelecimento selecionado, permitindo uma análise completa antes da decisão de reserva.
+
+Nesta interface, o usuário pode visualizar descrição do restaurante, categorias, localização, experiências oferecidas, fotos, cardápio e avaliações de outros clientes. Além disso, é possível consultar horários disponíveis para reserva. Para concluir a reserva, no entanto, é necessário realizar autenticação no sistema Reserva Fácil.
+
+### 2. Princípios Gestálticos Aplicados
+
+Proximidade:
+As informações são organizadas em blocos bem definidos, como “Sobre o restaurante”, “Experiências”, “Fotos”, “Menu” e “Avaliações”, facilitando a leitura e compreensão.
+
+Similaridade:
+Os elementos visuais seguem um padrão consistente, como cards de avaliações, botões de horários e seções informativas, reforçando a identidade visual do sistema.
+
+Figura-fundo:
+Os conteúdos são apresentados em containers claros sobre um fundo neutro, permitindo fácil distinção entre seções e elementos interativos.
+
+Ponto focal:
+O card lateral de reserva se destaca visualmente, principalmente pelo botão “Entrar para reservar”, indicando a principal ação da tela.
+
+Continuidade:
+A organização vertical das seções conduz o usuário de forma fluida ao longo da página, permitindo exploração progressiva das informações.
+
+Região comum:
+Cada seção da página é delimitada em áreas específicas, agrupando conteúdos relacionados e melhorando a organização visual.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A estrutura da página é clara e permite que o usuário encontre facilmente as informações desejadas.
+
+Carga cognitiva reduzida:
+As informações estão divididas em blocos, evitando sobrecarga visual.
+
+Legibilidade:
+Há boa hierarquia tipográfica, com títulos, descrições e conteúdos bem diferenciados.
+
+Eficiência de uso:
+O usuário consegue rapidamente acessar fotos, avaliações e horários sem necessidade de navegação adicional.
+
+Apoio à decisão:
+A presença de avaliações, descrição detalhada e imagens auxilia o usuário na escolha do restaurante.
+
+### 4. Regras de Ouro de Shneiderman
+
+Consistência:
+A interface mantém o padrão visual das telas anteriores, com uso consistente de cores, botões e tipografia.
+
+Feedback informativo:
+Os elementos interativos, como horários e botões, indicam claramente suas funcionalidades.
+
+Prevenção de erros:
+A ação de reserva é bloqueada para usuários não autenticados, evitando inconsistências no sistema.
+
+Usuário no controle:
+O usuário pode navegar livremente pelas seções e escolher quando iniciar o processo de reserva.
+
+Redução da carga de memória:
+Todas as informações necessárias estão disponíveis na tela, sem necessidade de memorização.
+
+Reversão de ações:
+O usuário pode explorar o conteúdo sem realizar ações obrigatórias, mantendo controle sobre sua navegação.
+
+Fechamento de diálogo:
+A presença do botão “Entrar para reservar” indica claramente o próximo passo necessário para avançar no fluxo.
+
+---
+
+## Protótipo 5 – Tentativa de Reserva na Tela de Detalhes (Usuário não autenticado)
+
+<img src="./img/prototype/logout-details-try.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+Este protótipo representa o momento em que o usuário, ainda não autenticado, tenta realizar uma reserva diretamente na tela de detalhes do restaurante no sistema Reserva Fácil.
+
+Ao selecionar data, horário e quantidade de pessoas e acionar o botão de reserva, o sistema exibe um modal solicitando autenticação. O objetivo é garantir que apenas usuários identificados possam concluir reservas, mantendo a integridade dos dados e o controle das operações.
+
+### 2. Princípios Gestálticos Aplicados
+
+Figura-fundo:
+O fundo da página é escurecido, destacando o modal como elemento principal e direcionando totalmente a atenção do usuário.
+
+Ponto focal:
+O modal central, juntamente com o ícone de cadeado e o botão “Fazer login”, cria um ponto de atenção claro e imediato.
+
+Proximidade:
+Os elementos do modal (título, descrição e botões) estão organizados de forma compacta, facilitando a leitura e compreensão.
+
+Similaridade:
+Os botões seguem o padrão visual do sistema, mantendo consistência com as demais interfaces.
+
+Região comum:
+O modal forma uma área isolada da interface, agrupando todas as ações relacionadas à autenticação.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A interface comunica de forma clara o motivo pelo qual a ação não pode ser concluída.
+
+Carga cognitiva reduzida:
+A mensagem é direta, evitando esforço desnecessário por parte do usuário.
+
+Legibilidade:
+O contraste entre o modal e o fundo escurecido facilita a leitura e compreensão da mensagem.
+
+Eficiência de uso:
+O usuário pode rapidamente optar por fazer login, criar conta ou cancelar a ação.
+
+Manutenção de contexto:
+O usuário permanece na tela de detalhes do restaurante, sem perder as informações já visualizadas.
+
+### 4. Regras de Ouro de Shneiderman
+
+Prevenção de erros:
+O sistema impede a realização de reservas sem autenticação, evitando inconsistências e registros inválidos.
+
+Feedback informativo:
+O modal explica claramente a necessidade de login para prosseguir com a reserva.
+
+Usuário no controle:
+O usuário pode escolher entre autenticar-se ou cancelar a ação.
+
+Reversão de ações:
+A opção “Agora não” permite interromper o fluxo sem consequências.
+
+Consistência:
+O modal segue o mesmo padrão visual e comportamento apresentado em outras telas do sistema.
+
+Redução da carga de memória:
+As opções são apresentadas diretamente na interface, sem necessidade de memorização de etapas.
+
+Fechamento de diálogo:
+O fluxo é claro: autenticar-se para continuar ou cancelar e permanecer na navegação atual.
+
+---
+
 ## 4.4 Testes com Protótipos
 
 ## Metodologia de Avaliação de Usabilidade — ReservaFácil
