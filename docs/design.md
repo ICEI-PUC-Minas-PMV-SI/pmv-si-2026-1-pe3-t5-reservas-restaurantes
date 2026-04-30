@@ -60,6 +60,8 @@ Os protótipos apresentados a seguir são importantes para validar a usabilidade
 
 ## Protótipo 1 – Tela Inicial / Landing Page
 
+<img src="./img/prototype/home.png" style="width:100%;">
+
 ### 1. Objetivo da Tela
 
 A tela inicial do sistema Reserva Fácil tem como objetivo apresentar a proposta da plataforma e permitir que o usuário inicie rapidamente a busca por restaurantes disponíveis. Nessa interface, o usuário pode informar cidade, data, horário e quantidade de pessoas, facilitando a localização de estabelecimentos compatíveis com sua necessidade.
@@ -125,11 +127,6 @@ As opções necessárias estão visíveis na própria tela, sem exigir memoriza�
 
 Fechamento de diálogo:
 Após preencher os dados, a ação de busca conduz naturalmente para a próxima etapa do sistema.
-
-
-<img src="./img/prototype/home-1.png" style="width:100%;">
-<img src="./img/prototype/home-2.png" style="width:100%;">
-
 
 ---
 
