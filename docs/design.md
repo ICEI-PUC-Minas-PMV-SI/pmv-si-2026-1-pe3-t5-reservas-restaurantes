@@ -275,7 +275,7 @@ A interação possui um fluxo claro: autenticar-se para prosseguir ou cancelar e
 
 ## Protótipo 4 – Tela de Detalhes do Restaurante (Usuário não autenticado)
 
-<img src="./img/prototype/logout-details.png" style="width:100%;">
+<img src="./img/prototype/logout-datails.png" style="width:100%;">
 
 ### 1. Objetivo da Tela
 
