@@ -202,6 +202,77 @@ Após selecionar um restaurante ou horário, o sistema conduz o usuário para a 
 
 ---
 
+## Protótipo 3 – Modal de Autenticação para Reserva
+
+<img src="./img/prototype/discover-2.png" style="width:100%;">
+
+### 1. Objetivo da Tela
+
+O modal de autenticação tem como objetivo impedir que usuários não autenticados realizem reservas diretamente no sistema Reserva Fácil.
+
+Ele é exibido quando o usuário tenta realizar uma ação restrita, como clicar no botão “Reservar” na tela de descoberta de restaurantes, solicitando que o usuário faça login ou crie uma conta para prosseguir.
+
+Essa abordagem garante maior segurança, rastreabilidade das reservas e integridade das informações no sistema, além de orientar o usuário de forma clara sobre o próximo passo necessário.
+
+### 2. Princípios Gestálticos Aplicados
+
+Figura-fundo:
+O fundo da tela é suavemente escurecido, destacando o modal como elemento principal e direcionando o foco do usuário para a ação necessária.
+
+Ponto focal:
+O modal centralizado, aliado ao ícone de cadeado e ao botão “Fazer login”, cria um forte ponto de atenção visual.
+
+Proximidade:
+Os elementos do modal (título, descrição e botões) estão organizados próximos entre si, facilitando a compreensão da mensagem.
+
+Similaridade:
+Os botões seguem o padrão visual do sistema, mantendo consistência com outras telas.
+
+Região comum:
+O modal funciona como uma área isolada do restante da interface, agrupando todas as ações relacionadas à autenticação.
+
+### 3. Recomendações Ergonômicas
+
+Usabilidade:
+A interface é simples e objetiva, apresentando claramente o motivo da interrupção da ação.
+
+Carga cognitiva reduzida:
+A mensagem é direta e não exige esforço interpretativo do usuário.
+
+Legibilidade:
+O contraste entre o modal e o fundo escurecido facilita a leitura e identificação das ações disponíveis.
+
+Eficiência de uso:
+O usuário pode rapidamente escolher entre fazer login, criar conta ou cancelar a ação.
+
+Manutenção de contexto:
+O modal permite que o usuário permaneça na mesma tela após fechá-lo, sem perder o estado da busca realizada.
+
+4. Regras de Ouro de Shneiderman
+
+Prevenção de erros:
+O sistema impede a realização de reservas sem autenticação, evitando inconsistências nos dados.
+
+Feedback informativo:
+O modal explica claramente o motivo pelo qual a ação não pode ser concluída naquele momento.
+
+Usuário no controle:
+O usuário pode optar por fazer login, criar conta ou simplesmente fechar o modal.
+
+Reversão de ações:
+A opção “Agora não” permite cancelar a ação sem consequências.
+
+Consistência:
+O design do modal segue o padrão visual do restante do sistema.
+
+Redução da carga de memória:
+As opções são apresentadas diretamente na interface, sem necessidade de memorização de etapas.
+
+Fechamento de diálogo:
+A interação possui um fluxo claro: autenticar-se para prosseguir ou cancelar e continuar navegando.
+
+---
+
 ## 4.4 Testes com Protótipos
 
 ## Metodologia de Avaliação de Usabilidade — ReservaFácil
