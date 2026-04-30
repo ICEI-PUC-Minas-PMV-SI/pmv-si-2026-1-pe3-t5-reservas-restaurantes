@@ -1179,7 +1179,7 @@ O usuário pode decidir posteriormente realizar a avaliação, mantendo flexibil
 
 ## Protótipo 17 – Modal de Avaliação de Restaurante
 
-<img src="./img/prototype/login-reservations-concluida-avaliacao" style="width:100%;">
+<img src="./img/prototype/login-reservations-concluida-avaliacao.png" style="width:100%;">
 
 ### 1. Objetivo da Tela
 
@@ -1251,7 +1251,7 @@ O usuário pode cancelar o processo antes de enviar a avaliação.
 
 ## Protótipo 18 – Tela de Minhas Avaliações
 
-<img src="./img/prototype/login-reservations-concluida-avaliacao" style="width:100%;">
+<img src="./img/prototype/login-avaliacoes.png" style="width:100%;">
 
 ### 1. Objetivo da Tela
 
@@ -1323,7 +1323,7 @@ Caso implementado futuramente, o sistema pode permitir edição ou exclusão de 
 
 ## Protótipo 19 – Modal de Edição de Perfil do Usuário
 
-<img src="./img/prototype/login-profile-edit" style="width:100%;">
+<img src="./img/prototype/login-profile-edit.png" style="width:100%;">
 
 ### 1. Objetivo da Tela
 
