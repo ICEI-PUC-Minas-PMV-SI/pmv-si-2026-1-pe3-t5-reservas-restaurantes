@@ -2377,81 +2377,78 @@ Essas observações complementaram os resultados numéricos obtidos no question�
 
 ---
 
-## Escala de Respostas
 
-As perguntas objetivas utilizaram **escala Likert de 1 a 5**, conforme abaixo:
+## Legenda das Colunas
 
-| Valor | Significado |
-|---|---|
-| 1 | Discordo Totalmente / Muito Insatisfeito |
-| 2 | Discordo Parcialmente |
-| 3 | Neutro / Satisfatório |
-| 4 | Concordo Parcialmente |
-| 5 | Concordo Totalmente / Excelente |
+As colunas de escala utilizam valores de **1 a 5**, onde 1 representa a pior avaliação e 5 a melhor. Colunas marcadas como **(aberto)** contêm respostas livres dos participantes.
 
 ---
 
-## Estrutura do Questionário
+### Navegação e Fluxo de Uso
 
-O formulário foi dividido em cinco dimensões principais:
-
-### 1. Navegação e Fluxo de Uso
-
-Avaliou:
-
-- facilidade para compreender o uso do sistema;
-- organização das etapas;
-- localização de menus e funções;
-- fluidez do processo.
-
-### 2. Layout e Interface Visual
-
-Avaliou:
-
-- organização visual das telas;
-- identificação de botões e áreas clicáveis;
-- uso de cores e ícones;
-- contraste e legibilidade.
-
-### 3. Clareza e Comunicação
-
-Avaliou:
-
-- clareza dos textos;
-- entendimento de mensagens;
-- coerência de nomes e comandos.
-
-### 4. Segurança e Confiança
-
-Avaliou:
-
-- confiança para utilizar o sistema;
-- aparência profissional;
-- segurança percebida durante o uso.
-
-### 5. Satisfação Geral
-
-Avaliou:
-
-- experiência geral;
-- intenção de uso futuro;
-- recomendação para outras pessoas.
+| Coluna | Pergunta |
+| --- | --- |
+| Nav. 1 | Ao acessar o sistema, foi fácil compreender como navegar entre as telas? |
+| Nav. 2 | O menu, botões e opções disponíveis estão posicionados de forma intuitiva? |
+| Nav. 3 | Foi fácil localizar as funcionalidades desejadas? |
+| Nav. 4 | As etapas para realizar a reserva pareceram claras e organizadas? |
+| Dificuldade (aberto) | Em quais etapas houve maior dificuldade durante o processo de uso? |
 
 ---
 
-## Campos Abertos Complementares
+### Layout e Interface Visual
 
-Além das perguntas objetivas, o questionário contou com campos abertos para aprofundamento qualitativo.
-
-Foram coletadas respostas sobre:
-
-- dificuldades encontradas durante o processo;
-- símbolos, ícones ou elementos confusos;
-- pontos positivos da experiência;
-- melhorias sugeridas para o protótipo.
+| Coluna | Pergunta |
+| --- | --- |
+| Layout 1 | A organização visual da tela facilita a compreensão das informações? |
+| Layout 2 | Botões, links e áreas clicáveis foram facilmente identificados? |
+| Layout 3 | As cores, ícones e elementos gráficos contribuíram para o uso do sistema? |
+| Layout 4 | O tamanho dos textos e contraste visual facilitaram a leitura? |
+| Confusão visual? (aberto) | Algum botão, ícone, cor ou imagem chamou atenção de forma negativa ou gerou confusão? |
 
 ---
 
+### Clareza e Comunicação
+
+| Coluna | Pergunta |
+| --- | --- |
+| Clareza 1 | Os textos e rótulos utilizados no sistema são claros e objetivos? |
+| Clareza 2 | As mensagens e instruções apresentadas auxiliaram durante o uso? |
+| Clareza 3 | Os nomes dos menus, botões e seções fazem sentido para você? |
+| Dúvida comunicação (aberto) | Qual aspecto da comunicação gerou maior dúvida ou confusão? |
+
+---
+
+### Segurança e Confiança
+
+| Coluna | Pergunta |
+| --- | --- |
+| Seg. 1 | O sistema transmite confiança para realizar uma reserva e fornecer dados? |
+| Seg. 2 | O sistema aparenta organização e profissionalismo no seu design? |
+| Seg. 3 | Você se sentiu seguro(a) ao utilizar o protótipo sem necessidade de ajuda externa? |
+
+---
+
+### Satisfação Geral
+
+| Coluna | Pergunta |
+| --- | --- |
+| Satisf. 1 | Sua experiência geral com o protótipo foi positiva? |
+| Satisf. 2 | Você utilizaria esse sistema caso estivesse disponível? |
+| Satisf. 3 | Você indicaria esse sistema para outra pessoa? |
+| O que gostou (aberto) | O que você mais gostou na experiência ou no design do sistema? |
+| O que melhorar (aberto) | O que você considera mais importante melhorar no protótipo? |
+| Descrição dificuldade (aberto) | Caso tenha tido dificuldade durante o processo de reserva, descreva: |
+| Elemento confuso (aberto) | Se sim, qual elemento gerou confusão? Descreva: |
+
+---
+
+## Respostas
+
+| Nome | Perfil | Nav. 1 | Nav. 2 | Nav. 3 | Nav. 4 | Dificuldade (aberto) | Layout 1 | Layout 2 | Layout 3 | Layout 4 | Confusão visual? (aberto) | Clareza 1 | Clareza 2 | Clareza 3 | Dúvida comunicação (aberto) | Seg. 1 | Seg. 2 | Seg. 3 | Satisf. 1 | Satisf. 2 | Satisf. 3 | O que gostou (aberto) | O que melhorar (aberto) | Descrição dificuldade (aberto) | Elemento confuso (aberto) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Ana Luisa | Cliente/Usuário Final | 1 | 2 | 3 | 5 | Não houve dificuldade | 3 | 4 | 5 | 4 | Não | 3 | 4 | 5 | Nenhuma dúvida | 3 | 4 | 5 | 5 | 5 | 5 | Muito fluido | Mais retorno visual | — | — |
+| Peter Pan | Funcionário/Administrador | 3 | 5 | 5 | 5 | Cadastro/Login | 3 | 3 | 4 | 4 | Não | 5 | 5 | 5 | Nenhuma dúvida | 5 | 4 | 3 | 5 | 5 | 5 | Interface moderna e agradevel | simplificar termos técnicos | — | — |
 ## Consolidação dos Resultados
 
 Os resultados individuais foram reunidos em uma análise geral, permitindo identificar:
