@@ -2445,7 +2445,7 @@ As colunas de escala utilizam valores de **1 a 5**, onde 1 representa a pior ava
 
 ## Respostas
 
-[Uploading Pesquisa de Usabilidade de Protótipo de Sistema de Reservas (respostas) - Respostas ao formulário 1.csv…]()
+[Planilha de respostas](anexos/Pesquisa%20de%20Usabilidade%20de%20Protótipo%20de%20Sistema%20de%20Reservas%20(respostas)%20-%20Respostas%20ao%20formulário%201.csv)
 
 
 | Nome | Perfil | Nav. 1 | Nav. 2 | Nav. 3 | Nav. 4 | Dificuldade (aberto) | Layout 1 | Layout 2 | Layout 3 | Layout 4 | Confusão visual? (aberto) | Clareza 1 | Clareza 2 | Clareza 3 | Dúvida comunicação (aberto) | Seg. 1 | Seg. 2 | Seg. 3 | Satisf. 1 | Satisf. 2 | Satisf. 3 | O que gostou (aberto) | O que melhorar (aberto) | Descrição dificuldade (aberto) | Elemento confuso (aberto) |
