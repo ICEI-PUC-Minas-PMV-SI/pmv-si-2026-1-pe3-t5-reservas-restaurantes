@@ -2445,10 +2445,18 @@ As colunas de escala utilizam valores de **1 a 5**, onde 1 representa a pior ava
 
 ## Respostas
 
+[Uploading Pesquisa de Usabilidade de Protótipo de Sistema de Reservas (respostas) - Respostas ao formulário 1.csv…]()
+
+
 | Nome | Perfil | Nav. 1 | Nav. 2 | Nav. 3 | Nav. 4 | Dificuldade (aberto) | Layout 1 | Layout 2 | Layout 3 | Layout 4 | Confusão visual? (aberto) | Clareza 1 | Clareza 2 | Clareza 3 | Dúvida comunicação (aberto) | Seg. 1 | Seg. 2 | Seg. 3 | Satisf. 1 | Satisf. 2 | Satisf. 3 | O que gostou (aberto) | O que melhorar (aberto) | Descrição dificuldade (aberto) | Elemento confuso (aberto) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Ana Luisa | Cliente/Usuário Final | 1 | 2 | 3 | 5 | Não houve dificuldade | 3 | 4 | 5 | 4 | Não | 3 | 4 | 5 | Nenhuma dúvida | 3 | 4 | 5 | 5 | 5 | 5 | Muito fluido | Mais retorno visual | — | — |
-| Peter Pan | Funcionário/Administrador | 3 | 5 | 5 | 5 | Cadastro/Login | 3 | 3 | 4 | 4 | Não | 5 | 5 | 5 | Nenhuma dúvida | 5 | 4 | 3 | 5 | 5 | 5 | Interface moderna e agradevel | simplificar termos técnicos | — | — |
+| FLÁVIO FERNANDES | Funcionário/Administrador | 5 | 5 | 5 | 2 | Confirmação da reserva | 5 | 5 | 5 | 5 | Não | 5 | 5 | 5 | Nenhuma dúvida | 4 | 5 | 3 | 4 | 3 | 5 | O site é fluído e bem montado. | (1) Fazer a reserva como admin.  (2) Colocar o relatorio dentro da Dashboard inicial no login de admin. | Escolhendo o administrador ficou confuso ver onde se realizava a reserva dentro do meu painel. | — |
+| Arthur Pádua | Cliente/Usuário Final | 5 | 5 | 5 | 5 | Busca de horários | 5 | 5 | 5 | 5 | Não | 5 | 5 | 5 | Mensagens do sistema (erros/confirmações) | 5 | 5 | 5 | 5 | 5 | 5 | Bem intuitivo e organizado. | As mensagens de erros e a parte para confirmação do cancelamento | Tive dificuldade na mensagem de erro quando selecionei o horário | — |
+| José Roberto | Cliente/Usuário Final | 5 | 3 | 3 | 4 | Confirmação da reserva | 3 | 5 | 3 | 5 | Não | 3 | 3 | 4 | Termos utilizados (jargões/vocabulário), Mensagens do sistema (erros/confirmações) | 4 | 3 | 3 | 4 | 5 | 5 | Direto ao ponto. | Design. | Tive dificuldade em confirmar minha reserva, opções abertas em relação a possíveis respostas. | Não tive uma etapa de confirmação na cancela da reserva. |
+| Ana Julia Ribeiro | Funcionário/Administrador | 5 | 3 | 2 | 5 | Cadastro/Login | 3 | 5 | 4 | 5 | Sim | 2 | 2 | 4 | Mensagens do sistema (erros/confirmações), Botões/Comandos (o que cada um faz) | 3 | 4 | 3 | 4 | 4 | 4 | Painel lateral enxuto e direto ao que preciso. | 1- Filtro temporal no dash | 2- Filtro no calendario para status de reservas | 3- Poderia facilitar o periodo que meu restaurante trabalha e nos horario de reserva ter opção mais facilitada para os intervalos. (15 minutos |
+| Isabela Rocha | Funcionário/Administrador | 4 | 3 | 5 | 5 | Confirmação da reserva | 3 | 5 | 3 | 5 | Não | 3 | 3 | 5 | Termos utilizados (jargões/vocabulário), Mensagens do sistema (erros/confirmações), Botões/Comandos (o que cada um faz) | 4 | 3 | 3 | 4 | 5 | 3 | Expêriencia bem fluída | UX/UI | Na criação do meu restaurante tive dificuldade em listar os horários disponiveis. | — |
+| Viviane Flavia Sousa | Cliente/Usuário Final | 5 | 4 | 5 | 5 | Confirmação da reserva | 4 | 5 | 5 | 5 | Não | 5 | 3 | 5 | Mensagens do sistema (erros/confirmações), Botões/Comandos (o que cada um faz) | 4 | 5 | 3 | 4 | 5 | 5 | Facil de localizar restaurantes próximos que eu queira conhecer, sabendo a faixa de gastos lá. | Eu tive duvidas para colocar o numero de pessoas que iriam fazer parte da minha reserva. | Não recebi notificação que minhas reservas foram confirmadas. | — |
+
 ## Consolidação dos Resultados
 
 Os resultados individuais foram reunidos em uma análise geral, permitindo identificar:
@@ -2464,7 +2472,13 @@ Os dados também foram organizados em tabelas e dashboards visuais para facilita
 
 ## Conclusão Metodológica
 
-A metodologia combinou **observação prática**, **avaliação quantitativa** e **feedback qualitativo**, proporcionando uma visão ampla da experiência do usuário e contribuindo diretamente para o aprimoramento final do projeto ReservaFácil.
+A análise dos testes realizados no protótipo do ReservaJá indica um desempenho consistentemente positivo em todas as cinco dimensões avaliadas (Navegação, Layout/Interface Visual, Clareza/Comunicação, Segurança/Confiança e Satisfação Geral). Observou-se baixa incidência de notas negativas tanto por parte dos usuários finais quanto dos operadores, o que sugere boa aderência do sistema às necessidades propostas.
 
-<img width="2800" height="6186" alt="reservafacil-dashboard-light-premium-ALTA" src="https://github.com/user-attachments/assets/7e5fb965-8174-4009-8fb2-b98bdb2e7a8d" />
+Os participantes demonstraram facilidade na execução das tarefas, com poucos pontos de fricção ao longo da navegação. A interface foi percebida como organizada e intuitiva, contribuindo para uma compreensão rápida das funcionalidades disponíveis. Além disso, a comunicação das informações mostrou-se clara na maior parte dos fluxos, reduzindo dúvidas operacionais.
+
+Embora existam oportunidades pontuais de melhoria  principalmente relacionadas a ajustes finos de usabilidade e refinamento visual, o sistema, de forma geral, atende de maneira eficaz aos objetivos do projeto. O resultado indica que o protótipo está em um nível adequado de maturidade para evolução incremental, sem muitas necessidade de revisões estruturais.
+
+<img width="2800" height="7030" alt="FINAL2" src="https://github.com/user-attachments/assets/c690436c-8ce5-4053-81dc-fd167cc09f75" />
+
+
 
