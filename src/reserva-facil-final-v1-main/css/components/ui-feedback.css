@@ -1,0 +1,168 @@
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1200;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toast {
+  min-width: 260px;
+  max-width: 360px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  box-shadow:
+    0 14px 30px rgba(17, 24, 39, 0.08),
+    0 4px 10px rgba(17, 24, 39, 0.04);
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  animation: toast-in 0.22s ease;
+}
+
+.toast-success {
+  border-left: 5px solid var(--success);
+}
+
+.toast-danger {
+  border-left: 5px solid var(--accent);
+}
+
+.toast-info {
+  border-left: 5px solid var(--accent-secondary);
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) translateX(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.confirm-modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.confirm-modal-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.danger-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 12px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.danger-btn:hover {
+  opacity: 0.96;
+}
+
+.time-chip {
+  border: 1px solid #fde7b0;
+  background: #fff8e6;
+  color: #9a6700;
+  border-radius: 999px;
+  padding: 9px 14px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.time-chip:hover {
+  transform: translateY(-1px);
+  background: #ffefc2;
+}
+
+.time-chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(239, 68, 68, 0.16);
+}
+
+.time-chip.disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  border-color: #e5e7eb;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+}
+
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #fff8e6;
+  border: 1px solid #fde7b0;
+  color: #9a6700;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.empty-state {
+  background: #fff;
+  border: 1px dashed var(--border);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.detail-section {
+  margin-top: 26px;
+}
+
+.detail-section h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.detail-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.detail-surface {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.restaurant-summary-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+@media (min-width: 900px) {
+  .detail-split {
+    grid-template-columns: 1.3fr 0.9fr;
+  }
+}

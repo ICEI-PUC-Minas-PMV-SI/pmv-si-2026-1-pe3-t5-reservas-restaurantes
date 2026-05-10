@@ -1,0 +1,313 @@
+  /* ========================================
+    AUTH PAGE - LOGIN / REGISTER
+  ======================================== */
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+    font-family: Inter, sans-serif;
+    color: var(--text-primary);
+  }
+
+  /* ========================================
+    NAVBAR
+  ======================================== */
+
+  .auth-navbar {
+    width: 100%;
+    min-height: 88px;
+    padding: 18px 36px;
+    background: #ffffff;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .auth-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  .auth-brand .logo-placeholder {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #ff5a3d, #f59e0b);
+    flex-shrink: 0;
+  }
+
+  .auth-back-link {
+    min-height: 46px;
+    padding: 0 18px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: #ffffff;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease;
+  }
+
+  .auth-back-link:hover {
+    border-color: #d1d5db;
+    transform: translateY(-1px);
+  }
+
+  /* ========================================
+    PAGE AREA
+  ======================================== */
+
+  .auth-page {
+    min-height: calc(100vh - 88px);
+    padding: 48px 20px 64px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* ========================================
+    CARD
+  ======================================== */
+
+  .auth-card {
+    width: 100%;
+    max-width: 430px;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow:
+      0 10px 30px rgba(15, 23, 42, 0.05),
+      0 2px 10px rgba(15, 23, 42, 0.03);
+    box-sizing: border-box;
+  }
+
+  .auth-label,
+  .auth-eyebrow {
+    margin: 0 0 10px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #ef4444;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .auth-card h1 {
+    margin: 0 0 10px;
+    font-size: 34px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: var(--text-primary);
+  }
+
+  .auth-description,
+  .auth-subtitle {
+    margin: 0 0 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text-secondary);
+  }
+
+  /* ========================================
+    ROLE SELECTOR
+  ======================================== */
+
+  .role-selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .role-btn {
+    height: 52px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+  .role-btn:hover {
+    border-color: #d1d5db;
+  }
+
+  .role-btn.active {
+    border-color: #ff4a43;
+    background: rgba(255, 74, 67, 0.06);
+    color: #ff4a43;
+  }
+
+  /* ========================================
+    FORM
+  ======================================== */
+
+  .auth-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .auth-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .auth-card input,
+  .auth-card select,
+  .auth-card textarea {
+    width: 100%;
+    height: 52px;
+    padding: 0 16px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: #ffffff;
+    font-size: 15px;
+    color: var(--text-primary);
+    box-sizing: border-box;
+    transition: 0.2s ease;
+  }
+
+  .auth-card input::placeholder,
+  .auth-card textarea::placeholder {
+    color: #94a3b8;
+  }
+
+  .auth-card input:focus,
+  .auth-card select:focus,
+  .auth-card textarea:focus {
+    outline: none;
+    border-color: #ff4a43;
+    box-shadow: 0 0 0 4px rgba(255, 74, 67, 0.08);
+  }
+
+  /* ========================================
+    BUTTON
+  ======================================== */
+
+  .auth-submit,
+  .auth-submit-btn {
+    width: 100%;
+    margin-top: 4px;
+    height: 54px;
+    border: none;
+    border-radius: 16px;
+    background: #f94144;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 10px 22px rgba(249, 65, 68, 0.18);
+  }
+
+  .auth-submit:hover,
+  .auth-submit-btn:hover {
+    transform: translateY(-1px);
+    background: #ef4444;
+  }
+
+  /* ========================================
+    FOOT LINKS
+  ======================================== */
+
+  .auth-footer-text,
+  .auth-switch-text {
+    margin-top: 18px;
+    font-size: 15px;
+    color: var(--text-secondary);
+  }
+
+  .auth-footer-text a,
+  .auth-switch-text a {
+    color: #ef4444;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .auth-footer-text a:hover,
+  .auth-switch-text a:hover {
+    text-decoration: underline;
+  }
+
+  /* ========================================
+    RESPONSIVO
+  ======================================== */
+
+  @media (max-width: 768px) {
+    .auth-navbar {
+      min-height: 78px;
+      padding: 16px 18px;
+    }
+
+    .auth-brand {
+      font-size: 20px;
+      gap: 10px;
+    }
+
+    .auth-brand .logo-placeholder {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+    }
+
+    .auth-back-link {
+      min-height: 42px;
+      padding: 0 14px;
+      font-size: 13px;
+    }
+
+    .auth-page {
+      min-height: calc(100vh - 78px);
+      padding: 28px 16px 48px;
+    }
+
+    .auth-card {
+      max-width: 100%;
+      padding: 24px;
+      border-radius: 22px;
+    }
+
+    .auth-card h1 {
+      font-size: 32px;
+    }
+
+    .auth-description,
+    .auth-subtitle {
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .role-selector,
+    .auth-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .role-btn,
+    .auth-card input,
+    .auth-submit,
+    .auth-submit-btn {
+      height: 52px;
+    }
+  }

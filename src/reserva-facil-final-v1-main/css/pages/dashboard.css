@@ -1,0 +1,4918 @@
+.dashboard-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px 16px 56px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 0 22px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.logo-placeholder {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-secondary)
+  );
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.18);
+  flex-shrink: 0;
+}
+
+/* =========================
+   PROFILE + DROPDOWN
+========================= */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.notification-btn,
+.profile-trigger {
+  height: 46px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 0 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+  color: var(--text-primary);
+}
+
+.notification-btn:hover,
+.profile-trigger:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.profile-menu-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  min-width: 220px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow:
+    0 18px 40px rgba(17, 24, 39, 0.08),
+    0 4px 12px rgba(17, 24, 39, 0.04);
+  padding: 8px;
+  display: none;
+  z-index: 9999;
+}
+
+.profile-dropdown.active {
+  display: block;
+}
+
+.profile-dropdown button {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: transparent;
+  padding: 12px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.profile-dropdown button:hover {
+  background: #f9fafb;
+}
+
+.profile-avatar-mini {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-secondary)
+  );
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.profile-avatar-mini img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+.btn,
+.btn-secondary,
+.logout-btn,
+.accordion-toggle {
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn {
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 16px;
+  box-shadow: 0 8px 18px rgba(239, 68, 68, 0.16);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.96;
+}
+
+.btn-secondary,
+.logout-btn {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text-primary);
+  padding: 12px 16px;
+}
+
+.btn-secondary:hover,
+.logout-btn:hover {
+  border-color: #d1d5db;
+  background: #f9fafb;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   SEARCH / FILTROS
+========================= */
+.search-section,
+.filters-section,
+.search-box {
+  margin-bottom: 42px !important;
+}
+
+.sticky-search {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  margin-bottom: 34px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 0;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.review-section,
+.admin-section,
+.reservations-section {
+  margin-top: 40px;
+}
+
+/* =========================
+   GRID GENÉRICO
+========================= */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow:
+    0 10px 30px rgba(17, 24, 39, 0.04),
+    0 2px 8px rgba(17, 24, 39, 0.02);
+}
+
+.restaurant-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.restaurant-meta {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+/* =========================
+   TAGS
+========================= */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #fff8e6;
+  color: #9a6700;
+  border: 1px solid #fde7b0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* =========================
+   STATUS
+========================= */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 12px;
+  text-transform: capitalize;
+}
+
+.status-ativa {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-confirmada {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-cancelada {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* =========================
+   TEXTOS
+========================= */
+.muted-text {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================
+   REVIEWS
+========================= */
+.review-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 14px;
+  box-shadow:
+    0 10px 24px rgba(17, 24, 39, 0.03),
+    0 2px 6px rgba(17, 24, 39, 0.02);
+}
+
+/* =========================
+   RESTAURANT LIST
+========================= */
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 8px;
+}
+
+.premium-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.restaurant-list-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 16px;
+  box-shadow:
+    0 10px 24px rgba(17, 24, 39, 0.03),
+    0 2px 6px rgba(17, 24, 39, 0.02);
+}
+
+.restaurant-list-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
+
+.restaurant-list-body {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.restaurant-list-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.restaurant-list-rating {
+  font-size: 15px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.restaurant-list-meta {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.restaurant-list-note {
+  font-size: 15px;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.restaurant-times-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.restaurant-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* =========================
+   PAGE RESTAURANT
+========================= */
+.restaurant-page {
+  max-width: 1320px;
+}
+
+.restaurant-hero {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 28px;
+  display: block;
+}
+
+.restaurant-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 26px;
+}
+
+.restaurant-main,
+.restaurant-sidebar {
+  min-width: 0;
+}
+
+.restaurant-headline {
+  font-size: 46px;
+  line-height: 1.08;
+  margin: 0;
+}
+
+.restaurant-subline {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.restaurant-summary-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #fff8e6;
+  border: 1px solid #fde7b0;
+  color: #9a6700;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tabs-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+  margin-top: 24px;
+}
+
+.tab-link {
+  background: none;
+  border: none;
+  font-size: 15px;
+  color: var(--text-secondary);
+  padding: 0 0 10px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-link.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  font-weight: 700;
+}
+
+.detail-section {
+  margin-top: 32px;
+  scroll-margin-top: 90px;
+}
+
+.detail-section h3 {
+  font-size: 26px;
+  margin-bottom: 14px;
+  color: var(--text-primary);
+}
+
+.detail-description {
+  margin-top: 18px;
+  max-width: 760px;
+  font-size: 15px;
+}
+
+.detail-surface {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* =========================
+   EXPERIÊNCIAS
+========================= */
+.experience-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 18px;
+  overflow: hidden;
+}
+
+.experience-card-content {
+  min-width: 0;
+}
+
+.experience-card-content h4 {
+  font-size: 24px;
+  margin: 0 0 10px;
+  color: var(--text-primary);
+}
+
+.experience-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+/* =========================
+   GALERIA
+========================= */
+.restaurant-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.restaurant-gallery img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: block;
+}
+
+.restaurant-gallery img:hover {
+  transform: scale(1.02);
+}
+
+/* =========================
+   BOOKING SIDEBAR
+========================= */
+.booking-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow:
+    0 18px 40px rgba(17, 24, 39, 0.06),
+    0 4px 12px rgba(17, 24, 39, 0.03);
+}
+
+.booking-card h3 {
+  font-size: 30px;
+  line-height: 1.1;
+  margin: 0 0 18px;
+  color: var(--text-primary);
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.public-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.booking-grid input {
+  height: 54px;
+  border-radius: 16px;
+}
+
+.booking-times {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.booking-times strong {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.booking-actions {
+  margin-top: 22px;
+}
+
+.booking-actions .btn {
+  width: 100%;
+  min-height: 50px;
+  border-radius: 16px;
+}
+
+/* =========================
+   EMPTY
+========================= */
+.empty-state {
+  background: #fff;
+  border: 1px dashed var(--border);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* =========================
+   IMAGE VIEWER
+========================= */
+.image-viewer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1300;
+  padding: 20px;
+}
+
+.image-viewer-backdrop.active {
+  display: flex;
+}
+
+.image-viewer-content {
+  max-width: 980px;
+  width: 100%;
+}
+
+.image-viewer-content img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #fff;
+}
+
+/* =========================
+   ACCORDION
+========================= */
+.accordion-section {
+  margin-top: 28px;
+}
+
+.accordion-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:
+    0 10px 24px rgba(17, 24, 39, 0.03),
+    0 2px 6px rgba(17, 24, 39, 0.02);
+}
+
+.accordion-toggle {
+  width: 100%;
+  border: none;
+  background: #fff;
+  color: var(--text-primary);
+  padding: 18px 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.accordion-toggle:hover {
+  background: #fafafa;
+}
+
+.accordion-icon {
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.accordion-card.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  display: none;
+  padding: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.accordion-card.active .accordion-content {
+  display: block;
+}
+
+/* =========================
+   AGENDA
+========================= */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.schedule-day-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.schedule-day-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.schedule-item {
+  background: #fafafa;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-top: 10px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .restaurant-layout {
+    grid-template-columns: minmax(0, 1.45fr) 380px;
+    align-items: start;
+  }
+
+  .restaurant-sidebar .booking-card {
+    position: sticky;
+    top: 20px;
+  }
+
+  .experience-card {
+    grid-template-columns: minmax(0, 1fr) 260px;
+    align-items: center;
+  }
+
+  .schedule-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 991px) {
+  .restaurant-list,
+  .premium-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .public-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .restaurant-hero {
+    height: 260px;
+  }
+
+  .restaurant-headline {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 639px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .profile {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .restaurant-title {
+    font-size: 18px;
+  }
+
+  .restaurant-list,
+  .premium-grid,
+  .public-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-list-image {
+    height: 200px;
+  }
+
+  .restaurant-list-title {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .accordion-toggle {
+    padding: 16px;
+  }
+
+  .accordion-content {
+    padding: 16px;
+  }
+
+  .restaurant-hero {
+    height: 200px;
+  }
+
+  .restaurant-headline {
+    font-size: 28px;
+  }
+
+  .tabs-inline {
+    gap: 12px;
+  }
+
+  .restaurant-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-gallery img {
+    height: 220px;
+  }
+
+  .experience-image {
+    height: 180px;
+  }
+}
+
+/* =========================
+   PUBLIC HOME
+========================= */
+.public-hero {
+  border-radius: 28px;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    rgba(194, 240, 223, 0.75),
+    rgba(252, 228, 214, 0.85),
+    rgba(248, 211, 220, 0.85)
+  );
+  box-shadow:
+    0 18px 44px rgba(17, 24, 39, 0.06),
+    0 4px 14px rgba(17, 24, 39, 0.03);
+}
+
+.public-hero-content {
+  min-height: 390px;
+  padding: 56px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.public-hero-content h1 {
+  max-width: 760px;
+  margin: 0 0 16px;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+}
+
+.public-hero-content p {
+  max-width: 720px;
+  margin: 0 0 30px;
+  color: var(--text-secondary);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.public-search-card {
+  width: 100%;
+  max-width: 980px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow:
+    0 18px 40px rgba(17, 24, 39, 0.08),
+    0 4px 12px rgba(17, 24, 39, 0.04);
+}
+
+.public-search-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.public-search-grid input {
+  height: 54px;
+  border-radius: 16px;
+}
+
+.public-search-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+
+.public-search-actions .btn {
+  min-height: 50px;
+  border-radius: 16px;
+}
+
+.public-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+/* Footer full width sem cortar topo */
+.public-footer {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 80px;
+  margin-bottom: 0;
+  padding: 56px 32px 24px;
+  box-sizing: border-box;
+  background: #1f2937;
+}
+
+
+.public-footer-content {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 0.7fr 1fr;
+  gap: 32px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.public-footer p {
+  color: #d1d5db;
+  line-height: 1.7;
+  margin: 0 0 8px;
+}
+
+.public-footer h4 {
+  margin: 0 0 14px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.public-footer a {
+  display: block;
+  color: #d1d5db;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: 0.2s ease;
+}
+
+.public-footer a:hover {
+  color: #fff;
+}
+
+.public-footer-bottom {
+  max-width: 1180px;
+  margin: 28px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 991px) {
+  .public-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .public-search-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .public-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .public-footer-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 639px) {
+  .public-hero-content {
+    min-height: auto;
+    padding: 38px 18px;
+  }
+
+  .public-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .public-hero-content p {
+    font-size: 15px;
+  }
+
+  .public-search-card {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .public-search-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .public-search-actions {
+    justify-content: stretch;
+  }
+
+  .public-search-actions .btn {
+    width: 100%;
+  }
+
+  .public-footer {
+    margin-top: 42px;
+  }
+}
+
+/* =========================
+   DETALHES RESTAURANTE - REFINOS
+========================= */
+
+.compact-times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.compact-times.collapsed .time-chip:nth-child(n + 5) {
+  display: none;
+}
+
+.show-more-times-btn,
+.show-more-photos-btn {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text-primary);
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.restaurant-gallery-limited {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.58);
+  color: #fff;
+  border: none;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.table-availability-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 18px;
+  margin-bottom: 12px;
+}
+
+.review-user-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  overflow: hidden;
+}
+
+.review-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 639px) {
+  .restaurant-gallery-limited {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item img {
+    height: 220px;
+  }
+
+  .compact-times {
+    max-height: 132px;
+    overflow: hidden;
+  }
+
+  .compact-times.expanded {
+    max-height: none;
+  }
+}
+
+/* =========================
+   AJUSTE MODAL DE RESERVA
+========================= */
+
+.modal {
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.modal-content {
+  max-height: 88vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+#reservationTimeOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+.reservation-time-chip,
+.detail-time-chip,
+.time-chip {
+  white-space: nowrap;
+}
+
+/* Espaço do botão "Ver mais horários" */
+.show-more-times-btn {
+  margin-top: 16px;
+  margin-bottom: 18px;
+  display: inline-flex;
+}
+
+/* Respiro na sidebar */
+#sidebarTimesWrapper {
+  margin-bottom: 14px;
+}
+
+.booking-actions {
+  margin-top: 20px;
+}
+
+/* =========================
+   NOTIFICAÇÕES
+========================= */
+
+.notification-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 360px;
+  max-height: 420px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow:
+    0 18px 40px rgba(17, 24, 39, 0.12),
+    0 4px 12px rgba(17, 24, 39, 0.05);
+  padding: 10px;
+  display: none;
+  z-index: 9999;
+}
+
+.notification-dropdown.active {
+  display: block;
+}
+
+.notification-item {
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.notification-item.unread {
+  background: #fff8e6;
+  border-color: #fde7b0;
+}
+
+.notification-item p {
+  margin: 8px 0 0;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.notification-empty {
+  padding: 14px;
+}
+
+/* =========================
+   RESPIRO ADMIN RESTAURANTES
+========================= */
+
+.admin-restaurant-card,
+#adminRestaurants .card {
+  padding: 28px;
+}
+
+#adminRestaurants .restaurant-title {
+  margin-bottom: 14px;
+}
+
+#adminRestaurants .restaurant-meta {
+  margin-bottom: 8px;
+}
+
+#adminRestaurants .card-row {
+  margin-top: 22px;
+  gap: 14px;
+}
+
+/* =========================
+   BOTÃO VER MAIS HORÁRIOS
+========================= */
+
+.show-more-times-btn {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+#sidebarTimesWrapper {
+  margin-bottom: 18px;
+}
+
+/* =========================
+   MOBILE NOTIFICAÇÕES
+========================= */
+
+@media (max-width: 639px) {
+  .notification-dropdown {
+    left: 0;
+    right: auto;
+    width: calc(100vw - 32px);
+  }
+}
+
+.accordion-toggle {
+  border-left: 4px solid transparent;
+}
+
+.accordion-card.active .accordion-toggle {
+  border-left-color: var(--accent);
+  color: var(--accent);
+}
+
+.accordion-card.active .accordion-icon {
+  color: var(--accent);
+}
+
+/* =========================
+   ADMIN DASHBOARD LAYOUT
+========================= */
+
+.admin-shell {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+.admin-sidebar {
+  height: 100vh;
+  background: #111827;
+  color: #fff;
+  padding: 22px 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.admin-main {
+  height: 100vh;
+  overflow-y: auto;
+  min-width: 0;
+}
+
+.admin-topbar {
+  width: 100%;
+  min-height: 88px;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 18px 28px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 900;
+}
+
+.admin-content {
+  padding: 28px;
+  max-width: 1280px;
+}
+
+.admin-sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 28px;
+  padding: 0 8px;
+}
+
+.admin-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-nav-link {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #cbd5e1;
+  padding: 13px 14px;
+  border-radius: 14px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.admin-nav-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.admin-nav-link.active {
+  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(239, 68, 68, 0.25);
+}
+
+.admin-topbar h1 {
+  font-size: 24px;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.admin-topbar p {
+  margin: 4px 0 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.admin-sidebar-toggle {
+  display: none;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.admin-panel {
+  display: none;
+  animation: adminFade 0.2s ease;
+}
+
+.admin-panel.active {
+  display: block;
+}
+
+@keyframes adminFade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.admin-section-header {
+  margin-bottom: 20px;
+}
+
+.admin-section-header h2 {
+  margin: 0;
+  font-size: 26px;
+  color: var(--text-primary);
+}
+
+.admin-section-header p {
+  margin: 6px 0 0;
+  color: var(--text-secondary);
+}
+
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.admin-stat-card {
+  border-radius: 22px;
+  padding: 22px;
+  color: #fff;
+  min-height: 130px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.admin-stat-card span {
+  display: block;
+  font-size: 13px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.admin-stat-card strong {
+  display: block;
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.admin-stat-card small {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.stat-red {
+  background: linear-gradient(135deg, #ef4444, #f97316);
+}
+
+.stat-green {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.stat-yellow {
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+}
+
+.stat-blue {
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+}
+
+.admin-content .cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* =========================
+   AGENDA SEMANAL PREMIUM
+========================= */
+
+.admin-week-calendar {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.04),
+    0 4px 12px rgba(15, 23, 42, 0.02);
+}
+
+.week-calendar-header {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  border-bottom: 1px solid var(--border);
+  background: #f9fafb;
+}
+
+.week-day-title {
+  padding: 16px 14px;
+  border-right: 1px solid var(--border);
+}
+
+.week-day-title:last-child {
+  border-right: none;
+}
+
+.week-day-title strong {
+  display: block;
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.week-day-title span {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.week-calendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  min-height: 520px;
+}
+
+.week-day-column {
+  padding: 14px;
+  border-right: 1px solid var(--border);
+  min-height: 520px;
+  background: #fff;
+}
+
+.week-day-column:last-child {
+  border-right: none;
+}
+
+.week-day-column.today {
+  background: #fff8f2;
+}
+
+.week-empty {
+  min-height: 110px;
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 13px;
+  text-align: center;
+  padding: 12px;
+}
+
+.week-reservation-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.03);
+}
+
+.week-reservation-card strong {
+  display: block;
+  font-size: 14px;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.week-reservation-card p {
+  margin: 4px 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.week-reservation-card .status-badge {
+  margin-top: 10px;
+}
+
+/* MOBILE ADMIN */
+@media (max-width: 1100px) {
+  .admin-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-content .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .week-calendar-header,
+  .week-calendar-body {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .week-day-column {
+    min-height: 280px;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+@media (max-width: 900px) {
+  .admin-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-sidebar {
+    position: fixed;
+    left: -290px;
+    top: 0;
+    width: 280px;
+    transition: left 0.2s ease;
+  }
+
+  .admin-sidebar.active {
+    left: 0;
+  }
+
+  .admin-sidebar-toggle {
+    display: inline-flex;
+  }
+
+  .admin-topbar {
+    align-items: flex-start;
+  }
+
+  .admin-content {
+    padding: 20px 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .admin-topbar {
+    flex-wrap: wrap;
+  }
+
+  .admin-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-stat-card strong {
+    font-size: 30px;
+  }
+
+  .week-calendar-header,
+  .week-calendar-body {
+    grid-template-columns: 1fr;
+  }
+
+  .week-day-column {
+    min-height: auto;
+  }
+}
+
+/* =========================
+   CORREÇÃO AGENDA SEMANAL ADMIN
+========================= */
+
+#adminSchedule.schedule-grid {
+  display: block;
+  width: 100%;
+}
+
+#adminSchedule {
+  width: 100%;
+}
+
+.admin-week-calendar {
+  width: 100%;
+  max-width: 100%;
+}
+
+.week-calendar-body {
+  min-height: 620px;
+}
+
+.week-day-column {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.week-reservation-card {
+  width: 100%;
+  overflow: hidden;
+}
+
+.week-reservation-card strong,
+.week-reservation-card p {
+  word-break: break-word;
+}
+
+.week-reservation-card .status-badge {
+  max-width: 100%;
+  white-space: normal;
+}
+
+/* Em telas menores, vira 2 colunas para não quebrar */
+@media (max-width: 1200px) {
+  .week-calendar-header,
+  .week-calendar-body {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .week-day-column {
+    min-height: 260px;
+  }
+}
+
+/* Mobile: uma coluna */
+@media (max-width: 640px) {
+  .week-calendar-header,
+  .week-calendar-body {
+    grid-template-columns: 1fr;
+  }
+
+  .week-day-column {
+    min-height: auto;
+  }
+}
+
+/* =========================
+   ADMIN RESTAURANTES COMPACTOS
+========================= */
+
+.admin-restaurant-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 22px;
+}
+
+.admin-restaurant-compact-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.04),
+    0 4px 12px rgba(15, 23, 42, 0.02);
+}
+
+.admin-restaurant-cover {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.admin-restaurant-card-content {
+  padding: 22px;
+}
+
+.admin-restaurant-preview {
+  margin-top: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.admin-restaurant-actions {
+  margin-top: 20px;
+}
+
+/* Modal de edição maior e confortável */
+#restaurantEditModal .modal-content {
+  max-width: 960px;
+  width: min(960px, calc(100vw - 32px));
+}
+
+#restaurantEditModal textarea {
+  margin-top: 14px;
+}
+
+@media (max-width: 1100px) {
+  .admin-restaurant-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .admin-restaurant-cover {
+    height: 180px;
+  }
+
+  .admin-restaurant-card-content {
+    padding: 18px;
+  }
+}
+
+/* =========================
+   AJUSTES MEUS RESTAURANTES ADMIN
+========================= */
+
+.admin-restaurant-grid {
+  grid-template-columns: 1fr !important;
+  max-width: 100%;
+}
+
+.admin-restaurant-compact-card {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  align-items: stretch;
+}
+
+.admin-restaurant-cover {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+}
+
+.admin-restaurant-card-content {
+  padding: 30px;
+}
+
+.admin-restaurant-preview {
+  max-width: 760px;
+}
+
+.admin-restaurant-actions {
+  gap: 14px;
+}
+
+.btn-danger-outline {
+  border: 1px solid #ef4444;
+  background: #fff;
+  color: #dc2626;
+  padding: 12px 16px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-danger-outline:hover {
+  background: #fef2f2;
+  transform: translateY(-1px);
+}
+
+/* Modal editar restaurante maior */
+#restaurantEditModal .modal-content {
+  max-width: 1180px;
+  width: min(1180px, calc(100vw - 48px));
+  max-height: 90vh;
+  padding: 32px;
+}
+
+#restaurantEditModal .form-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+#restaurantEditModal input,
+#restaurantEditModal textarea {
+  min-height: 54px;
+}
+
+#restaurantEditModal textarea {
+  min-height: 130px;
+}
+
+/* Modal danger */
+.confirm-modal-danger .modal-content {
+  border: 1px solid #fecaca;
+  box-shadow: 0 24px 60px rgba(220, 38, 38, 0.16);
+}
+
+.confirm-modal-danger h3 {
+  color: #dc2626;
+}
+
+.btn-danger-solid {
+  border: none;
+  background: #dc2626;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(220, 38, 38, 0.2);
+  transition: 0.2s ease;
+}
+
+.btn-danger-solid:hover {
+  background: #b91c1c;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .admin-restaurant-compact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-restaurant-cover {
+    height: 220px;
+    min-height: initial;
+  }
+
+  #restaurantEditModal .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   MODAIS DO ADMIN SEM QUEBRAR SIDEBAR
+========================= */
+
+.admin-scoped-modal {
+  left: 280px;
+  width: calc(100vw - 280px);
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.admin-wide-modal {
+  width: min(1120px, calc(100vw - 340px));
+  max-width: 1120px;
+  max-height: 88vh;
+  overflow-y: auto;
+  padding: 32px;
+  border-radius: 24px;
+}
+
+.admin-wide-modal .form-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.admin-wide-modal input,
+.admin-wide-modal textarea,
+.admin-wide-modal select {
+  min-height: 54px;
+}
+
+.admin-wide-modal textarea {
+  margin-top: 14px;
+  min-height: 130px;
+}
+
+#tableManageList {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .admin-scoped-modal {
+    left: 0;
+    width: 100vw;
+    padding: 16px;
+  }
+
+  .admin-wide-modal {
+    width: calc(100vw - 32px);
+    max-height: 90vh;
+    padding: 22px;
+  }
+
+  .admin-wide-modal .form-grid,
+  #tableManageList {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   ADMIN RESTAURANTE INLINE EDITOR
+========================= */
+
+.restaurant-inline-editor {
+  display: none;
+  margin-top: 26px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.04);
+}
+
+.restaurant-inline-editor.active {
+  display: block;
+}
+
+.restaurant-inline-editor .form-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.restaurant-inline-editor textarea {
+  margin-top: 14px;
+  min-height: 130px;
+}
+
+/* =========================
+   ADMIN GERENCIAR MESAS SECTION
+========================= */
+
+.table-manager-filter {
+  margin-bottom: 22px;
+}
+
+.table-manager-layout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.table-manager-list {
+  display: grid;
+  gap: 14px;
+}
+
+.table-manager-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.table-manager-card strong {
+  display: block;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.table-manager-card p {
+  margin: 4px 0;
+  color: var(--text-secondary);
+}
+
+/* Remove antigos modais quebrados de restaurante/mesa */
+#restaurantEditModal,
+#tableManageModal {
+  display: none !important;
+}
+
+/* =========================
+   ADMIN RESTAURANTE CARD MAIS LIMPO
+========================= */
+
+.admin-restaurant-actions {
+  margin-top: 20px;
+}
+
+.admin-restaurant-actions .btn-secondary,
+.admin-restaurant-actions .btn-danger-outline {
+  min-height: 44px;
+}
+
+@media (max-width: 1100px) {
+  .table-manager-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-inline-editor .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .table-manager-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .restaurant-inline-editor {
+    padding: 18px;
+  }
+}
+
+/* =========================
+   FIX CARD RESTAURANTE + EDITOR INLINE
+========================= */
+
+.admin-restaurant-compact-card {
+  display: block !important;
+  overflow: hidden;
+}
+
+.admin-restaurant-card-main {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  align-items: stretch;
+}
+
+.admin-restaurant-cover {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+}
+
+.restaurant-inline-editor {
+  display: none;
+  margin: 28px 30px 30px;
+  padding: 26px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.04);
+}
+
+.restaurant-inline-editor.active {
+  display: block;
+}
+
+.restaurant-inline-editor .form-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.restaurant-inline-editor textarea {
+  margin-top: 14px;
+  min-height: 130px;
+}
+
+/* =========================
+   FIX MODAL EDITAR MESA
+========================= */
+
+#tableEditModal {
+  left: 280px;
+  width: calc(100vw - 280px);
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(2px);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+#tableEditModal .modal-content {
+  width: min(560px, calc(100vw - 340px));
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 28px;
+  border-radius: 24px;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .admin-restaurant-card-main {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-restaurant-cover {
+    height: 220px;
+    min-height: initial;
+  }
+
+  .restaurant-inline-editor {
+    margin: 0 18px 24px;
+    padding: 20px;
+  }
+
+  .restaurant-inline-editor .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #tableEditModal {
+    left: 0;
+    width: 100vw;
+  }
+
+  #tableEditModal .modal-content {
+    width: calc(100vw - 32px);
+  }
+}
+
+/* =========================
+   RELATÓRIO ADMIN PREMIUM
+========================= */
+
+.report-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.report-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+
+.report-chart-card,
+.report-table-card {
+  padding: 26px;
+}
+
+.report-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.report-card-header h3 {
+  margin: 0;
+  font-size: 22px;
+  color: var(--text-primary);
+}
+
+.report-card-header p {
+  margin: 6px 0 0;
+  color: var(--text-secondary);
+}
+
+.bar-chart {
+  display: grid;
+  gap: 20px;
+}
+
+.bar-chart-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.bar-chart-track {
+  height: 14px;
+  background: #f1f5f9;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-chart-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.bar-red {
+  background: linear-gradient(135deg, #ef4444, #f97316);
+}
+
+.bar-yellow {
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+}
+
+.bar-green {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.bar-blue {
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+}
+
+.donut-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  min-height: 250px;
+}
+
+.donut-chart {
+  --value: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background:
+    conic-gradient(
+      #ef4444 calc(var(--value) * 1%),
+      #f1f5f9 0
+    );
+  display: grid;
+  place-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.donut-chart::before {
+  content: "";
+  position: absolute;
+  width: 126px;
+  height: 126px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.donut-chart span {
+  position: relative;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.donut-info strong {
+  display: block;
+  font-size: 42px;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.donut-info span {
+  display: block;
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-weight: 700;
+}
+
+.donut-info p {
+  margin-top: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.report-table {
+  display: grid;
+  gap: 10px;
+}
+
+.report-table-head,
+.report-table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.report-table-head {
+  font-weight: 800;
+  color: var(--text-primary);
+  padding: 14px 18px;
+  background: #f8fafc;
+  border-radius: 14px;
+}
+
+.report-table-row {
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+  color: var(--text-secondary);
+}
+
+.report-table-row span:first-child {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .report-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .report-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .report-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .donut-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .report-table-head,
+  .report-table-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   CLIENT DASHBOARD SIDEBAR
+========================= */
+
+.client-shell {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+.client-sidebar {
+  height: 100vh;
+  background: #111827;
+  color: #fff;
+  padding: 22px 16px;
+  overflow-y: auto;
+}
+
+.client-main {
+  height: 100vh;
+  overflow-y: auto;
+  min-width: 0;
+}
+
+.client-nav-link {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #cbd5e1;
+  padding: 13px 14px;
+  border-radius: 14px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.client-nav-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.client-nav-link.active {
+  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(239, 68, 68, 0.25);
+}
+
+.client-panel {
+  display: none;
+}
+
+.client-panel.active {
+  display: block;
+}
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 26px;
+}
+
+.client-restaurant-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.04);
+}
+
+.client-restaurant-image {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.client-restaurant-content {
+  padding: 22px;
+}
+
+.client-restaurant-content h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.small-label {
+  display: block;
+  margin: 16px 0 10px;
+}
+
+/* =========================
+   DETAILS FIXES
+========================= */
+
+.hidden-detail-time {
+  display: none;
+}
+
+.hidden-detail-time.show {
+  display: inline-flex;
+}
+
+.detail-time-chip.active,
+.time-chip.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.detail-time-chip.disabled,
+.time-chip.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* =========================
+   CLIENT MOBILE
+========================= */
+
+@media (max-width: 1200px) {
+  .restaurant-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .restaurant-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .client-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .client-sidebar {
+    position: fixed;
+    left: -290px;
+    top: 0;
+    width: 280px;
+    z-index: 1000;
+    transition: left 0.2s ease;
+  }
+
+  .client-sidebar.active {
+    left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .client-restaurant-image {
+    height: 190px;
+  }
+}
+
+/* =========================
+   FIX DETALHES RESTAURANTE
+========================= */
+
+.restaurant-detail-page {
+  width: min(1240px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 60px;
+}
+
+.simple-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.simple-header .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
+}
+
+.detail-hero {
+  width: 100%;
+  height: 330px;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 32px;
+  background: #fff;
+}
+
+.detail-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 30px;
+  align-items: start;
+}
+
+.detail-content h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.detail-tabs {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid var(--border);
+  margin: 26px 0;
+  overflow-x: auto;
+}
+
+.detail-tabs button {
+  border: none;
+  background: transparent;
+  padding: 0 0 14px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.detail-tabs button.active {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+.detail-section {
+  scroll-margin-top: 30px;
+  margin-bottom: 34px;
+}
+
+.detail-section h2 {
+  margin-bottom: 18px;
+}
+
+.detail-section p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.experience-card {
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 22px;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 22px;
+  background: #fff;
+}
+
+.experience-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.photo-gallery img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.reservation-sidebar {
+  position: sticky;
+  top: 24px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.reservation-sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.reservation-sidebar input {
+  margin-bottom: 14px;
+}
+
+.sidebar-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 18px 0;
+}
+
+.detail-times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.show-more-times-btn {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 999px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* =========================
+   RESPIRO PESQUISA CLIENTE
+========================= */
+
+.search-card {
+  margin-bottom: 34px;
+  padding: 26px;
+}
+
+#restaurantList.restaurant-grid {
+  margin-top: 34px;
+}
+
+.client-panel .admin-section-header {
+  margin-bottom: 22px;
+}
+
+.client-panel .admin-section-header h2 {
+  margin-bottom: 6px;
+}
+
+/* =========================
+   MOBILE DETAILS
+========================= */
+
+@media (max-width: 1000px) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 700px) {
+  .restaurant-detail-page {
+    width: min(100% - 24px, 1240px);
+    padding-top: 18px;
+  }
+
+  .detail-hero {
+    height: 230px;
+  }
+
+  .detail-content h1 {
+    font-size: 32px;
+  }
+
+  .experience-card {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-gallery img {
+    height: 210px;
+  }
+}
+
+.success-reservation-modal {
+  max-width: 480px;
+  text-align: center;
+  padding: 34px;
+}
+
+.success-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #16a34a;
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.success-reservation-modal h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.success-reservation-modal p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+/* ===== BLOQUEAR QUEBRA NO CAMPO DE AVALIAÇÃO ===== */
+.review-form textarea,
+textarea[name="comment"],
+#reviewComment {
+  width: 100%;
+  min-height: 140px;
+  max-height: 140px;
+  resize: none;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+
+/* =========================
+   DETAILS CLIENT TOPBAR FULL WIDTH
+========================= */
+
+.client-public-topbar {
+  width: 100vw;
+  min-height: 86px;
+  margin-left: calc(50% - 50vw);
+  padding: 18px 40px;
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 80;
+}
+
+.client-public-topbar .brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+.client-navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-dropdown a {
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.profile-dropdown a:hover {
+  background: #f8fafc;
+}
+
+.restaurant-detail-page {
+  width: min(1280px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 0 0 70px;
+}
+
+.detail-hero {
+  margin-top: 28px;
+}
+
+.image-preview-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 24px;
+}
+
+.image-preview-box {
+  position: relative;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.image-preview-box img {
+  width: 100%;
+  max-height: 86vh;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.close-preview {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.success-reservation-modal {
+  max-width: 480px;
+  text-align: center;
+  padding: 34px;
+}
+
+.success-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #16a34a;
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.success-reservation-modal h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.success-reservation-modal p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+#reviewComment {
+  resize: none;
+  min-height: 140px;
+  max-height: 140px;
+  overflow-y: auto;
+}
+
+@media (max-width: 760px) {
+  .client-public-topbar {
+    padding: 16px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .client-navbar-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .restaurant-detail-page {   
+    width: min(100% - 24px, 1280px);
+  }
+}
+
+/* =========================
+   CLIENTE SEM SIDEBAR - NAVBAR HORIZONTAL
+========================= */
+
+.client-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.client-horizontal-navbar {
+  width: 100%;
+  min-height: 88px;
+  padding: 18px 36px;
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 28px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 80;
+}
+
+.client-horizontal-navbar .brand,
+.client-public-topbar .brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+.client-horizontal-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.client-nav-link-horizontal {
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  padding: 12px 16px;
+  border-radius: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.client-nav-link-horizontal:hover {
+  background: #f8fafc;
+  color: var(--text-primary);
+}
+
+.client-nav-link-horizontal.active {
+  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(239, 68, 68, 0.22);
+}
+
+.client-horizontal-main {
+  width: min(1280px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 34px 0 70px;
+}
+
+.client-navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.client-panel {
+  display: none;
+}
+
+.client-panel.active {
+  display: block;
+}
+
+/* =========================
+   DETAILS TOPBAR CORRIGIDA
+========================= */
+
+.client-public-topbar {
+  width: 100vw;
+  min-height: 88px;
+  margin-left: calc(50% - 50vw);
+  padding: 18px 36px;
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 28px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 80;
+}
+
+
+.client-navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.details-back-left {
+  justify-self: flex-start;
+}
+
+/* remove qualquer resto visual de sidebar do cliente */
+.client-shell:has(.client-sidebar) {
+  display: grid;
+}
+
+@media (max-width: 900px) {
+  .client-horizontal-navbar,
+  .client-public-topbar {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .client-horizontal-links,
+  .client-navbar-actions,
+  .client-navbar-actions-full,
+  .client-navbar-right {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .client-horizontal-main {
+    width: min(100% - 24px, 1280px);
+    padding-top: 24px;
+  }
+}
+
+/* Logo clicável no dashboard cliente */
+.brand-button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.brand-button:hover strong {
+  color: var(--accent);
+}
+
+.client-horizontal-navbar {
+  grid-template-columns: auto 1fr;
+}
+
+.client-navbar-actions {
+  justify-content: flex-end;
+}
+
+/* =========================
+   CORREÇÃO DEFINITIVA FOOTER CLIENTE
+========================= */
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0 !important;
+  background: #1f2937;
+}
+
+.client-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+}
+
+.client-horizontal-main {
+  flex: 1;
+}
+
+.client-footer {
+  margin-top: 80px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 24px;
+  flex-shrink: 0;
+}
+
+/* Remove qualquer faixa clara depois do footer */
+.client-page::after {
+  content: none;
+}
+
+@media (max-width: 639px) {
+  .client-footer {
+    margin-top: 48px !important;
+  }
+}
+
+/* =========================
+   BUSCA CLIENTE - CARD PREMIUM
+========================= */
+
+.opentable-search-area {
+  margin: 26px 0 34px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.04),
+    0 4px 12px rgba(15, 23, 42, 0.02);
+}
+
+.opentable-search-bar {
+  display: grid;
+  grid-template-columns: 230px 190px 220px 1fr 190px;
+  gap: 12px;
+  align-items: center;
+  background: transparent;
+  padding: 0;
+}
+
+.opentable-field {
+  height: 58px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 18px;
+  overflow: hidden;
+}
+
+.opentable-field span {
+  flex: 0 0 auto;
+  font-size: 17px;
+}
+
+.opentable-field input {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #111827;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.opentable-search-btn {
+  height: 58px;
+  border: none;
+  border-radius: 16px;
+  background: #ef4444;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.opentable-search-btn:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+.opentable-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 16px 0 0;
+  margin-top: 14px;
+  border-top: 1px solid var(--border);
+  border-bottom: none;
+}
+
+.filter-chip {
+  height: 40px;
+  white-space: nowrap;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #111827;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+  flex-shrink: 0;
+}
+
+.filter-chip:hover,
+.filter-chip.active {
+  border-color: #ef4444;
+  color: #ef4444;
+  background: #fff5f5;
+}
+
+.clear-chip {
+  color: #ef4444;
+}
+
+@media (max-width: 1200px) {
+  .opentable-search-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .opentable-location,
+  .opentable-search-btn {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .opentable-search-area {
+    padding: 14px;
+    border-radius: 20px;
+  }
+
+  .opentable-search-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .opentable-location,
+  .opentable-search-btn {
+    grid-column: span 1;
+  }
+}
+
+/* =========================
+   CLIENTE - RESERVAS AGRUPADAS
+========================= */
+
+.client-reservation-group {
+  margin-top: 34px;
+}
+
+.client-reservation-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.client-reservation-group-header h3 {
+  font-size: 22px;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.client-reservation-group-header span {
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.client-reservation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.client-reservation-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow:
+    0 14px 34px rgba(15, 23, 42, 0.04),
+    0 4px 10px rgba(15, 23, 42, 0.02);
+}
+
+.client-reservation-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.client-reservation-card h4 {
+  font-size: 22px;
+  margin: 0 0 10px;
+  color: var(--text-primary);
+}
+
+.client-reservation-card p {
+  margin: 6px 0;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.client-reservation-actions {
+  margin-top: 22px;
+}
+
+@media (max-width: 900px) {
+  .client-reservation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .client-reservation-card-header {
+    flex-direction: column;
+  }
+}
+
+/* =========================
+   REMOVE FUNDO DETALHES
+========================= */
+
+.restaurant-details-page,
+.restaurant-details-shell,
+.restaurant-details-layout,
+.restaurant-details-wrapper,
+#restaurantDetailsApp {
+  background: transparent !important;
+}
+
+body:has(#restaurantDetailsApp) {
+  background: var(--bg-primary) !important;
+}
+
+/* =========================
+   DETALHES RESTAURANTE - RESPIRO
+========================= */
+
+#overviewSection .card-row {
+  margin-bottom: 18px;
+}
+
+#overviewSection p {
+  margin-top: 10px;
+}
+
+.experience-card {
+  padding: 28px;
+  gap: 28px;
+}
+
+.experience-card h3 {
+  margin-bottom: 14px;
+}
+
+.experience-card p {
+  margin-bottom: 14px;
+}
+
+.experience-card .tag {
+  margin-top: 8px;
+}
+
+/* =========================
+   SIDEBAR RESERVA ESTILO OPENTABLE
+========================= */
+
+.reservation-sidebar {
+  border-radius: 22px;
+  padding: 26px;
+  box-shadow:
+    0 18px 44px rgba(15, 23, 42, 0.08),
+    0 4px 12px rgba(15, 23, 42, 0.03);
+}
+
+.reservation-sidebar h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 22px;
+}
+
+#detailReservationForm {
+  display: grid;
+  gap: 12px;
+}
+
+#detailPeople,
+#detailDate {
+  height: 58px;
+  border-radius: 8px;
+  background: #f3f4f6;
+  border: none;
+  padding: 0 18px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sidebar-divider {
+  margin: 16px 0 8px;
+}
+
+.reservation-sidebar strong {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.detail-times {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.detail-time-chip {
+  width: 100%;
+  height: 44px;
+  border-radius: 6px;
+  border: none;
+  background: #ef4444;
+  color: #fff;
+  font-weight: 800;
+  justify-content: center;
+}
+
+.detail-time-chip:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+.detail-time-chip.active {
+  background: #dc2626;
+  color: #fff;
+}
+
+.show-more-times-btn {
+  grid-column: span 2;
+  height: 48px;
+  border-radius: 8px;
+  margin-top: 10px;
+  justify-content: center;
+  background: #fff;
+}
+
+#detailReservationForm .btn {
+  height: 54px;
+  border-radius: 8px !important;
+  margin-top: 18px !important;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* =========================
+   GALERIA SEM BORDA PRETA
+========================= */
+
+.photo-card {
+  border: none;
+  padding: 0;
+  background: transparent;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.photo-gallery img,
+.restaurant-gallery img {
+  border: none !important;
+  border-radius: 18px;
+  display: block;
+}
+
+.photo-gallery {
+  gap: 20px;
+}
+
+.photo-gallery img {
+  box-shadow:
+    0 12px 28px rgba(15, 23, 42, 0.06),
+    0 3px 8px rgba(15, 23, 42, 0.03);
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .detail-times {
+    grid-template-columns: 1fr;
+  }
+
+  .show-more-times-btn {
+    grid-column: span 1;
+  }
+
+  .experience-card {
+    padding: 22px;
+  }
+}
+
+/* =========================
+   MODAL SUCESSO RESERVA
+========================= */
+
+.reservation-success-card {
+  max-width: 440px;
+  text-align: center;
+  padding: 34px;
+}
+
+.success-icon {
+  width: 66px;
+  height: 66px;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #16a34a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.reservation-success-card h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.reservation-success-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.more-time-chip {
+  background: #fff;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* =========================
+   PUBLIC PAGES - PADRONIZAÇÃO CLARA
+========================= */
+
+body {
+  background: var(--bg-primary) !important;
+}
+
+/* NAVBAR PÚBLICA FULL WIDTH */
+
+.public-navbar-full {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  min-height: 92px;
+  padding: 18px 44px;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.public-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.public-navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.public-navbar-actions a {
+  text-decoration: none;
+}
+
+/* HERO INDEX */
+
+.public-hero {
+  margin-top: 28px;
+  border-radius: 30px;
+}
+
+.public-hero-content {
+  padding: 62px 28px;
+}
+
+.public-hero-content h1 {
+  font-size: 52px;
+}
+
+/* BUSCA DA HOME PÚBLICA */
+
+.public-home-search-card {
+  width: 100%;
+  max-width: 980px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow:
+    0 22px 50px rgba(15, 23, 42, 0.08),
+    0 6px 16px rgba(15, 23, 42, 0.04);
+}
+
+.public-home-search-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.public-search-field {
+  height: 58px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+}
+
+.public-search-field span {
+  flex-shrink: 0;
+  font-size: 17px;
+}
+
+.public-search-field input {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.public-home-search-btn {
+  width: 100%;
+  height: 56px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 16px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 12px 28px rgba(239, 68, 68, 0.18);
+  transition: 0.2s ease;
+}
+
+.public-home-search-btn:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+/* RESULTADOS PÚBLICOS / DISCOVER */
+
+.public-discover-page,
+.discover-page,
+.discover-container {
+  background: var(--bg-primary) !important;
+}
+
+.public-discover-search,
+.discover-search-card {
+  margin: 26px auto 34px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.04),
+    0 4px 12px rgba(15, 23, 42, 0.02);
+}
+
+.public-discover-grid,
+.discover-search-grid {
+  display: grid;
+  grid-template-columns: 230px 190px 190px 1fr 190px;
+  gap: 12px;
+  align-items: center;
+}
+
+.public-discover-grid input,
+.discover-search-grid input {
+  height: 58px;
+  border-radius: 16px;
+}
+
+.public-discover-grid button,
+.discover-search-grid button {
+  height: 58px;
+  border-radius: 16px;
+}
+
+/* MOBILE */
+
+@media (max-width: 991px) {
+  .public-navbar-full {
+    padding: 16px 20px;
+  }
+
+  .public-brand {
+    font-size: 24px;
+  }
+
+  .public-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .public-home-search-grid,
+  .public-discover-grid,
+  .discover-search-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .public-home-search-btn {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 639px) {
+  .public-navbar-full {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .public-navbar-actions {
+    width: 100%;
+  }
+
+  .public-navbar-actions a {
+    flex: 1;
+    text-align: center;
+  }
+
+  .public-home-search-grid,
+  .public-discover-grid,
+  .discover-search-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .public-home-search-btn {
+    grid-column: span 1;
+  }
+}
+
+/* =========================
+   DISCOVER PÚBLICO
+========================= */
+
+.public-discover-page {
+  padding-top: 36px;
+}
+
+.public-discover-header {
+  margin-bottom: 24px;
+}
+
+.public-discover-header h1 {
+  font-size: 36px;
+  margin: 0 0 8px;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+}
+
+.public-discover-header p {
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.public-discover-search {
+  margin-bottom: 36px;
+}
+
+@media (max-width: 1100px) {
+  .public-discover-search .opentable-search-bar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .public-discover-search .opentable-search-btn {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .public-discover-page {
+    padding-top: 24px;
+  }
+
+  .public-discover-header h1 {
+    font-size: 30px;
+  }
+
+  .public-discover-search .opentable-search-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .public-discover-search .opentable-search-btn {
+    grid-column: span 1;
+  }
+}
+
+/* =========================
+   DISCOVER IGUAL CLIENTE LOGADO
+========================= */
+
+.public-discover-search {
+  max-width: none;
+}
+
+.public-discover-search .opentable-search-bar {
+  grid-template-columns: 230px 190px 220px 1fr 190px !important;
+}
+
+.public-discover-search .opentable-field {
+  min-width: 0;
+}
+
+.public-discover-search .opentable-field input {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.public-discover-search .opentable-search-btn {
+  white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  .public-discover-search .opentable-search-bar {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .public-discover-search .opentable-location,
+  .public-discover-search .opentable-search-btn {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .public-discover-search .opentable-search-bar {
+    grid-template-columns: 1fr !important;
+  }
+
+  .public-discover-search .opentable-location,
+  .public-discover-search .opentable-search-btn {
+    grid-column: span 1;
+  }
+}
+
+/* =========================
+   PADRONIZAÇÃO NAVBAR PÚBLICA COM CLIENTE
+========================= */
+
+.public-navbar-full {
+  min-height: 98px !important;
+  padding: 22px 36px !important;
+}
+
+.public-brand {
+  font-size: 30px !important;
+  gap: 14px !important;
+}
+
+.public-brand .logo-placeholder {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 16px !important;
+}
+
+.public-navbar-actions .btn,
+.public-navbar-actions .btn-secondary {
+  min-height: 52px;
+  padding: 0 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   DISCOVER IGUAL CLIENTE LOGADO
+========================= */
+
+.public-discover-page {
+  max-width: 1320px !important;
+  padding-top: 36px !important;
+}
+
+.public-discover-header {
+  margin-bottom: 24px;
+}
+
+.public-discover-search {
+  width: 100%;
+  max-width: none !important;
+  margin: 26px 0 34px !important;
+  padding: 18px !important;
+}
+
+.public-discover-search .opentable-search-bar {
+  grid-template-columns: 230px 190px 220px 1fr 190px !important;
+  gap: 12px !important;
+}
+
+.public-discover-search .opentable-field {
+  height: 58px !important;
+  border-radius: 16px !important;
+}
+
+.public-discover-search .opentable-search-btn {
+  height: 58px !important;
+  border-radius: 16px !important;
+}
+
+.public-discover-search .opentable-filter-row {
+  padding: 16px 0 0 !important;
+  margin-top: 14px !important;
+}
+
+/* Corrige texto quebrado dos inputs */
+.public-discover-search input {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* MOBILE */
+@media (max-width: 1200px) {
+  .public-discover-search .opentable-search-bar {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .public-discover-search .opentable-location,
+  .public-discover-search .opentable-search-btn {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .public-navbar-full {
+    padding: 18px 20px !important;
+  }
+
+  .public-discover-search .opentable-search-bar {
+    grid-template-columns: 1fr !important;
+  }
+
+  .public-discover-search .opentable-location,
+  .public-discover-search .opentable-search-btn {
+    grid-column: span 1;
+  }
+}
+
+/* =========================
+   FIX INDEX - NAVBAR E HERO MENOR
+========================= */
+
+.public-navbar-full {
+  min-height: 78px !important;
+  padding: 14px 32px !important;
+}
+
+.public-brand {
+  font-size: 24px !important;
+  gap: 12px !important;
+}
+
+.public-brand .logo-placeholder,
+.public-navbar-full .logo-placeholder {
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 14px !important;
+}
+
+.public-navbar-actions .btn,
+.public-navbar-actions .btn-secondary {
+  min-height: 44px !important;
+  padding: 0 18px !important;
+  font-size: 14px !important;
+  border-radius: 14px !important;
+}
+
+/* HERO INDEX MENOS “ZOOM” */
+
+.public-hero {
+  margin-top: 22px !important;
+  border-radius: 26px !important;
+}
+
+.public-hero-content {
+  min-height: 330px !important;
+  padding: 42px 24px !important;
+}
+
+.public-hero-content h1 {
+  font-size: 40px !important;
+  line-height: 1.08 !important;
+  max-width: 720px !important;
+  margin-bottom: 14px !important;
+}
+
+.public-hero-content p {
+  font-size: 16px !important;
+  max-width: 660px !important;
+  margin-bottom: 24px !important;
+}
+
+/* CARD DE BUSCA DO INDEX MENOR */
+
+.public-home-search-card {
+  max-width: 900px !important;
+  padding: 18px !important;
+  border-radius: 22px !important;
+}
+
+.public-search-field {
+  height: 52px !important;
+  border-radius: 14px !important;
+}
+
+.public-home-search-btn {
+  height: 52px !important;
+  border-radius: 14px !important;
+  font-size: 15px !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+  .public-navbar-full {
+    min-height: auto !important;
+    padding: 16px 20px !important;
+  }
+
+  .public-brand {
+    font-size: 21px !important;
+  }
+
+  .public-brand .logo-placeholder,
+  .public-navbar-full .logo-placeholder {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .public-hero-content {
+    padding: 34px 18px !important;
+  }
+
+  .public-hero-content h1 {
+    font-size: 32px !important;
+  }
+}
+
+/* =========================
+   INDEX - NAVBAR MAIS PRÓXIMA DO TOPO
+========================= */
+
+body {
+  padding-top: 0 !important;
+}
+
+.public-navbar-full {
+  margin-top: 0 !important;
+  top: 0 !important;
+}
+
+.dashboard-container,
+.public-home-page,
+.public-page {
+  padding-top: 0 !important;
+}
+
+/* se existir wrapper no index */
+.public-hero:first-child,
+.public-hero {
+  margin-top: 14px !important;
+}
+
+/* =========================
+   INDEX - CORRIGIR INPUTS DA BUSCA
+========================= */
+
+.public-home-search-card {
+  max-width: 1080px !important;
+}
+
+.public-home-search-grid {
+  grid-template-columns: 1.15fr 1.15fr 1.15fr 1fr !important;
+  gap: 14px !important;
+}
+
+.public-search-field {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.public-search-field input {
+  min-width: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Campo de data precisa de mais espaço */
+#publicDate {
+  min-width: 150px;
+}
+
+/* Evita quebrar/cortar texto no Chrome */
+#publicLocation,
+#publicDate,
+#publicTime,
+#publicPeople {
+  font-size: 15px !important;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .public-home-search-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .public-home-search-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  #publicDate {
+    min-width: 0;
+  }
+}
+
+#publicRestaurantList.restaurant-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1200px) {
+  #publicRestaurantList.restaurant-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  #publicRestaurantList.restaurant-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   DISCOVER - RESPIRO + TÍTULO
+========================= */
+
+/* mais espaço abaixo da navbar */
+.public-navbar-full,
+.client-horizontal-navbar {
+  margin-bottom: 32px !important;
+}
+
+/* garante que o topo da seção não fique colado */
+.public-discover-page,
+.client-dashboard-page,
+.discover-page {
+  padding-top: 8px !important;
+}
+
+/* título principal */
+.public-discover-header h1,
+.discover-header h1,
+.hero-search-content h1 {
+  font-size: 26px !important;
+  line-height: 1.18 !important;
+  letter-spacing: -0.02em !important;
+  font-weight: 700 !important;
+  margin-bottom: 8px !important;
+}
+
+/* subtítulo */
+.public-discover-header p,
+.discover-header p {
+  font-size: 15px !important;
+  color: #667085 !important;
+  margin-bottom: 28px !important;
+}
+
+/* LOGO GLOBAL DO SISTEMA */
+.system-logo,
+.footer-logo img,
+.brand img,
+.navbar img,
+.public-brand img,
+.auth-brand img {
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  max-width: 42px !important;
+
+  object-fit: contain !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+
+  border-radius: 12px !important;
+  background: transparent !important;
+}
+
+.details-footer {
+  margin-top: 80px;
+}
+
+/* =========================
+   MODAL RESERVA SEM LOGIN
+========================= */
+
+.guest-reservation-modal {
+  max-width: 520px;
+  border-radius: 26px;
+  padding: 28px;
+}
+
+.guest-modal-header {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.guest-modal-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  background: #fff8e6;
+  border: 1px solid #fde7b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.guest-modal-header h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+.guest-modal-header p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.guest-reservation-summary {
+  padding: 16px;
+  border-radius: 18px;
+  background: #f9fafb;
+  border: 1px solid var(--border);
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.guest-reservation-summary strong {
+  color: var(--text-primary);
+  font-size: 16px;
+}
+
+.guest-reservation-summary span {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.guest-account-note {
+  padding: 16px;
+  border-radius: 18px;
+  background: #fff8e6;
+  border: 1px solid #fde7b0;
+  margin-top: 4px;
+}
+
+.guest-account-note strong {
+  color: #92400e;
+  font-size: 14px;
+}
+
+.guest-account-note p {
+  margin: 6px 0 0;
+  color: #9a6700;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .guest-reservation-modal {
+    padding: 22px;
+  }
+
+  .guest-modal-header {
+    flex-direction: column;
+  }
+}
+
+/* =========================
+   MODAL RESERVA SEM LOGIN
+========================= */
+
+.guest-reservation-modal {
+  max-width: 520px;
+  border-radius: 26px;
+  padding: 28px;
+}
+
+.guest-modal-header {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.guest-modal-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  background: #fff8e6;
+  border: 1px solid #fde7b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.guest-modal-header h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+.guest-modal-header p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.guest-reservation-summary {
+  padding: 16px;
+  border-radius: 18px;
+  background: #f9fafb;
+  border: 1px solid var(--border);
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.guest-reservation-summary strong {
+  color: var(--text-primary);
+  font-size: 16px;
+}
+
+.guest-reservation-summary span {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .guest-reservation-modal {
+    padding: 22px;
+  }
+
+  .guest-modal-header {
+    flex-direction: column;
+  }
+}
+
+.guest-reservation-modal {
+  max-width: 520px;
+  border-radius: 26px;
+  padding: 28px;
+}
+
+/* =========================
+   MODAL RESERVA SEM LOGIN
+========================= */
+
+.guest-reservation-modal {
+  max-width: 520px;
+  border-radius: 26px;
+  padding: 28px;
+}
+
+.guest-modal-header {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.guest-modal-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  background: #fff8e6;
+  border: 1px solid #fde7b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.guest-modal-header h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+.guest-modal-header p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.guest-reservation-summary {
+  padding: 16px;
+  border-radius: 18px;
+  background: #f9fafb;
+  border: 1px solid var(--border);
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.guest-reservation-summary strong {
+  color: var(--text-primary);
+  font-size: 16px;
+}
+
+.guest-reservation-summary span {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .guest-reservation-modal {
+    padding: 22px;
+  }
+
+  .guest-modal-header {
+    flex-direction: column;
+  }
+}
+
+.profile-dropdown a,
+.profile-dropdown button {
+  font-size: 14px;
+  font-weight: 500; /* PADRÃO */
+  color: #1F2937;
+  text-decoration: none;
+}
+
+/* REMOVE QUALQUER NEGRITO ESPECÍFICO */
+.profile-dropdown a {
+  font-weight: 500 !important;
+}
+
+.restaurant-card-actions a,
+.restaurant-card-actions a:link,
+.restaurant-card-actions a:visited,
+.restaurant-card-actions a:hover {
+  text-decoration: none !important;
+}
+
+
+/* =========================
+   DETAILS NAVBAR - VERSÃO FINAL LIMPA
+   Corrige botões à direita no detalhe do restaurante
+========================= */
+
+.client-public-topbar {
+  width: 100vw !important;
+  min-height: 88px !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  padding: 18px 36px !important;
+  background: #fff !important;
+  border-bottom: 1px solid var(--border) !important;
+  display: flex !important;               /* ← era grid */
+  align-items: center !important;
+  justify-content: space-between !important; /* ← novo */
+  gap: 28px !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 80 !important;
+}
+
+.client-public-topbar .brand,
+.client-public-topbar .brand-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  width: auto !important;
+  min-width: max-content !important;
+  max-width: none !important;
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  color: var(--text-primary) !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+}
+
+.client-public-topbar .brand strong,
+.client-public-topbar .brand-button strong {
+  white-space: nowrap !important;
+  font-size: 24px !important;
+  line-height: 1 !important;
+}
+
+.client-public-topbar .client-navbar-actions,
+
+.client-public-topbar .client-navbar-right,
+.client-public-topbar .details-public-actions,
+.client-public-topbar .public-nav-actions {
+  width: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 12px !important;
+  margin-left: auto !important;
+  flex: 0 0 auto !important;
+}
+
+.client-public-topbar a,
+.client-public-topbar button {
+  text-decoration: none !important;
+}
+
+.client-public-topbar .notification-btn,
+.client-public-topbar .profile-trigger,
+.client-public-topbar .btn,
+.client-public-topbar .btn-secondary {
+  min-height: 46px !important;
+  border-radius: 14px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 760px) {
+  .client-public-topbar {
+    grid-template-columns: 1fr !important;
+    align-items: flex-start !important;
+    padding: 16px !important;
+    gap: 16px !important;
+  }
+
+  .client-public-topbar .client-navbar-actions,
+  .client-public-topbar .client-navbar-right,
+  .client-public-topbar .details-public-actions,
+  .client-public-topbar .public-nav-actions {
+    width: 100% !important;
+    margin-left: 0 !important;
+    flex-wrap: wrap !important;
+  }
+}
+
+/* NAVBAR DETALHES - CORREÇÃO FINAL */
+
+.restaurant-detail-page .details-navbar-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
+
+.restaurant-detail-page .details-navbar-container .brand-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.restaurant-detail-page .details-navbar-actions,
+.restaurant-detail-page .details-public-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+
+  margin-left: auto !important; /* 🔥 ISSO resolve */
+}
+
+/* ======================================
+   CORREÇÃO FINAL - NAVBAR DETAILS
+====================================== */
+
+.restaurant-detail-page .client-public-topbar {
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  padding: 18px 36px !important;
+  background: #fff !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.restaurant-detail-page .details-navbar-container {
+  width: 100% !important;
+  max-width: none !important;
+
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.restaurant-detail-page .brand-button {
+  flex: 0 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+/* USUÁRIO LOGADO */
+.restaurant-detail-page .client-navbar-actions,
+.restaurant-detail-page .client-navbar-actions-full {
+  margin-left: auto !important;
+
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-end !important;
+  gap: 12px !important;
+
+  width: auto !important;
+  max-width: none !important;
+}
+
+/* USUÁRIO SEM LOGIN */
+.restaurant-detail-page .details-public-actions {
+  margin-left: auto !important;
+
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 12px !important;
+
+  width: auto !important;
+  max-width: none !important;
+}
+
+.restaurant-detail-page .details-public-actions a {
+  text-decoration: none !important;
+}
+
+/* =========================
+   FIX DEFINITIVO - NAVBAR DETAILS BOTÕES À DIREITA
+========================= */
+
+.client-public-topbar .details-navbar-container {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  gap: 0 !important;
+}
+
+.client-public-topbar .details-public-actions,
+.client-public-topbar .client-navbar-actions,
+.client-public-topbar .client-navbar-actions-full {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 12px !important;
+  margin-left: auto !important;
+  flex: 0 0 auto !important;
+  width: auto !important;
+}
+
+/* =========================
+   MODAL LOGIN OBRIGATÓRIO
+========================= */
+
+.login-required-modal {
+  max-width: 440px;
+  text-align: center;
+  padding: 34px 28px;
+  border-radius: 24px;
+}
+
+.login-required-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 18px;
+  border-radius: 999px;
+  background: #fff8e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.login-required-modal h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+.login-required-modal p {
+  margin: 0 0 24px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.login-required-modal .modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.login-required-modal .modal-actions a {
+  text-decoration: none;
+}
+
+.login-required-close {
+  margin-top: 18px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-required-close:hover {
+  color: var(--text-primary);
+}
+
+.login-required-modal {
+  max-width: 440px;
+  text-align: center;
+  padding: 34px 28px;
+  border-radius: 24px;
+}
+
+.login-required-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 18px;
+  border-radius: 999px;
+  background: #fff8e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.login-required-modal h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+.login-required-modal p {
+  margin: 0 0 24px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.login-required-close {
+  margin-top: 18px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-required-close:hover {
+  color: var(--text-primary);
+}

@@ -30,7 +30,7 @@ O desenvolvimento da aplicação será orientado pelos princípios de Design Cen
 | ETAPA 1         |[Introdução](docs/introducao.md) <br> [Estado da Arte](docs/estado.md) <br> [Referências](docs/referencias.md) |
 | ETAPA 2         |[Especificação de Requisitos de Software](docs/especificacao.md) |
 | ETAPA 3         |[Design de Interação](docs/design.md) |
-| ETAPA 4        |[Testes de Software](docs/testes.md) |
+| ETAPA 4         |[Testes de Software](docs/testes.md) |
 | ETAPA 5         | [Apresentação](docs/apresentacao.md) |
 
 

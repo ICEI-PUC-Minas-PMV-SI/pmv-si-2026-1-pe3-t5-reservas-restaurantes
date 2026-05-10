@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+@import './variables.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* ---------- NAVBAR MAIS LEVE ---------- */
+
+.navbar,
+.client-horizontal-navbar,
+.public-navbar,
+header.navbar {
+  min-height: 78px !important;
+  padding: 14px 28px !important;
+}
+
+.logo,
+.navbar .logo {
+  gap: 10px !important;
+  font-size: 22px !important;
+  font-weight: 800 !important;
+}
+
+.logo-placeholder,
+.logo-square,
+.navbar .logo-placeholder {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 12px !important;
+}
+
+/* botões da direita */
+
+.navbar .profile a,
+.navbar .profile button,
+.navbar .btn,
+.navbar .btn-secondary {
+  min-height: 42px !important;
+  padding: 0 16px !important;
+  font-size: 14px !important;
+  border-radius: 14px !important;
+}
+
+/* ---------- HERO MENOS ZOOM ---------- */
+
+.hero,
+.hero-section,
+.index-hero,
+.home-hero {
+  padding: 56px 28px !important;
+}
+
+.hero h1,
+.hero-title,
+.hero-content h1 {
+  font-size: clamp(40px, 5vw, 62px) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.04em !important;
+  max-width: 920px;
+  margin: 0 auto 18px;
+}
+
+.hero p,
+.hero-subtitle,
+.hero-content p {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* ---------- CARD DE PESQUISA HERO ---------- */
+
+.search-box,
+.search-card,
+.hero-search,
+.booking-search-box {
+  max-width: 1120px !important;
+  margin: 34px auto 0 !important;
+  padding: 22px !important;
+  border-radius: 28px !important;
+}
+
+/* ---------- INPUTS HERO ---------- */
+
+.search-box input,
+.search-card input,
+.hero-search input,
+.search-box select,
+.search-card select {
+  height: 56px !important;
+  font-size: 15px !important;
+  border-radius: 16px !important;
+}
+
+/* ---------- BOTÃO HERO ---------- */
+
+.search-box .btn,
+.search-card .btn,
+.hero-search .btn {
+  height: 56px !important;
+  font-size: 16px !important;
+  border-radius: 16px !important;
+  padding: 0 22px !important;
+}
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 768px) {
+  .navbar,
+  .client-horizontal-navbar,
+  .public-navbar,
+  header.navbar {
+    min-height: 70px !important;
+    padding: 12px 18px !important;
+  }
+
+  .logo,
+  .navbar .logo {
+    font-size: 19px !important;
+  }
+
+  .logo-placeholder,
+  .logo-square {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .hero,
+  .hero-section,
+  .index-hero,
+  .home-hero {
+    padding: 36px 18px !important;
+  }
+
+  .hero h1,
+  .hero-title,
+  .hero-content h1 {
+    font-size: 34px !important;
+  }
+
+  .hero p,
+  .hero-subtitle,
+  .hero-content p {
+    font-size: 15px !important;
+  }
+
+  .search-box,
+  .search-card,
+  .hero-search {
+    padding: 16px !important;
+    border-radius: 22px !important;
+  }
+}
+
+/* LOGO GLOBAL DO SISTEMA */
+.system-logo,
+.footer-logo img,
+.brand img,
+.navbar img,
+.public-brand img,
+.auth-brand img {
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  max-width: 42px !important;
+
+  object-fit: contain !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+
+  border-radius: 12px !important;
+  background: transparent !important;
+}
+
+.restaurant-card-actions a,
+.restaurant-card-actions a:link,
+.restaurant-card-actions a:visited,
+.restaurant-card-actions a:hover {
+  text-decoration: none !important;
+}
+
+/* =========================
+   FIX CARDS RESTAURANTES CLIENTE
+========================= */
+
+.client-restaurant-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.client-restaurant-content {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 !important;
+}
+
+/* remove sublinhado branco do Ver detalhes */
+.client-restaurant-content a,
+.client-restaurant-content a:link,
+.client-restaurant-content a:visited,
+.client-restaurant-content a:hover {
+  text-decoration: none !important;
+}
+
+/* empurra os botões para o final do card */
+.client-restaurant-content .card-row:last-child {
+  margin-top: auto !important;
+  padding-top: 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+/* garante botão alinhado */
+.client-restaurant-content .btn,
+.client-restaurant-content .btn-secondary {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+}

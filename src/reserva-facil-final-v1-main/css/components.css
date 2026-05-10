@@ -1,0 +1,42 @@
+.profile-dropdown a,
+.profile-dropdown button {
+  font-size: 14px;
+  font-weight: 500; /* PADRÃO */
+  color: #1F2937;
+  text-decoration: none;
+}
+
+/* REMOVE QUALQUER NEGRITO ESPECÍFICO */
+.profile-dropdown a {
+  font-weight: 500 !important;
+}
+
+.restaurant-card-actions a,
+.restaurant-card-actions a:link,
+.restaurant-card-actions a:visited,
+.restaurant-card-actions a:hover {
+  text-decoration: none !important;
+}
+
+/* NAVBAR DO DETAILS - CORREÇÃO FINAL */
+.client-public-topbar {
+  width: 100%;
+}
+
+.details-navbar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* 🔥 ISSO AQUI É O MAIS IMPORTANTE */
+.details-navbar-container .public-nav-actions {
+  margin-left: auto; /* joga os botões pra direita */
+}
+
+/* garante alinhamento bonito */
+.public-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Reserva Fácil | Administrador</title>
+
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/pages/dashboard.css" />
+  <link rel="stylesheet" href="../css/components/form.css" />
+  <link rel="stylesheet" href="../css/components/modal.css" />
+  <link rel="stylesheet" href="../css/components/ui-feedback.css" />
+</head>
+
+<body>
+  <div class="admin-shell">
+    <aside class="admin-sidebar">
+      <div class="admin-sidebar-logo">
+        <img src="../assets/img/logo-reserva-facil.png"
+          alt="Reserva Fácil"
+          class="system-logo">
+        <span>Reserva Fácil</span>
+      </div>
+
+      <nav class="admin-sidebar-nav">
+        <button class="admin-nav-link active" data-section="sectionOverview">Dashboard</button>
+        <button class="admin-nav-link" data-section="sectionRestaurantForm">Cadastrar restaurante</button>
+        <button class="admin-nav-link" data-section="sectionRestaurants">Meus restaurantes</button>
+        <button class="admin-nav-link" data-section="sectionTables">Gerenciar mesas</button>
+        <button class="admin-nav-link" data-section="sectionSchedule">Agenda semanal</button>
+        <button class="admin-nav-link" data-section="sectionReservations">Reservas recebidas</button>
+        <button class="admin-nav-link" data-section="sectionReviews">Avaliações</button>
+        <button class="admin-nav-link" data-section="sectionReports">Relatórios</button>
+      </nav>
+    </aside>
+
+    <div class="admin-main">
+      <header class="admin-topbar">
+        <button id="adminSidebarToggle" class="admin-sidebar-toggle" type="button">☰</button>
+
+        <div>
+          <h1>Dashboard</h1>
+          <p>Gerencie restaurantes, reservas, mesas e avaliações.</p>
+        </div>
+
+        <div class="profile">
+          <div class="profile-menu-wrapper">
+            <button id="profileMenuBtn" class="profile-trigger" type="button">
+              <span id="userAvatarMini" class="profile-avatar-mini"></span>
+              <span>Olá, <strong id="userName"></strong> ▾</span>
+            </button>
+
+            <div id="profileDropdown" class="profile-dropdown">
+              <button id="openProfileEditBtn" type="button">Editar perfil</button>
+              <button id="logoutBtn" type="button">Sair</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="admin-content">
+
+        <section id="sectionOverview" class="admin-panel active">
+          <div class="admin-stats-grid">
+            <div class="admin-stat-card stat-red">
+              <span>Restaurantes</span>
+              <strong id="statRestaurants">--</strong>
+              <small>Cadastrados na sua conta</small>
+            </div>
+
+            <div class="admin-stat-card stat-green">
+              <span>Reservas</span>
+              <strong id="statReservations">--</strong>
+              <small>Solicitações recebidas</small>
+            </div>
+
+            <div class="admin-stat-card stat-yellow">
+              <span>Mesas</span>
+              <strong id="statTables">--</strong>
+              <small>Mesas cadastradas</small>
+            </div>
+
+            <div class="admin-stat-card stat-blue">
+              <span>Avaliações</span>
+              <strong id="statReviews">--</strong>
+              <small>Feedbacks recebidos</small>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:24px;">
+            <h2 class="section-title">Bem-vindo ao painel administrativo</h2>
+            <p class="muted-text">
+              Use o menu lateral para cadastrar restaurantes, editar informações,
+              gerenciar mesas, acompanhar reservas e visualizar avaliações.
+            </p>
+          </div>
+        </section>
+
+        <section id="sectionRestaurantForm" class="admin-panel">
+          <div class="admin-section-header">
+            <h2>Cadastrar restaurante</h2>
+            <p>Preencha as informações principais do restaurante.</p>
+          </div>
+
+          <div class="card">
+            <form id="restaurantForm">
+              <div class="form-grid">
+                <input type="text" id="restaurantName" placeholder="Nome do restaurante" required />
+                <input type="text" id="restaurantCategory" placeholder="Categoria. Ex: Italiana, Brasileira" required />
+                <input type="text" id="restaurantCity" placeholder="Cidade" required />
+                <input type="text" id="restaurantHours" placeholder="Horário de funcionamento. Ex: 11:00 ~ 22:00" required />
+                <input type="text" id="restaurantPriceRange" placeholder="Faixa de preço. Ex: $$$" required />
+                <input type="text" id="restaurantCoverImage" placeholder="URL da imagem de capa" required />
+                <input type="text" id="restaurantDishImage" placeholder="URL da imagem de prato/experiência" />
+                <input type="text" id="restaurantPhotos" placeholder="Fotos extras separadas por vírgula" />
+                <input type="text" id="restaurantAvailableTimes" placeholder="Horários disponíveis separados por vírgula. Ex: 19:00, 19:30" required />
+              </div>
+
+              <textarea id="restaurantDescription" placeholder="Descrição da experiência do restaurante" rows="5" required></textarea>
+              <textarea id="restaurantMenu" placeholder="Descrição do menu da casa" rows="5" required></textarea>
+
+              <div class="card-row">
+                <button type="submit" class="btn">Salvar restaurante</button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section id="sectionRestaurants" class="admin-panel">
+          <div class="admin-section-header">
+            <h2>Meus restaurantes</h2>
+            <p>Visualize, edite ou exclua os restaurantes cadastrados.</p>
+          </div>
+
+          <div id="adminRestaurants"></div>
+        </section>
+
+        <section id="sectionTables" class="admin-panel">
+          <div class="admin-section-header">
+            <h2>Gerenciar mesas</h2>
+            <p>Selecione um restaurante para cadastrar, editar ou excluir mesas.</p>
+          </div>
+
+          <div class="card table-manager-filter">
+            <select id="tableRestaurantSelect">
+              <option value="">Selecione um restaurante</option>
+            </select>
+          </div>
+
+          <div id="tableManagerArea"></div>
+        </section>
+
+        <section id="sectionSchedule" class="admin-panel">
+          <div class="admin-section-header">
+            <h2>Agenda semanal</h2>
+            <p>Acompanhe as reservas distribuídas por dia.</p>
+          </div>
+
+          <div id="adminSchedule"></div>
+        </section>
+
+        <section id="sectionReservations" class="admin-panel">
+          <div class="admin-section-header">
+            <h2>Reservas recebidas</h2>
+            <p>Confirme, cancele ou finalize experiências dos clientes.</p>
+          </div>
+
+          <div class="card" style="margin-bottom:18px;">
+            <select id="adminReservationStatusFilter">
+              <option value="">Todas as reservas</option>
+              <option value="pendente confirmação">Pendentes</option>
+              <option value="confirmada">Confirmadas</option>
+              <option value="concluida">Concluídas</option>
+              <option value="cancelada">Canceladas</option>
+            </select>
+          </div>
+
+          <div id="adminReservations"></div>
+        </section>
+
+        <section id="sectionReviews" class="admin-panel">
+          <div class="admin-section-header">
+            <h2>Avaliações recebidas</h2>
+            <p>Veja os comentários e notas deixados pelos clientes.</p>
+          </div>
+
+          <div id="adminReviews"></div>
+        </section>
+
+        <section id="sectionReports" class="admin-panel">
+          <div class="admin-section-header">
+            <h2>Relatório de reservas</h2>
+            <p>Resumo de reservas, cancelamentos, confirmações e ocupação.</p>
+          </div>
+
+          <div id="reservationReport"></div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- MODAL EDITAR MESA -->
+  <div id="tableEditModal" class="modal admin-scoped-modal">
+    <div class="modal-content admin-wide-modal">
+      <h3>Editar mesa</h3>
+
+      <form id="tableEditForm">
+        <input type="hidden" id="editTableRestaurantId" />
+        <input type="hidden" id="editTableId" />
+
+        <div class="form-grid">
+          <input type="text" id="editTableNumber" placeholder="Número da mesa" disabled />
+          <input type="number" id="editTableCapacity" placeholder="Capacidade" min="1" required />
+          <input type="text" id="editTableLocation" placeholder="Localização" required />
+        </div>
+
+        <div class="modal-actions">
+          <button type="submit" class="btn">Salvar alterações</button>
+          <button type="button" id="closeTableEditModal" class="btn-secondary">Fechar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL EDITAR PERFIL -->
+  <div id="profileModal" class="modal admin-scoped-modal">
+    <div class="modal-content admin-wide-modal profile-modal">
+      <h3>Editar perfil</h3>
+
+      <form id="profileForm">
+        <div class="readonly-grid">
+          <div class="readonly-field">
+            <label>Nome</label>
+            <input type="text" id="profileFirstName" disabled />
+          </div>
+
+          <div class="readonly-field">
+            <label>Sobrenome</label>
+            <input type="text" id="profileLastName" disabled />
+          </div>
+
+          <div class="readonly-field">
+            <label>Email</label>
+            <input type="text" id="profileEmail" disabled />
+          </div>
+
+          <div class="readonly-field">
+            <label>Idade</label>
+            <input type="text" id="profileAge" disabled />
+          </div>
+
+          <div class="readonly-field">
+            <label>Celular</label>
+            <input type="text" id="profilePhone" />
+          </div>
+
+          <div class="readonly-field">
+            <label>Foto (URL)</label>
+            <input type="text" id="profilePhoto" />
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button type="submit" class="btn">Salvar</button>
+          <button type="button" id="closeProfileModal" class="btn-secondary">Fechar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="../js/controllers/adminDashboardController.js"></script>
+  <script type="module" src="../js/controllers/adminReservationController.js"></script>
+  <script type="module" src="../js/controllers/adminScheduleController.js"></script>
+  <script type="module" src="../js/controllers/reportController.js"></script>
+  <script type="module" src="../js/controllers/navbarProfileController.js"></script>
+  <script type="module" src="../js/controllers/profileController.js"></script>
+  <script type="module" src="../js/controllers/adminLayoutController.js"></script>
+</body>
+</html>

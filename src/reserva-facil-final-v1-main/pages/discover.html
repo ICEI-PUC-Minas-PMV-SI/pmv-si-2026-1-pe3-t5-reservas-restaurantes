@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Reserva Fácil | Restaurantes</title>
+
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/pages/dashboard.css" />
+  <link rel="stylesheet" href="../css/components/form.css" />
+  <link rel="stylesheet" href="../css/components/modal.css" />
+  <link rel="stylesheet" href="../css/components/ui-feedback.css" />
+</head>
+
+<body>
+  <header class="public-navbar-full">
+    <a href="../index.html" class="public-brand">
+      <img src="../assets/img/logo-reserva-facil.png"
+          alt="Reserva Fácil"
+          class="system-logo">
+      <strong>Reserva Fácil</strong>
+    </a>
+
+    <nav class="public-navbar-actions">
+      <a href="../index.html" class="btn-secondary">Início</a>
+      <a href="../auth/login.html" class="btn-secondary">Entrar</a>
+      <a href="../auth/register.html" class="btn">Criar conta</a>
+    </nav>
+  </header>
+
+  <main class="dashboard-container public-discover-page">
+    <section class="public-discover-header">
+      <h1>Restaurantes disponíveis</h1>
+      <p>Confira restaurantes, horários e experiências disponíveis em Belo Horizonte.</p>
+    </section>
+
+    <section class="opentable-search-area public-discover-search">
+      <div class="opentable-search-bar">
+        <div class="opentable-field">
+          <span>📅</span>
+          <input type="date" id="searchDate" />
+        </div>
+
+        <div class="opentable-field">
+          <span>🕒</span>
+          <input type="time" id="searchTime" />
+        </div>
+
+        <div class="opentable-field">
+          <span>👤</span>
+          <input type="number" id="searchPeople" min="1" placeholder="2 pessoas" />
+        </div>
+
+        <div class="opentable-field opentable-location">
+          <span>🔎</span>
+          <input type="text" id="searchLocation" placeholder="Restaurante ou cozinha" />
+        </div>
+
+        <button id="searchAgainBtn" class="opentable-search-btn" type="button">
+          Buscar mesa
+        </button>
+      </div>
+
+      <div class="opentable-filter-row">
+        <button class="filter-chip active" type="button">Destaques</button>
+        <button class="filter-chip" type="button">Todos</button>
+        <button class="filter-chip" type="button">Italiano</button>
+        <button class="filter-chip" type="button">Brasileiro</button>
+        <button class="filter-chip" type="button">Japonês</button>
+        <button class="filter-chip" type="button">Mexicano</button>
+        <button class="filter-chip" type="button">Hamburgueria</button>
+        <button class="filter-chip" type="button">$</button>
+        <button class="filter-chip" type="button">$$</button>
+        <button class="filter-chip" type="button">$$$</button>
+        <button class="filter-chip clear-chip" type="button">Limpar</button>
+      </div>
+    </section>
+
+    <section>
+      <div id="publicRestaurantList" class="restaurant-list premium-grid"></div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="public-footer">
+    <div class="public-footer-content">
+      <div>
+        <div class="footer-logo">
+          <img src="../assets/img/logo-reserva-facil.png"
+            alt="Reserva Fácil"
+            class="system-logo">
+          <span>Reserva Fácil</span>
+        </div>
+
+        <p>
+          Uma plataforma para facilitar a descoberta de restaurantes, consulta de horários
+          e gerenciamento de reservas.
+        </p>
+      </div>
+
+      <div>
+        <h4>Navegação</h4>
+        <a href="../index.html">Início</a>
+        <a href="../auth/login.html">Entrar</a>
+        <a href="../auth/register.html">Criar conta</a>
+      </div>
+
+      <div>
+        <h4>Projeto</h4>
+        <p>Sistema acadêmico de reservas para restaurantes.</p>
+        <p>Desenvolvido com HTML, CSS, JavaScript e LocalStorage.</p>
+      </div>
+    </div>
+
+    <div class="public-footer-bottom">
+      © 2026 Reserva Fácil. Projeto acadêmico.
+    </div>
+  </footer>
+
+  <div id="authRequiredModal" class="modal">
+    <div class="modal-content login-required-modal">
+      <div class="login-required-icon">🔒</div>
+
+      <h3>Entre para continuar</h3>
+
+      <p class="muted-text">
+        Para realizar uma reserva, você precisa acessar sua conta ou criar um cadastro gratuito.
+      </p>
+
+      <div class="modal-actions">
+        <a href="../auth/login.html" class="btn">Fazer login</a>
+        <a href="../auth/register.html" class="btn-secondary">Criar conta</a>
+      </div>
+
+      <button id="closeAuthRequiredModal" class="login-required-close" type="button">
+        Agora não
+      </button>
+    </div>
+  </div>
+
+  <script type="module" src="../js/controllers/publicDiscoverController.js"></script>
+</body>
+</html>
+
