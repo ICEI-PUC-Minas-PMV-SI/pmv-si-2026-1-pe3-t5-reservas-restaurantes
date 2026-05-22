@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Reserva Fácil</title>
+
+  <link rel="icon" type="image/png" href="./assets/img/favicon-logo.png" />
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/pages/dashboard.css" />
+  <link rel="stylesheet" href="./css/components/form.css" />
+  <link rel="stylesheet" href="./css/components/ui-feedback.css" />
+</head>
+
+<body>
+  <div class="client-page public-home-page">
+    <header class="client-horizontal-navbar client-public-topbar public-home-topbar">
+      <a href="./index.html" class="brand brand-button">
+        <img src="./assets/img/logo-reserva-facil.png"
+          alt="Reserva Fácil"
+          class="system-logo">
+        <strong>Reserva Fácil</strong>
+      </a>
+
+      <nav class="client-navbar-actions public-nav-actions">
+        <a href="./auth/login.html" class="notification-btn">Entrar</a>
+        <a href="./auth/register.html" class="btn">Criar conta</a>
+      </nav>
+    </header>
+
+    <main class="client-horizontal-main public-home-main">
+      <section class="public-home-hero">
+        <div class="client-search-header public-home-heading">
+          <span class="client-search-kicker">Reserva Fácil</span>
+          <h1>Encontre um restaurante para sua próxima reserva</h1>
+
+          <p>
+            Pesquise restaurantes, compare horários disponíveis e visualize detalhes antes
+            de concluir sua reserva.
+          </p>
+        </div>
+
+        <div class="search-premium-wrapper">
+          <form id="publicSearchForm" class="opentable-search-area client-search-card public-home-search-card">
+            <div class="opentable-search-bar clean-search-bar public-home-search-grid">
+              <div class="opentable-field">
+                <label for="publicLocation">Cidade</label>
+                <input type="text" id="publicLocation" value="Belo Horizonte" placeholder="Cidade" required />
+              </div>
+
+              <div class="opentable-field">
+                <label for="publicDate">Data</label>
+                <input type="date" id="publicDate" required />
+              </div>
+
+              <div class="opentable-field">
+                <label for="publicTime">Horário</label>
+                <select id="publicTime" data-time-select required>
+                  <option value="">Selecione um horário</option>
+                </select>
+              </div>
+
+              <div class="opentable-field">
+                <label for="publicPeople">Pessoas</label>
+                <input type="number" id="publicPeople" min="1" placeholder="2 pessoas" required />
+              </div>
+
+              <button type="submit" class="opentable-search-btn">
+                Buscar restaurantes
+              </button>
+            </div>
+
+            <div class="public-home-search-note">
+              A busca mostra restaurantes públicos. Para finalizar uma reserva, entre ou crie sua conta.
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="public-home-section">
+        <div class="public-home-section-header">
+          <span class="client-search-kicker">Como funciona</span>
+          <h2>Do interesse à reserva em poucos passos</h2>
+        </div>
+
+        <div class="public-info-grid public-home-info-grid">
+          <div class="card public-home-info-card">
+            <strong>Pesquise restaurantes</strong>
+            <p class="muted-text">
+              Escolha cidade, data, horário e quantidade de pessoas para visualizar
+              opções disponíveis.
+            </p>
+          </div>
+
+          <div class="card public-home-info-card">
+            <strong>Compare experiências</strong>
+            <p class="muted-text">
+              Veja fotos, menu, avaliações, mesas e horários antes de decidir onde reservar.
+            </p>
+          </div>
+
+          <div class="card public-home-info-card">
+            <strong>Reserve com praticidade</strong>
+            <p class="muted-text">
+              Ao decidir, faça login ou crie sua conta para concluir sua reserva com segurança.
+            </p>
+          </div>
+
+          <div class="card public-home-info-card">
+            <strong>Gerencie suas reservas</strong>
+            <p class="muted-text">
+              Acompanhe suas reservas, receba confirmações do restaurante e cancele quando necessário.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="public-home-section public-home-faq">
+        <div class="public-home-section-header">
+          <span class="client-search-kicker">Dúvidas comuns</span>
+          <h2>Perguntas frequentes</h2>
+        </div>
+
+        <div class="accordion-section">
+          <div class="accordion-card">
+            <button class="accordion-toggle" type="button">
+              <span>Preciso criar conta para pesquisar restaurantes?</span>
+              <span class="accordion-icon">⌄</span>
+            </button>
+            <div class="accordion-content">
+              <p class="muted-text">
+                Não. Você pode pesquisar restaurantes, consultar horários e visualizar detalhes sem login.
+                A conta só é necessária para concluir uma reserva.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-section">
+          <div class="accordion-card">
+            <button class="accordion-toggle" type="button">
+              <span>Como faço uma reserva?</span>
+              <span class="accordion-icon">⌄</span>
+            </button>
+            <div class="accordion-content">
+              <p class="muted-text">
+                Basta escolher o restaurante, informar data, horário e quantidade de pessoas.
+                Para confirmar a reserva, será necessário entrar ou criar uma conta.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-section">
+          <div class="accordion-card">
+            <button class="accordion-toggle" type="button">
+              <span>O restaurante precisa confirmar minha reserva?</span>
+              <span class="accordion-icon">⌄</span>
+            </button>
+            <div class="accordion-content">
+              <p class="muted-text">
+                Sim. Inicialmente a reserva fica como pendente de confirmação.
+                Depois, o restaurante pode confirmar ou cancelar a solicitação.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-section">
+          <div class="accordion-card">
+            <button class="accordion-toggle" type="button">
+              <span>Posso cancelar uma reserva?</span>
+              <span class="accordion-icon">⌄</span>
+            </button>
+            <div class="accordion-content">
+              <p class="muted-text">
+                Sim. Após fazer login, o cliente pode acompanhar suas reservas e cancelar quando necessário.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="public-footer">
+    <div class="public-footer-content">
+      <div>
+        <div class="footer-logo">
+          <img src="./assets/img/logo-reserva-facil.png"
+            alt="Reserva Fácil"
+            class="system-logo">
+          <span>Reserva Fácil</span>
+        </div>
+
+        <p>
+          Uma plataforma para facilitar a descoberta de restaurantes, consulta de horários
+          e gerenciamento de reservas.
+        </p>
+      </div>
+
+      <div>
+        <h4>Projeto</h4>
+        <p>Sistema acadêmico de reservas para restaurantes.</p>
+        <p>Desenvolvido com HTML, CSS, JavaScript e LocalStorage.</p>
+      </div>
+    </div>
+
+    <div class="public-footer-bottom">
+      © 2026 Reserva Fácil. Projeto acadêmico.
+    </div>
+  </footer>
+
+  <script type="module" src="./js/controllers/publicHomeController.js"></script>
+  <script type="module" src="./js/controllers/accordionController.js"></script>
+</body>
+</html>

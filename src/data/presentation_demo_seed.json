@@ -1,0 +1,476 @@
+{
+  "name": "Reserva Facil - seed de apresentacao",
+  "credentials": {
+    "restaurantAdmin": {
+      "email": "restaurante.demo@reservafacil.com",
+      "password": "demo123",
+      "role": "admin",
+      "description": "Conta do restaurante para apresentar dashboard, reservas, mesas, agenda e avaliacoes."
+    },
+    "client": {
+      "email": "cliente.demo@reservafacil.com",
+      "password": "demo123",
+      "role": "client",
+      "description": "Conta cliente para apresentar busca, reservas, notificacoes e avaliacoes."
+    }
+  },
+  "localStorage": {
+    "users": [
+      {
+        "id": 9001,
+        "firstName": "Mariana",
+        "lastName": "Almeida",
+        "age": 34,
+        "email": "restaurante.demo@reservafacil.com",
+        "password": "demo123",
+        "role": "admin",
+        "phone": "(31) 99988-1100",
+        "photo": ""
+      },
+      {
+        "id": 9002,
+        "firstName": "Lucas",
+        "lastName": "Ferreira",
+        "age": 28,
+        "email": "cliente.demo@reservafacil.com",
+        "password": "demo123",
+        "role": "client",
+        "phone": "(31) 98877-2200",
+        "photo": ""
+      },
+      {
+        "id": 9003,
+        "firstName": "Ana",
+        "lastName": "Costa",
+        "age": 31,
+        "email": "ana.costa@exemplo.com",
+        "password": "demo123",
+        "role": "client",
+        "phone": "(31) 97766-3300",
+        "photo": ""
+      },
+      {
+        "id": 9004,
+        "firstName": "Rafael",
+        "lastName": "Moura",
+        "age": 39,
+        "email": "rafael.moura@exemplo.com",
+        "password": "demo123",
+        "role": "client",
+        "phone": "(31) 96655-4400",
+        "photo": ""
+      },
+      {
+        "id": 9005,
+        "firstName": "Beatriz",
+        "lastName": "Nogueira",
+        "age": 26,
+        "email": "beatriz.nogueira@exemplo.com",
+        "password": "demo123",
+        "role": "client",
+        "phone": "(31) 95544-5500",
+        "photo": ""
+      },
+      {
+        "id": 9006,
+        "firstName": "Diego",
+        "lastName": "Martins",
+        "age": 33,
+        "email": "diego.martins@exemplo.com",
+        "password": "demo123",
+        "role": "client",
+        "phone": "(31) 94433-6600",
+        "photo": ""
+      },
+      {
+        "id": 9007,
+        "firstName": "Carolina",
+        "lastName": "Pires",
+        "age": 29,
+        "email": "carolina.pires@exemplo.com",
+        "password": "demo123",
+        "role": "client",
+        "phone": "(31) 93322-7700",
+        "photo": ""
+      }
+    ],
+    "restaurants": [
+      {
+        "id": 910001,
+        "ownerId": 9001,
+        "ownerName": "Mariana Almeida",
+        "ownerEmail": "restaurante.demo@reservafacil.com",
+        "name": "Bistro Jardim Savassi",
+        "category": "Contemporânea",
+        "city": "Belo Horizonte",
+        "openingHours": "11:30 às 23:30",
+        "priceRange": "$$$",
+        "coverImage": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1400&q=80",
+        "dishImage": "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1000&q=80",
+        "description": "Restaurante contemporaneo na Savassi, com ambiente acolhedor, cozinha autoral e atendimento pensado para almocos executivos, encontros em familia e jantares especiais.",
+        "menu": "Entradas: burrata com tomates assados, croquete de costela, tartare de mignon e salada da horta. Principais: risoto de cogumelos, peixe do dia com pure de baroa, nhoque artesanal ao ragu, bife ancho com legumes grelhados e massa fresca com molho de limao siciliano. Sobremesas: pudim de doce de leite, torta de chocolate belga e creme brulee de cumaru.",
+        "photos": [
+          "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
+          "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=80",
+          "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1000&q=80",
+          "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1000&q=80"
+        ],
+        "availableTimes": [
+          "11:30",
+          "12:00",
+          "12:30",
+          "13:00",
+          "13:30",
+          "18:30",
+          "19:00",
+          "19:30",
+          "20:00",
+          "20:30",
+          "21:00",
+          "21:30"
+        ],
+        "tables": [
+          {
+            "id": 91000101,
+            "number": "01",
+            "capacity": 2,
+            "location": "Janela"
+          },
+          {
+            "id": 91000102,
+            "number": "02",
+            "capacity": 2,
+            "location": "Salao principal"
+          },
+          {
+            "id": 91000103,
+            "number": "03",
+            "capacity": 4,
+            "location": "Salao principal"
+          },
+          {
+            "id": 91000104,
+            "number": "04",
+            "capacity": 4,
+            "location": "Varanda coberta"
+          },
+          {
+            "id": 91000105,
+            "number": "05",
+            "capacity": 6,
+            "location": "Area reservada"
+          },
+          {
+            "id": 91000106,
+            "number": "06",
+            "capacity": 8,
+            "location": "Mesa familia"
+          },
+          {
+            "id": 91000107,
+            "number": "07",
+            "capacity": 4,
+            "location": "Lounge"
+          },
+          {
+            "id": 91000108,
+            "number": "08",
+            "capacity": 10,
+            "location": "Sala privativa"
+          }
+        ],
+        "rating": "4.8"
+      }
+    ],
+    "reservations": [
+      {
+        "id": 920001,
+        "userId": 9002,
+        "userName": "Lucas Ferreira",
+        "userEmail": "cliente.demo@reservafacil.com",
+        "userPhone": "(31) 98877-2200",
+        "customerFirstName": "Lucas",
+        "customerLastName": "Ferreira",
+        "customerContact": "cliente.demo@reservafacil.com",
+        "customerType": "registered",
+        "restaurantId": 910001,
+        "restaurantName": "Bistro Jardim Savassi",
+        "tableId": 91000103,
+        "tableNumber": "03",
+        "date": "2026-05-24",
+        "time": "20:00",
+        "people": 4,
+        "status": "pendente confirmação",
+        "createdAt": "2026-05-20T14:20:00.000Z"
+      },
+      {
+        "id": 920002,
+        "userId": 9002,
+        "userName": "Lucas Ferreira",
+        "userEmail": "cliente.demo@reservafacil.com",
+        "userPhone": "(31) 98877-2200",
+        "customerFirstName": "Lucas",
+        "customerLastName": "Ferreira",
+        "customerContact": "cliente.demo@reservafacil.com",
+        "customerType": "registered",
+        "restaurantId": 910001,
+        "restaurantName": "Bistro Jardim Savassi",
+        "tableId": 91000105,
+        "tableNumber": "05",
+        "date": "2026-05-29",
+        "time": "19:30",
+        "people": 5,
+        "status": "confirmada",
+        "createdAt": "2026-05-19T18:40:00.000Z"
+      },
+      {
+        "id": 920003,
+        "userId": 9002,
+        "userName": "Lucas Ferreira",
+        "userEmail": "cliente.demo@reservafacil.com",
+        "userPhone": "(31) 98877-2200",
+        "customerFirstName": "Lucas",
+        "customerLastName": "Ferreira",
+        "customerContact": "cliente.demo@reservafacil.com",
+        "customerType": "registered",
+        "restaurantId": 910001,
+        "restaurantName": "Bistro Jardim Savassi",
+        "tableId": 91000102,
+        "tableNumber": "02",
+        "date": "2026-05-10",
+        "time": "12:30",
+        "people": 2,
+        "status": "concluida",
+        "createdAt": "2026-05-08T10:15:00.000Z"
+      },
+      {
+        "id": 920004,
+        "userId": 9002,
+        "userName": "Lucas Ferreira",
+        "userEmail": "cliente.demo@reservafacil.com",
+        "userPhone": "(31) 98877-2200",
+        "customerFirstName": "Lucas",
+        "customerLastName": "Ferreira",
+        "customerContact": "cliente.demo@reservafacil.com",
+        "customerType": "registered",
+        "restaurantId": 910001,
+        "restaurantName": "Bistro Jardim Savassi",
+        "tableId": 91000104,
+        "tableNumber": "04",
+        "date": "2026-05-15",
+        "time": "21:00",
+        "people": 4,
+        "status": "cancelada",
+        "createdAt": "2026-05-12T21:05:00.000Z"
+      },
+      {
+        "id": 920005,
+        "userId": 9003,
+        "userName": "Ana Costa",
+        "userEmail": "ana.costa@exemplo.com",
+        "userPhone": "(31) 97766-3300",
+        "customerFirstName": "Ana",
+        "customerLastName": "Costa",
+        "customerContact": "ana.costa@exemplo.com",
+        "customerType": "registered",
+        "restaurantId": 910001,
+        "restaurantName": "Bistro Jardim Savassi",
+        "tableId": 91000101,
+        "tableNumber": "01",
+        "date": "2026-05-23",
+        "time": "18:30",
+        "people": 2,
+        "status": "confirmada",
+        "createdAt": "2026-05-20T09:10:00.000Z"
+      },
+      {
+        "id": 920006,
+        "userId": 9004,
+        "userName": "Rafael Moura",
+        "userEmail": "rafael.moura@exemplo.com",
+        "userPhone": "(31) 96655-4400",
+        "customerFirstName": "Rafael",
+        "customerLastName": "Moura",
+        "customerContact": "rafael.moura@exemplo.com",
+        "customerType": "registered",
+        "restaurantId": 910001,
+        "restaurantName": "Bistro Jardim Savassi",
+        "tableId": 91000106,
+        "tableNumber": "06",
+        "date": "2026-05-25",
+        "time": "13:00",
+        "people": 7,
+        "status": "pendente confirmação",
+        "createdAt": "2026-05-21T16:30:00.000Z"
+      },
+      {
+        "id": 920007,
+        "userId": null,
+        "userName": "Camila Rocha",
+        "userEmail": "camila.rocha@exemplo.com",
+        "userPhone": "",
+        "customerFirstName": "Camila",
+        "customerLastName": "Rocha",
+        "customerContact": "camila.rocha@exemplo.com",
+        "customerType": "admin-created",
+        "restaurantId": 910001,
+        "restaurantName": "Bistro Jardim Savassi",
+        "tableId": 91000108,
+        "tableNumber": "08",
+        "date": "2026-05-28",
+        "time": "20:30",
+        "people": 10,
+        "status": "confirmada",
+        "createdAt": "2026-05-18T13:00:00.000Z"
+      },
+      {
+        "id": 920008,
+        "userId": null,
+        "userName": "Empresa Horizonte",
+        "userEmail": "",
+        "userPhone": "(31) 3555-1122",
+        "customerFirstName": "Empresa",
+        "customerLastName": "Horizonte",
+        "customerContact": "(31) 3555-1122",
+        "customerType": "admin-created",
+        "restaurantId": 910001,
+        "restaurantName": "Bistro Jardim Savassi",
+        "tableId": 91000108,
+        "tableNumber": "08",
+        "date": "2026-05-30",
+        "time": "12:00",
+        "people": 9,
+        "status": "confirmada",
+        "createdAt": "2026-05-17T11:30:00.000Z"
+      },
+      {
+        "id": 920009,
+        "userId": 9003,
+        "userName": "Ana Costa",
+        "userEmail": "ana.costa@exemplo.com",
+        "userPhone": "(31) 97766-3300",
+        "customerFirstName": "Ana",
+        "customerLastName": "Costa",
+        "customerContact": "ana.costa@exemplo.com",
+        "customerType": "registered",
+        "restaurantId": 910001,
+        "restaurantName": "Bistro Jardim Savassi",
+        "tableId": 91000107,
+        "tableNumber": "07",
+        "date": "2026-05-08",
+        "time": "19:00",
+        "people": 3,
+        "status": "concluida",
+        "createdAt": "2026-05-06T20:45:00.000Z"
+      },
+      {
+        "id": 920010,
+        "userId": 9004,
+        "userName": "Rafael Moura",
+        "userEmail": "rafael.moura@exemplo.com",
+        "userPhone": "(31) 96655-4400",
+        "customerFirstName": "Rafael",
+        "customerLastName": "Moura",
+        "customerContact": "rafael.moura@exemplo.com",
+        "customerType": "registered",
+        "restaurantId": 910001,
+        "restaurantName": "Bistro Jardim Savassi",
+        "tableId": 91000104,
+        "tableNumber": "04",
+        "date": "2026-05-12",
+        "time": "21:30",
+        "people": 4,
+        "status": "cancelada",
+        "createdAt": "2026-05-09T22:15:00.000Z"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 930001,
+        "userId": 9002,
+        "userName": "Lucas Ferreira",
+        "restaurant": "Bistro Jardim Savassi",
+        "rating": 5,
+        "comment": "Atendimento muito organizado e pratos excelentes. A reserva apareceu certinha e a mesa estava pronta no horario.",
+        "createdAt": "2026-05-10T15:30:00.000Z"
+      },
+      {
+        "id": 930002,
+        "userId": 9003,
+        "userName": "Ana Costa",
+        "restaurant": "Bistro Jardim Savassi",
+        "rating": 5,
+        "comment": "Ambiente bonito, equipe atenciosa e risoto impecavel. Voltaria para um jantar especial.",
+        "createdAt": "2026-05-08T22:40:00.000Z"
+      },
+      {
+        "id": 930003,
+        "userId": 9004,
+        "userName": "Rafael Moura",
+        "restaurant": "Bistro Jardim Savassi",
+        "rating": 4,
+        "comment": "Boa experiencia geral. O prato principal demorou um pouco, mas o atendimento compensou.",
+        "createdAt": "2026-05-13T12:10:00.000Z"
+      },
+      {
+        "id": 930004,
+        "userId": 9005,
+        "userName": "Beatriz Nogueira",
+        "restaurant": "Bistro Jardim Savassi",
+        "rating": 5,
+        "comment": "A sala reservada funcionou muito bem para o almoco em grupo. Cardapio variado e sobremesas excelentes.",
+        "createdAt": "2026-05-16T18:25:00.000Z"
+      },
+      {
+        "id": 930005,
+        "userId": 9006,
+        "userName": "Diego Martins",
+        "restaurant": "Bistro Jardim Savassi",
+        "rating": 4,
+        "comment": "Gostei bastante da praticidade da reserva e da confirmacao. O restaurante estava cheio, mas tudo foi bem conduzido.",
+        "createdAt": "2026-05-18T09:50:00.000Z"
+      },
+      {
+        "id": 930006,
+        "userId": 9007,
+        "userName": "Carolina Pires",
+        "restaurant": "Bistro Jardim Savassi",
+        "rating": 5,
+        "comment": "Excelente opcao na regiao. Mesa confortavel, boa carta de bebidas e atendimento rapido.",
+        "createdAt": "2026-05-19T21:35:00.000Z"
+      }
+    ],
+    "notifications": [
+      {
+        "id": 940001,
+        "userId": 9002,
+        "title": "Reserva confirmada",
+        "message": "Sua reserva no restaurante Bistro Jardim Savassi foi confirmada.",
+        "type": "reservation",
+        "restaurantName": "Bistro Jardim Savassi",
+        "read": false,
+        "createdAt": "2026-05-19T18:45:00.000Z"
+      },
+      {
+        "id": 940002,
+        "userId": 9002,
+        "title": "Como foi sua experiencia?",
+        "message": "Sua experiencia no restaurante Bistro Jardim Savassi foi finalizada. Que tal deixar uma avaliacao?",
+        "type": "review",
+        "restaurantName": "Bistro Jardim Savassi",
+        "read": false,
+        "createdAt": "2026-05-10T15:00:00.000Z"
+      },
+      {
+        "id": 940003,
+        "userId": 9002,
+        "title": "Reserva cancelada",
+        "message": "Sua reserva no restaurante Bistro Jardim Savassi foi cancelada.",
+        "type": "reservation",
+        "restaurantName": "Bistro Jardim Savassi",
+        "read": true,
+        "createdAt": "2026-05-15T21:20:00.000Z"
+      }
+    ]
+  }
+}

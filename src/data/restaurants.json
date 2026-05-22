@@ -1,0 +1,886 @@
+[
+  {
+    "id": 100001,
+    "ownerId": "seed-owner",
+    "ownerName": "Reserva Fácil",
+    "ownerEmail": "demo@reservafacil.local",
+    "name": "Casa Aurora Gastronomia",
+    "category": "Contemporânea",
+    "city": "Belo Horizonte",
+    "openingHours": "11:30 às 23:00",
+    "priceRange": "$$$",
+    "coverImage": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80",
+    "dishImage": "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1000&q=80",
+    "description": "Restaurante contemporâneo com cozinha autoral, ambiente confortável e serviço pensado para jantares especiais, encontros em grupo e almoços de negócios. A casa combina ingredientes brasileiros, técnicas modernas e uma carta de bebidas com opções sem álcool, vinhos e coquetéis clássicos.",
+    "menu": "Entradas: burrata com tomates assados, tartare de mignon, croquete de costela e salada de folhas com queijo da Serra da Canastra. Pratos principais: risoto de cogumelos, peixe do dia com purê de baroa, nhoque artesanal ao ragu e bife ancho com legumes grelhados. Sobremesas: pudim de doce de leite, torta de chocolate belga e creme brulee de cumaru.",
+    "photos": [
+      "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availableTimes": [
+      "11:30",
+      "12:00",
+      "12:30",
+      "13:00",
+      "13:30",
+      "18:30",
+      "19:00",
+      "19:30",
+      "20:00",
+      "20:30",
+      "21:00",
+      "21:30"
+    ],
+    "tables": [
+      {
+        "id": 10000101,
+        "number": "01",
+        "capacity": 2,
+        "location": "Janela"
+      },
+      {
+        "id": 10000102,
+        "number": "02",
+        "capacity": 2,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000103,
+        "number": "03",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000104,
+        "number": "04",
+        "capacity": 4,
+        "location": "Varanda coberta"
+      },
+      {
+        "id": 10000105,
+        "number": "05",
+        "capacity": 6,
+        "location": "Área reservada"
+      },
+      {
+        "id": 10000106,
+        "number": "06",
+        "capacity": 8,
+        "location": "Mesa família"
+      }
+    ],
+    "rating": "4.8"
+  },
+  {
+    "id": 100002,
+    "ownerId": "seed-owner",
+    "ownerName": "Reserva Fácil",
+    "ownerEmail": "demo@reservafacil.local",
+    "name": "Brasa do Mercado",
+    "category": "Churrascaria",
+    "city": "São Paulo",
+    "openingHours": "12:00 às 23:30",
+    "priceRange": "$$$$",
+    "coverImage": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1400&q=80",
+    "dishImage": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1000&q=80",
+    "description": "Churrascaria moderna inspirada nos grandes mercados urbanos, com cortes selecionados, parrilla aberta e atendimento voltado para grupos, comemorações e reuniões corporativas. O salão tem clima descontraído, iluminação baixa e uma área reservada para eventos menores.",
+    "menu": "Entradas: pão de alho artesanal, provoleta, linguiça na brasa e salada de batatas com maionese da casa. Pratos principais: ancho, chorizo, costela assada lentamente, frango marinado, legumes na parrilla e arroz carreteiro. Sobremesas: mousse de chocolate, abacaxi grelhado com canela e sorvete de creme.",
+    "photos": [
+      "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availableTimes": [
+      "12:00",
+      "12:30",
+      "13:00",
+      "13:30",
+      "14:00",
+      "18:00",
+      "18:30",
+      "19:00",
+      "19:30",
+      "20:00",
+      "20:30",
+      "21:00",
+      "21:30"
+    ],
+    "tables": [
+      {
+        "id": 10000201,
+        "number": "01",
+        "capacity": 2,
+        "location": "Balcão"
+      },
+      {
+        "id": 10000202,
+        "number": "02",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000203,
+        "number": "03",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000204,
+        "number": "04",
+        "capacity": 6,
+        "location": "Área gourmet"
+      },
+      {
+        "id": 10000205,
+        "number": "05",
+        "capacity": 8,
+        "location": "Área reservada"
+      },
+      {
+        "id": 10000206,
+        "number": "06",
+        "capacity": 10,
+        "location": "Mesa de grupo"
+      }
+    ],
+    "rating": "4.7"
+  },
+  {
+    "id": 100003,
+    "ownerId": "seed-owner",
+    "ownerName": "Reserva Fácil",
+    "ownerEmail": "demo@reservafacil.local",
+    "name": "Trattoria Bella Serra",
+    "category": "Italiana",
+    "city": "Curitiba",
+    "openingHours": "11:00 às 22:30",
+    "priceRange": "$$$",
+    "coverImage": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=80",
+    "dishImage": "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?auto=format&fit=crop&w=1000&q=80",
+    "description": "Trattoria italiana familiar com massas frescas preparadas diariamente, molhos clássicos e uma seleção de vinhos para harmonização. O restaurante é indicado para almoços tranquilos, jantares românticos e encontros em família.",
+    "menu": "Entradas: focaccia com azeite, bruschetta de tomate, caprese e polenta cremosa com ragu. Pratos principais: lasanha bolonhesa, fettuccine alfredo, ravioli de ricota com espinafre, gnocchi ao sugo e risoto de parmesão. Sobremesas: tiramisu, panna cotta de frutas vermelhas e cannoli.",
+    "photos": [
+      "https://images.unsplash.com/photo-1579684947550-22e945225d9a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availableTimes": [
+      "11:00",
+      "11:30",
+      "12:00",
+      "12:30",
+      "13:00",
+      "13:30",
+      "18:00",
+      "18:30",
+      "19:00",
+      "19:30",
+      "20:00",
+      "20:30"
+    ],
+    "tables": [
+      {
+        "id": 10000301,
+        "number": "01",
+        "capacity": 2,
+        "location": "Janela"
+      },
+      {
+        "id": 10000302,
+        "number": "02",
+        "capacity": 2,
+        "location": "Mezanino"
+      },
+      {
+        "id": 10000303,
+        "number": "03",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000304,
+        "number": "04",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000305,
+        "number": "05",
+        "capacity": 6,
+        "location": "Área reservada"
+      },
+      {
+        "id": 10000306,
+        "number": "06",
+        "capacity": 8,
+        "location": "Mesa família"
+      }
+    ],
+    "rating": "4.6"
+  },
+  {
+    "id": 100004,
+    "ownerId": "seed-owner",
+    "ownerName": "Reserva Fácil",
+    "ownerEmail": "demo@reservafacil.local",
+    "name": "Sushi Kairo",
+    "category": "Japonesa",
+    "city": "Rio de Janeiro",
+    "openingHours": "18:00 às 00:00",
+    "priceRange": "$$$$",
+    "coverImage": "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=1400&q=80",
+    "dishImage": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80",
+    "description": "Restaurante japonês com balcão de sushi, combinados autorais e pratos quentes. A proposta mistura técnica tradicional, ingredientes frescos e apresentação refinada, sendo uma boa opção para ocasiões especiais e reservas à noite.",
+    "menu": "Entradas: sunomono, guioza, edamame e ceviche nikkei. Pratos principais: combinado do chef, sashimi variado, uramaki especial, tempurá de camarão, yakisoba de legumes e teppan de salmão. Sobremesas: harumaki de banana, mochi e sorvete de matchá.",
+    "photos": [
+      "https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1563612116625-3012372fccce?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availableTimes": [
+      "18:00",
+      "18:30",
+      "19:00",
+      "19:30",
+      "20:00",
+      "20:30",
+      "21:00",
+      "21:30",
+      "22:00",
+      "22:30",
+      "23:00"
+    ],
+    "tables": [
+      {
+        "id": 10000401,
+        "number": "01",
+        "capacity": 2,
+        "location": "Balcão do sushi"
+      },
+      {
+        "id": 10000402,
+        "number": "02",
+        "capacity": 2,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000403,
+        "number": "03",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000404,
+        "number": "04",
+        "capacity": 4,
+        "location": "Sala privativa"
+      },
+      {
+        "id": 10000405,
+        "number": "05",
+        "capacity": 6,
+        "location": "Tatame reservado"
+      },
+      {
+        "id": 10000406,
+        "number": "06",
+        "capacity": 8,
+        "location": "Mesa de grupo"
+      }
+    ],
+    "rating": "4.9"
+  },
+  {
+    "id": 100005,
+    "ownerId": "seed-owner",
+    "ownerName": "Reserva Fácil",
+    "ownerEmail": "demo@reservafacil.local",
+    "name": "Verde Raiz Bistrô",
+    "category": "Vegetariana",
+    "city": "Florianópolis",
+    "openingHours": "10:30 às 21:30",
+    "priceRange": "$$",
+    "coverImage": "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=1400&q=80",
+    "dishImage": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80",
+    "description": "Bistrô vegetariano com foco em ingredientes orgânicos, pratos coloridos e opções veganas. A casa tem ambiente leve, cardápio sazonal e atendimento voltado para cafés da manhã tardios, almoços saudáveis e jantares informais.",
+    "menu": "Entradas: homus com pão pita, chips de raízes, salada mediterrânea e bolinho de grão-de-bico. Pratos principais: bowl de quinoa, moqueca de banana-da-terra, hambúrguer de lentilha, massa ao pesto de castanhas e curry de legumes. Sobremesas: brownie vegano, cheesecake de frutas vermelhas e mousse de cacau.",
+    "photos": [
+      "https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availableTimes": [
+      "10:30",
+      "11:00",
+      "11:30",
+      "12:00",
+      "12:30",
+      "13:00",
+      "13:30",
+      "18:00",
+      "18:30",
+      "19:00",
+      "19:30",
+      "20:00"
+    ],
+    "tables": [
+      {
+        "id": 10000501,
+        "number": "01",
+        "capacity": 2,
+        "location": "Jardim"
+      },
+      {
+        "id": 10000502,
+        "number": "02",
+        "capacity": 2,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000503,
+        "number": "03",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000504,
+        "number": "04",
+        "capacity": 4,
+        "location": "Varanda"
+      },
+      {
+        "id": 10000505,
+        "number": "05",
+        "capacity": 6,
+        "location": "Mesa comunitária"
+      },
+      {
+        "id": 10000506,
+        "number": "06",
+        "capacity": 8,
+        "location": "Área externa"
+      }
+    ],
+    "rating": "4.5"
+  },
+  {
+    "id": 100006,
+    "ownerId": "seed-owner",
+    "ownerName": "Reserva Fácil",
+    "ownerEmail": "demo@reservafacil.local",
+    "name": "Cantina do Porto",
+    "category": "Portuguesa",
+    "city": "Recife",
+    "openingHours": "11:30 às 22:30",
+    "priceRange": "$$$",
+    "coverImage": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80",
+    "dishImage": "https://images.unsplash.com/photo-1515669097368-22e68427d265?auto=format&fit=crop&w=1000&q=80",
+    "description": "Casa portuguesa com pratos fartos, peixes, frutos do mar e receitas de forno. O espaço tem decoração rústica, salão amplo e mesas indicadas para famílias, aniversários e encontros de fim de semana.",
+    "menu": "Entradas: bolinho de bacalhau, caldo verde, azeitonas temperadas e salada de polvo. Pratos principais: bacalhau à lagareiro, arroz de mariscos, polvo grelhado, sardinhas na brasa e carne de panela ao vinho. Sobremesas: pastel de nata, arroz doce e toucinho do céu.",
+    "photos": [
+      "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1550966871-9e2f56c7e3d1?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availableTimes": [
+      "11:30",
+      "12:00",
+      "12:30",
+      "13:00",
+      "13:30",
+      "14:00",
+      "18:30",
+      "19:00",
+      "19:30",
+      "20:00",
+      "20:30",
+      "21:00"
+    ],
+    "tables": [
+      {
+        "id": 10000601,
+        "number": "01",
+        "capacity": 2,
+        "location": "Janela"
+      },
+      {
+        "id": 10000602,
+        "number": "02",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000603,
+        "number": "03",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000604,
+        "number": "04",
+        "capacity": 6,
+        "location": "Varanda coberta"
+      },
+      {
+        "id": 10000605,
+        "number": "05",
+        "capacity": 8,
+        "location": "Mesa família"
+      },
+      {
+        "id": 10000606,
+        "number": "06",
+        "capacity": 10,
+        "location": "Sala reservada"
+      }
+    ],
+    "rating": "4.4"
+  },
+  {
+    "id": 100007,
+    "ownerId": "seed-owner",
+    "ownerName": "Reserva Fácil",
+    "ownerEmail": "demo@reservafacil.local",
+    "name": "El Camino Taquería",
+    "category": "Mexicana",
+    "city": "Brasília",
+    "openingHours": "17:30 às 23:30",
+    "priceRange": "$$",
+    "coverImage": "https://images.unsplash.com/photo-1567529854338-fc097b962123?auto=format&fit=crop&w=1400&q=80",
+    "dishImage": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1000&q=80",
+    "description": "Taquería mexicana com clima casual, música ambiente e cardápio pensado para compartilhar. A casa trabalha com tortillas artesanais, molhos preparados diariamente e opções para quem prefere pratos mais leves ou apimentados.",
+    "menu": "Entradas: nachos com guacamole, elote grelhado, quesadilla de queijo e ceviche de peixe branco. Pratos principais: tacos de carne, tacos de cogumelos, burrito de frango, enchiladas, chilli com feijão e bowl mexicano. Sobremesas: churros com doce de leite, flan e brownie com pimenta.",
+    "photos": [
+      "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availableTimes": [
+      "17:30",
+      "18:00",
+      "18:30",
+      "19:00",
+      "19:30",
+      "20:00",
+      "20:30",
+      "21:00",
+      "21:30",
+      "22:00"
+    ],
+    "tables": [
+      {
+        "id": 10000701,
+        "number": "01",
+        "capacity": 2,
+        "location": "Balcão"
+      },
+      {
+        "id": 10000702,
+        "number": "02",
+        "capacity": 2,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000703,
+        "number": "03",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000704,
+        "number": "04",
+        "capacity": 4,
+        "location": "Área externa"
+      },
+      {
+        "id": 10000705,
+        "number": "05",
+        "capacity": 6,
+        "location": "Mesa alta"
+      },
+      {
+        "id": 10000706,
+        "number": "06",
+        "capacity": 8,
+        "location": "Área reservada"
+      }
+    ],
+    "rating": "4.6"
+  },
+  {
+    "id": 100008,
+    "ownerId": "seed-owner",
+    "ownerName": "Reserva Fácil",
+    "ownerEmail": "demo@reservafacil.local",
+    "name": "Maré Alta Seafood",
+    "category": "Frutos do Mar",
+    "city": "Salvador",
+    "openingHours": "11:00 às 23:00",
+    "priceRange": "$$$",
+    "coverImage": "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1400&q=80",
+    "dishImage": "https://images.unsplash.com/photo-1559737558-2f5a35f4523b?auto=format&fit=crop&w=1000&q=80",
+    "description": "Restaurante de frutos do mar com vista urbana, pratos para compartilhar e receitas inspiradas no litoral brasileiro. O ambiente é descontraído durante o almoço e mais intimista no jantar.",
+    "menu": "Entradas: casquinha de siri, lula crocante, vinagrete de polvo e ceviche tropical. Pratos principais: moqueca baiana, camarão ao alho e óleo, peixe grelhado com farofa de dendê, risoto de camarão e arroz de polvo. Sobremesas: cocada cremosa, cartola e sorvete de tapioca.",
+    "photos": [
+      "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1560717845-968823efbee1?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availableTimes": [
+      "11:00",
+      "11:30",
+      "12:00",
+      "12:30",
+      "13:00",
+      "13:30",
+      "14:00",
+      "18:00",
+      "18:30",
+      "19:00",
+      "19:30",
+      "20:00",
+      "20:30"
+    ],
+    "tables": [
+      {
+        "id": 10000801,
+        "number": "01",
+        "capacity": 2,
+        "location": "Janela"
+      },
+      {
+        "id": 10000802,
+        "number": "02",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000803,
+        "number": "03",
+        "capacity": 4,
+        "location": "Varanda"
+      },
+      {
+        "id": 10000804,
+        "number": "04",
+        "capacity": 6,
+        "location": "Área reservada"
+      },
+      {
+        "id": 10000805,
+        "number": "05",
+        "capacity": 8,
+        "location": "Mesa família"
+      },
+      {
+        "id": 10000806,
+        "number": "06",
+        "capacity": 10,
+        "location": "Sala de eventos"
+      }
+    ],
+    "rating": "4.7"
+  },
+  {
+    "id": 100009,
+    "ownerId": "seed-owner",
+    "ownerName": "Reserva Fácil",
+    "ownerEmail": "demo@reservafacil.local",
+    "name": "Café Jardim Secreto",
+    "category": "Café e Brunch",
+    "city": "Porto Alegre",
+    "openingHours": "08:00 às 19:00",
+    "priceRange": "$$",
+    "coverImage": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=80",
+    "dishImage": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=1000&q=80",
+    "description": "Café com jardim interno, brunch durante o dia e cardápio de confeitaria artesanal. É indicado para encontros rápidos, trabalho remoto, cafés em grupo e refeições leves no fim da tarde.",
+    "menu": "Entradas e lanches: pão de queijo recheado, croissant de queijo, avocado toast, salada de frutas e iogurte com granola. Pratos principais: omelete de cogumelos, waffle salgado, sanduíche de rosbife e quiche do dia. Sobremesas: cheesecake, bolo de cenoura, brownie e torta de limão.",
+    "photos": [
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availableTimes": [
+      "08:00",
+      "08:30",
+      "09:00",
+      "09:30",
+      "10:00",
+      "10:30",
+      "11:00",
+      "14:00",
+      "14:30",
+      "15:00",
+      "15:30",
+      "16:00",
+      "16:30"
+    ],
+    "tables": [
+      {
+        "id": 10000901,
+        "number": "01",
+        "capacity": 2,
+        "location": "Jardim interno"
+      },
+      {
+        "id": 10000902,
+        "number": "02",
+        "capacity": 2,
+        "location": "Janela"
+      },
+      {
+        "id": 10000903,
+        "number": "03",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10000904,
+        "number": "04",
+        "capacity": 4,
+        "location": "Varanda"
+      },
+      {
+        "id": 10000905,
+        "number": "05",
+        "capacity": 6,
+        "location": "Mesa comunitária"
+      },
+      {
+        "id": 10000906,
+        "number": "06",
+        "capacity": 8,
+        "location": "Área de grupos"
+      }
+    ],
+    "rating": "4.5"
+  },
+  {
+    "id": 100010,
+    "ownerId": "seed-owner",
+    "ownerName": "Reserva Fácil",
+    "ownerEmail": "demo@reservafacil.local",
+    "name": "Beco Burger Artesanal",
+    "category": "Hamburgueria",
+    "city": "Goiânia",
+    "openingHours": "18:00 às 00:00",
+    "priceRange": "$$",
+    "coverImage": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1400&q=80",
+    "dishImage": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80",
+    "description": "Hamburgueria artesanal com carnes grelhadas, pães de fermentação natural e opções vegetarianas. O local tem atmosfera urbana, mesas coletivas e boa estrutura para grupos de amigos.",
+    "menu": "Entradas: batata rústica, onion rings, dadinho de tapioca e nuggets artesanais. Pratos principais: burger clássico, smash duplo, burger de costela, burger vegetariano de grão-de-bico e sanduíche de frango crocante. Sobremesas: milk-shake de baunilha, brownie com sorvete e cookie recheado.",
+    "photos": [
+      "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1534790566855-4cb788d389ec?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availableTimes": [
+      "18:00",
+      "18:30",
+      "19:00",
+      "19:30",
+      "20:00",
+      "20:30",
+      "21:00",
+      "21:30",
+      "22:00",
+      "22:30",
+      "23:00"
+    ],
+    "tables": [
+      {
+        "id": 10001001,
+        "number": "01",
+        "capacity": 2,
+        "location": "Balcão"
+      },
+      {
+        "id": 10001002,
+        "number": "02",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10001003,
+        "number": "03",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10001004,
+        "number": "04",
+        "capacity": 6,
+        "location": "Mesa coletiva"
+      },
+      {
+        "id": 10001005,
+        "number": "05",
+        "capacity": 8,
+        "location": "Área externa"
+      },
+      {
+        "id": 10001006,
+        "number": "06",
+        "capacity": 10,
+        "location": "Área de grupo"
+      }
+    ],
+    "rating": "4.4"
+  },
+  {
+    "id": 100011,
+    "ownerId": "seed-owner",
+    "ownerName": "Reserva Fácil",
+    "ownerEmail": "demo@reservafacil.local",
+    "name": "Tempero da Vó Lurdes",
+    "category": "Brasileira",
+    "city": "Campinas",
+    "openingHours": "11:00 às 21:00",
+    "priceRange": "$$",
+    "coverImage": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=1400&q=80",
+    "dishImage": "https://images.unsplash.com/photo-1565895405138-6c3a1555da6a?auto=format&fit=crop&w=1000&q=80",
+    "description": "Restaurante de comida brasileira caseira com buffet no almoço e pratos à la carte à noite. A proposta é servir receitas afetivas, porções generosas e atendimento próximo, com foco em famílias e refeições do dia a dia.",
+    "menu": "Entradas: mandioca frita, torresmo, caldinho de feijão e salada da casa. Pratos principais: feijoada, frango com quiabo, picadinho com arroz e ovo, escondidinho de carne seca e peixe ao molho de ervas. Sobremesas: goiabada com queijo, pudim, doce de abóbora e manjar de coco.",
+    "photos": [
+      "https://images.unsplash.com/photo-1543352634-82d8f4c4d07d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1600891963935-9e7caa2a6220?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availableTimes": [
+      "11:00",
+      "11:30",
+      "12:00",
+      "12:30",
+      "13:00",
+      "13:30",
+      "14:00",
+      "18:00",
+      "18:30",
+      "19:00",
+      "19:30",
+      "20:00"
+    ],
+    "tables": [
+      {
+        "id": 10001101,
+        "number": "01",
+        "capacity": 2,
+        "location": "Janela"
+      },
+      {
+        "id": 10001102,
+        "number": "02",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10001103,
+        "number": "03",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10001104,
+        "number": "04",
+        "capacity": 6,
+        "location": "Varanda"
+      },
+      {
+        "id": 10001105,
+        "number": "05",
+        "capacity": 8,
+        "location": "Mesa família"
+      },
+      {
+        "id": 10001106,
+        "number": "06",
+        "capacity": 10,
+        "location": "Sala reservada"
+      }
+    ],
+    "rating": "4.3"
+  },
+  {
+    "id": 100012,
+    "ownerId": "seed-owner",
+    "ownerName": "Reserva Fácil",
+    "ownerEmail": "demo@reservafacil.local",
+    "name": "Le Petit Lumière",
+    "category": "Francesa",
+    "city": "São Paulo",
+    "openingHours": "19:00 às 00:00",
+    "priceRange": "$$$$",
+    "coverImage": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1400&q=80",
+    "dishImage": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1000&q=80",
+    "description": "Bistrô francês intimista, com salão pequeno, iluminação aconchegante e serviço mais formal. A casa é indicada para jantares românticos, comemorações discretas e experiências gastronômicas com menu completo.",
+    "menu": "Entradas: sopa de cebola, steak tartare, queijo brie assado e salada niçoise. Pratos principais: boeuf bourguignon, magret de pato, ratatouille, peixe ao beurre blanc e risoto de alho-poró. Sobremesas: crème brûlée, profiteroles, tarte tatin e mousse de chocolate amargo.",
+    "photos": [
+      "https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "availableTimes": [
+      "19:00",
+      "19:30",
+      "20:00",
+      "20:30",
+      "21:00",
+      "21:30",
+      "22:00",
+      "22:30",
+      "23:00"
+    ],
+    "tables": [
+      {
+        "id": 10001201,
+        "number": "01",
+        "capacity": 2,
+        "location": "Janela"
+      },
+      {
+        "id": 10001202,
+        "number": "02",
+        "capacity": 2,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10001203,
+        "number": "03",
+        "capacity": 4,
+        "location": "Salão principal"
+      },
+      {
+        "id": 10001204,
+        "number": "04",
+        "capacity": 4,
+        "location": "Área romântica"
+      },
+      {
+        "id": 10001205,
+        "number": "05",
+        "capacity": 6,
+        "location": "Sala privativa"
+      },
+      {
+        "id": 10001206,
+        "number": "06",
+        "capacity": 8,
+        "location": "Mesa de grupo"
+      }
+    ],
+    "rating": "4.9"
+  }
+]
