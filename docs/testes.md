@@ -1,16 +1,30 @@
 # 5. PLANO DE TESTES DE SOFTWARE
    
-Nesta etapa devem ser realizados dois tipos de avaliação: por observação de sessão de uso (teste com usuários) e por inspeção (avaliação heurística, realizada pelos especialistas em usabilidade). Foram disponibilizados em "Material de Apoio" modelos para o registro dos testes que deverão ser realizados da seguinte maneira:
-•	Na avaliação heurística, cada integrante do grupo deverá preencher a planilha correspondente ao teste (arquivo Avaliação_Heurística.xlsx). Ao final, os resultados deverão ser compilados em arquivo único de mesmo formato.
-•	Na avaliação por observação de sessão de uso, deverão ser definidas tarefas em quantidade igual ao número de integrantes do grupo (ex.: grupo com 5 integrantes, 5 tarefas) e documentadas no relatório de testes com usuário (arquivo Relatório_de_Testes_com_Usuário.docx). Cada integrante do grupo deverá realizar o teste com um usuário distinto (ex.: grupo com 5 integrantes, 5 usuários deverão ser escolhidos, um por cada membro, para a realização dos testes).
+Nesta etapa foram realizadas avaliações de usabilidade e validação funcional do sistema Reserva Fácil por meio de testes com usuários e avaliação heurística da interface.
 
-Ao final, os relatórios gerados por cada membro deverão ser disponibilizados aqui, juntamente com a planilha consolidada da avaliação heurística.
+A avaliação heurística foi conduzida pelos integrantes do grupo com base nas 10 heurísticas de usabilidade de Nielsen, permitindo identificar pontos fortes da interface e oportunidades de melhoria relacionadas à experiência do usuário.
 
-Material de apoio para esta etapa:
+Para os testes de usabilidade, foram definidas tarefas representando funcionalidades reais do sistema, contemplando tanto o perfil de cliente quanto o perfil de administrador. Cada integrante do grupo foi responsável por elaborar uma tarefa específica e conduzir uma sessão de teste com um usuário distinto, totalizando um participante por membro da equipe.
 
+Durante os testes, os usuários executaram atividades previamente definidas enquanto os avaliadores observaram a navegação, registraram dificuldades encontradas, analisaram a compreensão das funcionalidades e verificaram se os objetivos das tarefas foram alcançados com sucesso.
 
-[Avaliação_Heurística.xlsx](https://github.com/user-attachments/files/16501461/Avaliacao_Heuristica.xlsx) 
+Os resultados obtidos demonstraram que os usuários conseguiram navegar pelo sistema de forma intuitiva, localizando facilmente as funcionalidades necessárias para a execução das tarefas propostas. As observações coletadas também permitiram identificar oportunidades de aprimoramento relacionadas principalmente à comunicação visual e ao feedback apresentado pelo sistema após determinadas ações.
 
-[Relatório_de_Testes_com_Usuário.docx](https://github.com/user-attachments/files/16501456/Relatorio_de_Testes_com_Usuario.docx)
+Os documentos completos referentes aos testes realizados pelos integrantes da equipe e à avaliação heurística consolidada encontram-se disponíveis nos arquivos anexados abaixo.
 
-[Relatório_de_Testes_com_Usuário_exemplo.docx](https://github.com/user-attachments/files/16501459/Relatorio_de_Testes_com_Usuario_exemplo.docx)
+--
+
+## Arquivos dos Testes
+
+### Relatórios de Testes com Usuários
+
+- [Relatório de Testes - Fábio](LINK)
+- [Relatório de Testes - Igor](LINK)
+- [Relatório de Testes - Samuel](LINK)
+- [Relatório de Testes - Marcelo](LINK)
+- [Relatório de Testes - Matheus](LINK)
+- [Relatório de Testes - Suelen](LINK)
+
+### Avaliação Heurística
+
+- [Avaliação Heurística Consolidada](LINK)
