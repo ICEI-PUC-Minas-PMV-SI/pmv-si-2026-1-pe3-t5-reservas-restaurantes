@@ -12,13 +12,11 @@ Os resultados obtidos demonstraram que os usuários conseguiram navegar pelo sis
 
 Os documentos completos referentes aos testes realizados pelos integrantes da equipe e à avaliação heurística consolidada encontram-se disponíveis nos arquivos anexados abaixo.
 
---
-
 ## Arquivos dos Testes
 
 ### Relatórios de Testes com Usuários
 
-- [Relatório de Testes - Fábio](.docs/img/reports/Relatório_de_Testes_com_Usuário_Fábio_Henrique.docx.pdf)
+- [Relatório de Testes - Fábio](./docs/img/reports/Relatório_de_Testes_com_Usuário_Fábio_Henrique.docx.pdf)
 - [Relatório de Testes - Igor](LINK)
 - [Relatório de Testes - Samuel](LINK)
 - [Relatório de Testes - Marcelo](LINK)
