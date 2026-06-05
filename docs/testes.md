@@ -18,7 +18,7 @@ Os documentos completos referentes aos testes realizados pelos integrantes da eq
 
 ### Relatórios de Testes com Usuários
 
-- [Relatório de Testes - Fábio](LINK)
+- [Relatório de Testes - Fábio](.docs/img/reports/Relatório_de_Testes_com_Usuário_Fábio_Henrique.docx.pdf)
 - [Relatório de Testes - Igor](LINK)
 - [Relatório de Testes - Samuel](LINK)
 - [Relatório de Testes - Marcelo](LINK)
