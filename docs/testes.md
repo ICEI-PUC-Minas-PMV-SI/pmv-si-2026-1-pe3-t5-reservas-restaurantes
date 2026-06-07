@@ -25,4 +25,4 @@ Os documentos completos referentes aos testes realizados pelos integrantes da eq
 
 ### Avaliação Heurística
 
-- [Avaliação Heurística Consolidada](LINK)
+- [Avaliação Heurística Consolidada](../docs/anexos/reports/Avaliação_Heurística.xlsx)
