@@ -16,12 +16,12 @@ Os documentos completos referentes aos testes realizados pelos integrantes da eq
 
 ### Relatórios de Testes com Usuários
 
-- [Relatório de Testes - Fábio](./img/reports/Relatório_de_Testes_com_Usuário_Fábio_Henrique.docx.pdf)
-- [Relatório de Testes - Igor](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2026-1-pe3-t5-reservas-restaurantes/blob/main/docs/anexos/reports/Relatório_de_Testes_com_Usuário_Igor_Ferreira.pdf)
-- [Relatório de Testes - Samuel](LINK)
-- [Relatório de Testes - Marcelo](LINK)
-- [Relatório de Testes - Matheus](LINK)
-- [Relatório de Testes - Suelen](LINK)
+- [Relatório de Testes - Fábio](../docs/anexos/reports/Relatório_de_Testes_com_Usuário_Fábio_Henrique.docx.pdf)
+- [Relatório de Testes - Igor](../docs/anexos/reports/Relatório_de_Testes_com_Usuário_Igor_Ferreira.pdf)
+- [Relatório de Testes - Samuel](../docs/anexos/reports/Relatório_de_Testes_com_Usuário_Samuel_Alexander.pdf)
+- [Relatório de Testes - Marcelo](../docs/anexos/reports/Relatório_de_Testes_com_Usuário_Marcelo_Silva.pdf)
+- [Relatório de Testes - Matheus](../docs/anexos/reports/Relatório_de_Testes_com_Usuário_Matheus_Almeida.pdf)
+- [Relatório de Testes - Suelen](../docs/anexos/reports/Relatório_de_Testes_com_Usuário_Suelen_Marchetto.pdf)
 
 ### Avaliação Heurística
 
