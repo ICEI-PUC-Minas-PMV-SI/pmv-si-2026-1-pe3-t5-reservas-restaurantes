@@ -2,4 +2,4 @@
 
 Arquivo em PDF da apresentação final. 
 
-- [Apresentação Final do Trabalho](../docs/anexos/reports/apresentacao_final/Slide_-_Reserva_Facil.pdf)
+- [Apresentação Final do Trabalho](../docs/anexos/apresentacao_final/Slide_-_Reserva_Facil.pdf)
